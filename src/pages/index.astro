@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+
+const comics = await getCollection('comics');
+// Sort by date or grab the first entry
+const latestComic = comics[0];
+
+if (latestComic) {
+  return Astro.redirect(`/comic/${latestComic.id}`);
+}
+---
+
+<p>No comics published yet.</p>

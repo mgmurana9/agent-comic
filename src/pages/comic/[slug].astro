@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const comics = await getCollection('comics');
+  return comics.map(c => ({ params: { slug: c.id }, props: { comic: c.data } }));
+}
+
+const { comic } = Astro.props;
+---
+
+<Layout title={comic.title}>
+  <main class="max-w-3xl mx-auto px-6 py-12 text-zinc-100 font-sans">
+    <header class="mb-8 border-b border-zinc-800 pb-4">
+      <span class="text-xs font-mono text-zinc-500 uppercase tracking-widest">{comic.publish_date}</span>
+      <h1 class="text-3xl font-bold tracking-tight text-zinc-100 mt-1">{comic.title}</h1>
+    </header>
+
+    <div class="mb-8 bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
+      <img src={comic.image_file} alt={comic.alt_text} class="w-full h-auto object-cover" />
+    </div>
+
+    <div class="space-y-4 text-lg font-mono">
+      <p class="text-zinc-400">&gt; {comic.setup}</p>
+      <p class="text-zinc-100 font-bold">&gt; {comic.punchline}</p>
+    </div>
+  </main>
+</Layout>
