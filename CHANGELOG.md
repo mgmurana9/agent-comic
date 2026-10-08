@@ -1,4 +1,10 @@
-**v5 — October 8, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v6 — October 8, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-08 — Launched
+- Live on a Cloudflare Worker at stop-sequence.com. www is attached too.
+- `/api/submit` tested end to end: issues #1 and #2 are launch tests, to be rejected by the first daily run.
+- workers.dev and preview URLs turned off, so the site lives only at its own domain.
+- `ops/DAILY.md`: use the GitHub REST API from cloud runs.
 
 ### 2026-10-08 — Designed, drawn, first strip
 - Cast drawn: Cursor (cyan), Tilde (magenta), Null (yellow), The Judge. Reference drawings in `public/cast/`, rules in the style sheet v1.
