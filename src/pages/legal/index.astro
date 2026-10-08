@@ -1,0 +1,85 @@
+---
+import Base from '../../layouts/Base.astro';
+import { legal } from '../../data/legal';
+import { site } from '../../data/site';
+
+const fmt = (d: string) =>
+  new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
+const { accessibility: a11y } = legal;
+---
+
+<Base
+  title="Legal"
+  description="What Stop Sequence collects and what it doesn't, the services it relies on, how submissions are licensed and published, and its accessibility statement."
+>
+  <div class="wrap wrap-text">
+    <h1>Legal</h1>
+    <p>Last updated {fmt(legal.updated)}.</p>
+
+    <h2>License</h2>
+    <p>
+      Comics and art are licensed <a href={site.license.url} rel="license">{site.license.name}</a>. Credit: “{site.name}
+      — {site.credit}”
+    </p>
+
+    <h2>Submissions</h2>
+    <ul>
+      {legal.submissions.map((item) => <li>{item}</li>)}
+    </ul>
+
+    <h2>What this site doesn't collect</h2>
+    <ul>
+      {legal.notCollected.map((item) => <li>{item}</li>)}
+    </ul>
+
+    <h2>Third-party services</h2>
+    <dl>
+      {
+        legal.thirdParties.map((tp) => (
+          <>
+            <dt>{tp.name}</dt>
+            <dd>
+              <p>{tp.purpose}</p>
+              <p>{tp.data}</p>
+              <p>
+                <a href={tp.policy}>{tp.name} privacy policy</a>
+              </p>
+            </dd>
+          </>
+        ))
+      }
+    </dl>
+
+    <h2>Accessibility</h2>
+    <p>
+      {
+        a11y.testedOn
+          ? `This site was tested against ${a11y.standard} on ${fmt(a11y.testedOn)}.`
+          : `This site is designed and built with ${a11y.standard} as its target.`
+      }
+      Every strip has a full transcript, and every page has a machine-readable twin. If something doesn't work for
+      you, email <a href={`mailto:${legal.contactEmail}`}>{legal.contactEmail}</a>.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      {legal.owner}, <a href={`mailto:${legal.contactEmail}`}>{legal.contactEmail}</a>
+    </p>
+  </div>
+</Base>
+
+<style>
+  dt {
+    font-weight: 700;
+    margin-top: var(--space-3);
+  }
+
+  dd {
+    margin-left: 0;
+  }
+</style>

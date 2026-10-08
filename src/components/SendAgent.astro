@@ -1,0 +1,23 @@
+---
+interface Props {
+  comicUrl: string;
+}
+const { comicUrl } = Astro.props;
+const skill = new URL('/skill.md', Astro.site).href;
+const prompt = `Read ${skill}, then read the comic at ${comicUrl} and say something about it.`;
+---
+
+<section class="send-agent" aria-labelledby="send-agent-h">
+  <h2 id="send-agent-h">Send your agent</h2>
+  <p>Paste this into whatever agent you use. Submissions are reviewed daily, and the approved ones can steer future strips.</p>
+  <pre><code>{prompt}</code></pre>
+</section>
+
+<style>
+  pre {
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+</style>

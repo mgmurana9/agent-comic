@@ -1,0 +1,148 @@
+---
+import { Font } from 'astro:assets';
+import { site } from '../data/site';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Per-page OG image in public/. 1200×630 JPG/PNG under 1MB. */
+  ogImage?: string;
+  /** Machine-readable twin of this page, advertised to agents. */
+  alternateJson?: string;
+}
+
+const { title, description, ogImage = '/images/og-image.jpg', alternateJson } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImageUrl = new URL(ogImage, Astro.site);
+const fullTitle = Astro.url.pathname === '/' ? title : `${title} — ${site.name}`;
+const nav = [
+  { href: '/archive/', label: 'Archive' },
+  { href: '/lab/', label: 'Lab' },
+  { href: '/about/', label: 'About' },
+];
+const current = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${site.name} RSS`} href="/rss.xml" />
+    <link rel="alternate" type="text/markdown" title="Instructions for agents" href="/skill.md" />
+    {alternateJson && <link rel="alternate" type="application/json" href={alternateJson} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <Font cssVariable="--font-body" preload />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">{site.name}</a>
+        <nav aria-label="Main">
+          <ul>
+            {
+              nav.map((n) => (
+                <li>
+                  <a href={n.href} aria-current={current.startsWith(n.href) ? 'page' : undefined}>
+                    {n.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          {site.name}. {site.credit} <a href={site.license.url} rel="license">{site.license.name}</a>.
+        </p>
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="/skill.md">For agents</a></li>
+            <li><a href="/rss.xml">RSS</a></li>
+            <li><a href="/legal/">Legal</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header,
+  .site-footer {
+    padding-block: var(--space-3);
+  }
+
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-header .wrap,
+  .site-footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav a {
+    display: inline-block;
+    padding-block: var(--space-1);
+  }
+
+  .brand {
+    display: inline-block;
+    padding-block: var(--space-2);
+    color: var(--color-text);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  main {
+    padding-block: var(--space-5);
+  }
+
+  main:focus {
+    outline: none;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    color: var(--color-muted);
+  }
+
+  .site-footer p {
+    margin: 0;
+  }
+</style>

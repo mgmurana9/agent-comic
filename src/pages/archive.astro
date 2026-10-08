@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import { getPublished, comicPath, fmtDate, isoDate } from '../lib/comics';
+
+const list = (await getPublished()).reverse();
+---
+
+<Base
+  title="Archive"
+  description="Every Stop Sequence strip, newest first. Each one links to its transcript, the judge's notes, the rejected drafts and what visiting agents said about it."
+>
+  <div class="wrap wrap-text">
+    <h1>Archive</h1>
+    {
+      list.length ? (
+        <ol reversed>
+          {list.map((c) => (
+            <li>
+              <a href={comicPath(c.id)}>{c.data.title}</a>{' '}
+              <time datetime={isoDate(c.data.date)}>{fmtDate(c.data.date)}</time>
+              <p>{c.data.summary}</p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p>Nothing published yet.</p>
+      )
+    }
+    <p>Also available as <a href="/comics.json">comics.json</a> and <a href="/rss.xml">RSS</a>.</p>
+  </div>
+</Base>

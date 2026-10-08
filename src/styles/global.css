@@ -1,1 +1,150 @@
-@import "tailwindcss";
+/* Tokens. Contrast calculated (WCAG relative luminance), not guessed:
+   text      #1a1a1a  17.40:1 on bg, 15.80:1 on surface
+   muted     #595959   7.00:1 on bg,  6.36:1 on surface
+   accent    #0a58ca   6.44:1 on bg,  5.85:1 on surface  (links, focus)
+   accent-hv #084298   9.36:1 on bg
+   border    #767676   4.54:1 on bg   (UI, 3:1 required)
+   Recalculate when the palette changes. */
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f4f4f2;
+  --color-text: #1a1a1a;
+  --color-muted: #595959;
+  --color-accent: #0a58ca;
+  --color-accent-hover: #084298;
+  --color-border: #767676;
+  --color-focus: #0a58ca;
+  --color-on-accent: #ffffff;
+
+  --font-stack: var(--font-body), system-ui, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  --measure: 68ch;
+  --radius: 4px;
+
+  /* Layout defaults (astro-build §3): 768px layout breakpoint, 1100px for
+     hover-dependent interactions. */
+  --pad-x: 24px;
+  --max-text: 980px;
+  --max-wide: 1180px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --pad-x: clamp(80px, 8.3vw, 120px);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-stack);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+p {
+  max-width: var(--measure);
+}
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Inputs 16px+ so iOS doesn't zoom; tap targets 24px+. */
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  font-size: max(1rem, 16px);
+  min-height: 2.75rem;
+}
+
+.wrap {
+  max-width: calc(var(--max-wide) + 2 * var(--pad-x));
+  margin-inline: auto;
+  padding-inline: var(--pad-x);
+}
+
+.wrap-text {
+  max-width: calc(var(--max-text) + 2 * var(--pad-x));
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-3);
+  top: -100px;
+  z-index: 100;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  border-radius: var(--radius);
+}
+
+.skip-link:focus {
+  top: var(--space-3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,84 @@
+# Merge gate for the daily run. The agent opens a PR from a daily/* branch;
+# this workflow, not the agent, decides whether it merges.
+#
+# pull_request_target runs THIS file and the gate scripts from main, so a PR
+# can't edit its own gate. PR code is only checked out into ./pr after the
+# path check has proven the PR touches nothing but content (JSON, SVG, PNG,
+# Markdown). Content can't run code at build time.
+#
+# Merges only if: every path is allowed content, every SVG passes the lint,
+# and astro check + build pass. Anything else stays open for Michael.
+name: merge-gate
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: merge-gate-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    if: startsWith(github.event.pull_request.head.ref, 'daily/') && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main (gate scripts come from here)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.ref }}
+          path: base
+
+      - name: Paused?
+        id: paused
+        run: |
+          if [ -e base/ops/PAUSED ]; then echo "paused=1" >> "$GITHUB_OUTPUT"; else echo "paused=0" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Changed paths are allowed content
+        if: steps.paused.outputs.paused == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR/files" --jq '.[].filename' > changed.txt
+          gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR/files" --jq '.[] | select(.previous_filename != null) | .previous_filename' >> changed.txt
+          cat changed.txt
+          base/.github/scripts/allowed-paths.sh < changed.txt
+
+      - name: Check out the PR (content only, proven above)
+        if: steps.paused.outputs.paused == '0'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: pr
+          persist-credentials: false
+
+      - name: SVG lint
+        if: steps.paused.outputs.paused == '0'
+        run: |
+          grep -E '\.svg$' changed.txt | sed 's#^#pr/#' | xargs -r base/.github/scripts/svg-lint.sh
+
+      - uses: actions/setup-node@v4
+        if: steps.paused.outputs.paused == '0'
+        with:
+          node-version: 22
+
+      - name: Build
+        if: steps.paused.outputs.paused == '0'
+        working-directory: pr
+        run: |
+          npm ci --ignore-scripts
+          npx astro check
+          npm run build
+
+      - name: Merge
+        if: steps.paused.outputs.paused == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: gh pr merge "$PR" --squash --delete-branch --match-head-commit "$HEAD_SHA" --repo "$GITHUB_REPOSITORY"

@@ -1,8 +1,0 @@
-{
-  "title": "Temperature Check",
-  "publish_date": "2026-09-18",
-  "alt_text": "A brutalist concrete room with a single chair at Temp 0.0, versus chaotic motion-blurred destruction at Temp 0.9.",
-  "setup": "Model behavior at Temperature 0.0: Strict logic.",
-  "punchline": "Model behavior at Temperature 0.9: Unhinged hallucination.",
-  "image_file": "/images/001-temperature.jpg"
-}

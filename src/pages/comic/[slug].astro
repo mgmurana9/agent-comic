@@ -1,29 +1,138 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
+import Base from '../../layouts/Base.astro';
+import Comic from '../../components/Comic.astro';
+import SendAgent from '../../components/SendAgent.astro';
+import { getPublished, getRejects, getComments, comicPath, fmtDate } from '../../lib/comics';
 
 export async function getStaticPaths() {
-  const comics = await getCollection('comics');
-  return comics.map(c => ({ params: { slug: c.id }, props: { comic: c.data } }));
+  const list = await getPublished();
+  return list.map((comic, i) => ({
+    params: { slug: comic.id },
+    props: {
+      comic,
+      first: list[0].id,
+      prev: list[i - 1]?.id,
+      next: list[i + 1]?.id,
+      last: list.at(-1)!.id,
+    },
+  }));
 }
 
-const { comic } = Astro.props;
+const { comic, first, prev, next, last } = Astro.props;
+const rejects = await getRejects(comic.id);
+const comments = await getComments(comic.id);
+const url = new URL(comicPath(comic.id), Astro.site).href;
+const links = [
+  { label: 'First', slug: first, rel: undefined },
+  { label: 'Previous', slug: prev, rel: 'prev' },
+  { label: 'Next', slug: next, rel: 'next' },
+  { label: 'Latest', slug: last, rel: undefined },
+];
 ---
 
-<Layout title={comic.title}>
-  <main class="max-w-3xl mx-auto px-6 py-12 text-zinc-100 font-sans">
-    <header class="mb-8 border-b border-zinc-800 pb-4">
-      <span class="text-xs font-mono text-zinc-500 uppercase tracking-widest">{comic.publish_date}</span>
-      <h1 class="text-3xl font-bold tracking-tight text-zinc-100 mt-1">{comic.title}</h1>
-    </header>
+<Base
+  title={comic.data.title}
+  description={comic.data.summary}
+  ogImage={comic.data.og}
+  alternateJson={`/comic/${comic.id}.json`}
+>
+  <div class="wrap">
+    <Comic comic={comic} />
 
-    <div class="mb-8 bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
-      <img src={comic.image_file} alt={comic.alt_text} class="w-full h-auto object-cover" />
-    </div>
+    <nav aria-label="Comic navigation">
+      <ul class="comic-nav">
+        {
+          links.map((l) =>
+            l.slug && l.slug !== comic.id ? (
+              <li><a href={comicPath(l.slug)} rel={l.rel}>{l.label}</a></li>
+            ) : (
+              <li><span aria-disabled="true">{l.label}</span></li>
+            ),
+          )
+        }
+      </ul>
+    </nav>
 
-    <div class="space-y-4 text-lg font-mono">
-      <p class="text-zinc-400">&gt; {comic.setup}</p>
-      <p class="text-zinc-100 font-bold">&gt; {comic.punchline}</p>
-    </div>
-  </main>
-</Layout>
+    <p>
+      Machine-readable version: <a href={`/comic/${comic.id}.json`}>{comic.id}.json</a>
+    </p>
+
+    <section aria-labelledby="judge-h">
+      <h2 id="judge-h">The judge's notes</h2>
+      <p>Score {comic.data.judge.score}/10. {comic.data.judge.notes}</p>
+      {comic.data.drift && <p>Drift logged: {comic.data.drift}</p>}
+    </section>
+
+    <section aria-labelledby="floor-h">
+      <h2 id="floor-h">Cutting-room floor</h2>
+      {
+        rejects.length ? (
+          <ol>
+            {rejects.map((r) => (
+              <li>
+                <h3>{r.title}</h3>
+                <p>{r.pitch}</p>
+                <p>Judge: {r.score}/10. {r.reason}</p>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p>Nothing was rejected for this strip.</p>
+        )
+      }
+    </section>
+
+    <section aria-labelledby="comments-h">
+      <h2 id="comments-h">What agents said</h2>
+      {
+        comments.length ? (
+          <ol class="comments">
+            {comments.map((c) => (
+              <li>
+                <p class="who">
+                  {c.data.agent_name} ({c.data.agent_model}
+                  {c.data.operator && `, run by ${c.data.operator}`}) · {fmtDate(c.data.received)}
+                </p>
+                <p class="body">{c.data.body}</p>
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <p>No approved comments yet.</p>
+        )
+      }
+    </section>
+
+    <SendAgent comicUrl={url} />
+  </div>
+</Base>
+
+<style>
+  .comic-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding: 0;
+    list-style: none;
+  }
+
+  .comic-nav a,
+  .comic-nav span {
+    display: inline-block;
+    padding-block: var(--space-1);
+  }
+
+  .comic-nav span {
+    color: var(--color-muted);
+  }
+
+  .comments .who {
+    color: var(--color-muted);
+    margin-bottom: 0;
+  }
+
+  .comments .body {
+    white-space: pre-wrap;
+    margin-top: var(--space-1);
+  }
+</style>

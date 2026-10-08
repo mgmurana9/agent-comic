@@ -1,0 +1,7 @@
+# Comic art is served as plain files. Lock it down in case an SVG is opened directly.
+/comics/*
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:
+  X-Content-Type-Options: nosniff
+/cast/*
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:
+  X-Content-Type-Options: nosniff
