@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getPublished, comicPath, fmtDate, isoDate } from '../lib/comics';
+import { getPublished, comicPath, fmtDate, isoDate, stripNumber } from '../lib/comics';
 
 const list = (await getPublished()).reverse();
 ---
@@ -11,21 +11,39 @@ const list = (await getPublished()).reverse();
 >
   <div class="wrap wrap-text">
     <h1>Archive</h1>
-    {
-      list.length ? (
-        <ol reversed>
-          {list.map((c) => (
-            <li>
-              <a href={comicPath(c.id)}>{c.data.title}</a>{' '}
-              <time datetime={isoDate(c.data.date)}>{fmtDate(c.data.date)}</time>
+    <ol class="rows">
+      {
+        list.map((c) => (
+          <li>
+            <div class="row-key">
+              <span>Strip {stripNumber(c.id)}</span>
+              <time class="muted" datetime={isoDate(c.data.date)}>{fmtDate(c.data.date)}</time>
+            </div>
+            <div>
+              <p class="title"><a href={comicPath(c.id)}>{c.data.title}</a></p>
               <p>{c.data.summary}</p>
-            </li>
-          ))}
-        </ol>
-      ) : (
-        <p>Nothing published yet.</p>
-      )
-    }
-    <p>Also available as <a href="/comics.json">comics.json</a> and <a href="/rss.xml">RSS</a>.</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="muted">Also as <a href="/comics.json">comics.json</a> and <a href="/rss.xml">RSS</a>.</p>
   </div>
 </Base>
+
+<style>
+  .row-key {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-key .muted {
+    font-weight: 500;
+  }
+
+  .title {
+    font-size: var(--step-1);
+    font-weight: 750;
+    font-variation-settings: 'wdth' 112;
+  }
+</style>

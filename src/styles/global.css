@@ -1,22 +1,36 @@
-/* Tokens. Contrast calculated (WCAG relative luminance), not guessed:
-   text      #1a1a1a  17.40:1 on bg, 15.80:1 on surface
-   muted     #595959   7.00:1 on bg,  6.36:1 on surface
-   accent    #0a58ca   6.44:1 on bg,  5.85:1 on surface  (links, focus)
-   accent-hv #084298   9.36:1 on bg
-   border    #767676   4.54:1 on bg   (UI, 3:1 required)
+/* Stop Sequence — tokens. Four-color process printing: the comic is printed
+   with ink on paper, and the cast are the three process colors.
+   Contrast calculated (WCAG relative luminance), not guessed:
+     ink      #000000  21.00:1 on paper, 15.39:1 on yellow
+     muted    #50535B   7.69:1 on paper,  5.41:1 on yellow
+     link     #B0005F   6.97:1 on paper   (text links)
+     focus    #0071A8   5.35:1 on paper   (focus ring, 3:1 required)
+     rule     #7A7D85   4.12:1 on paper   (UI borders, 3:1 required)
+     magenta  #E5007D   4.54:1 on paper   (large display + art only)
+     cyan     #00A3E0   2.87:1  art only, never text
+     yellow   #FFD500   1.42:1  art and fills only, never text
    Recalculate when the palette changes. */
 :root {
-  --color-bg: #ffffff;
-  --color-surface: #f4f4f2;
-  --color-text: #1a1a1a;
-  --color-muted: #595959;
-  --color-accent: #0a58ca;
-  --color-accent-hover: #084298;
-  --color-border: #767676;
-  --color-focus: #0a58ca;
-  --color-on-accent: #ffffff;
+  --color-paper: #ffffff;
+  --color-ink: #000000;
+  --color-muted: #50535b;
+  --color-link: #b0005f;
+  --color-focus: #0071a8;
+  --color-rule: #7a7d85;
+  --color-cyan: #00a3e0;
+  --color-magenta: #e5007d;
+  --color-yellow: #ffd500;
 
-  --font-stack: var(--font-body), system-ui, sans-serif;
+  --font-body: var(--font-archivo), 'Arial Narrow', Arial, sans-serif;
+  --font-letter: var(--font-shantell), 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+
+  /* Type scale: minor third on a 17px base. */
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.3rem;
+  --step-2: 1.6rem;
+  --step-3: clamp(1.9rem, 1.4rem + 2.4vw, 2.6rem);
+  --step-mast: clamp(2.6rem, 1.2rem + 7vw, 6.5rem);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -25,11 +39,11 @@
   --space-5: 2.5rem;
   --space-6: 4rem;
 
-  --measure: 68ch;
-  --radius: 4px;
+  --measure: 64ch;
+  --ink-line: 3px;
+  --gutter: 12px;
 
-  /* Layout defaults (astro-build §3): 768px layout breakpoint, 1100px for
-     hover-dependent interactions. */
+  /* astro-build §3 layout defaults. Mobile first: 24px, then clamp at 768. */
   --pad-x: 24px;
   --max-text: 980px;
   --max-wide: 1180px;
@@ -38,6 +52,7 @@
 @media (min-width: 768px) {
   :root {
     --pad-x: clamp(80px, 8.3vw, 120px);
+    --gutter: 16px;
   }
 }
 
@@ -53,11 +68,11 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-stack);
-  font-size: 1.0625rem;
-  line-height: 1.6;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.55;
 }
 
 img,
@@ -71,26 +86,55 @@ video {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1.1;
   text-wrap: balance;
+  font-stretch: 112%;
+  font-variation-settings: 'wdth' 112;
 }
 
-p {
+h1 {
+  font-size: var(--step-3);
+  font-weight: 850;
+  margin: 0 0 var(--space-2);
+}
+
+h2 {
+  font-size: var(--step-2);
+  font-weight: 800;
+  margin: var(--space-5) 0 var(--space-3);
+}
+
+h3 {
+  font-size: var(--step-1);
+  font-weight: 750;
+  margin: var(--space-4) 0 var(--space-2);
+}
+
+p,
+li,
+dd {
   max-width: var(--measure);
 }
 
 a {
-  color: var(--color-accent);
-  text-underline-offset: 0.15em;
+  color: var(--color-link);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
 }
 
 a:hover {
-  color: var(--color-accent-hover);
+  color: var(--color-ink);
 }
 
 :focus-visible {
   outline: 3px solid var(--color-focus);
-  outline-offset: 2px;
+  outline-offset: 3px;
+}
+
+code,
+pre {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
 }
 
 /* Inputs 16px+ so iOS doesn't zoom; tap targets 24px+. */
@@ -113,15 +157,23 @@ button {
   max-width: calc(var(--max-text) + 2 * var(--pad-x));
 }
 
+.lede {
+  font-size: var(--step-1);
+  line-height: 1.4;
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
 .skip-link {
   position: absolute;
   left: var(--space-3);
   top: -100px;
   z-index: 100;
   padding: var(--space-2) var(--space-3);
-  background: var(--color-accent);
-  color: var(--color-on-accent);
-  border-radius: var(--radius);
+  background: var(--color-ink);
+  color: var(--color-paper);
 }
 
 .skip-link:focus {
@@ -136,6 +188,47 @@ button {
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+/* Ruled rows: the site's list pattern. Heading left, body right from 768px. */
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--ink-line) solid var(--color-ink);
+}
+
+.rows > li,
+.rows > div {
+  max-width: none;
+  display: grid;
+  gap: var(--space-1) var(--space-4);
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+@media (min-width: 768px) {
+  .rows > li,
+  .rows > div {
+    grid-template-columns: 12rem 1fr;
+  }
+}
+
+.rows dt,
+.rows .row-key {
+  font-weight: 750;
+}
+
+.rows dd {
+  margin: 0;
+}
+
+.rows p {
+  margin: 0 0 var(--space-2);
+}
+
+.rows p:last-child {
+  margin-bottom: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

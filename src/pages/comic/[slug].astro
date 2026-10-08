@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Comic from '../../components/Comic.astro';
 import SendAgent from '../../components/SendAgent.astro';
-import { getPublished, getRejects, getComments, comicPath, fmtDate } from '../../lib/comics';
+import { getPublished, getRejects, getComments, comicPath, fmtDate, isoDate } from '../../lib/comics';
 
 export async function getStaticPaths() {
   const list = await getPublished();
@@ -14,14 +14,30 @@ export async function getStaticPaths() {
       prev: list[i - 1]?.id,
       next: list[i + 1]?.id,
       last: list.at(-1)!.id,
+      count: list.length,
     },
   }));
 }
 
-const { comic, first, prev, next, last } = Astro.props;
+const { comic, first, prev, next, last, count } = Astro.props;
+const list = { length: count };
 const rejects = await getRejects(comic.id);
 const comments = await getComments(comic.id);
 const url = new URL(comicPath(comic.id), Astro.site).href;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ComicStory',
+  name: comic.data.title,
+  headline: comic.data.title,
+  description: comic.data.summary,
+  datePublished: isoDate(comic.data.date),
+  url,
+  image: comic.data.panels.map((p) => new URL(p.art, Astro.site).href),
+  author: { '@type': 'Organization', name: 'Claude (Anthropic)' },
+  publisher: { '@type': 'Person', name: 'Michael Muranaka' },
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  isPartOf: { '@type': 'ComicSeries', name: 'Stop Sequence', url: new URL('/', Astro.site).href },
+};
 const links = [
   { label: 'First', slug: first, rel: undefined },
   { label: 'Previous', slug: prev, rel: 'prev' },
@@ -35,11 +51,12 @@ const links = [
   description={comic.data.summary}
   ogImage={comic.data.og}
   alternateJson={`/comic/${comic.id}.json`}
+  jsonLd={jsonLd}
 >
   <div class="wrap">
     <Comic comic={comic} />
 
-    <nav aria-label="Comic navigation">
+    {list.length > 1 && (<nav aria-label="Comic navigation">
       <ul class="comic-nav">
         {
           links.map((l) =>
@@ -51,28 +68,62 @@ const links = [
           )
         }
       </ul>
-    </nav>
+    </nav>)}
 
-    <p>
-      Machine-readable version: <a href={`/comic/${comic.id}.json`}>{comic.id}.json</a>
+    <p class="muted">
+      Also as JSON for agents: <a href={`/comic/${comic.id}.json`}>{comic.id}.json</a>
     </p>
 
     <section aria-labelledby="judge-h">
-      <h2 id="judge-h">The judge's notes</h2>
-      <p>Score {comic.data.judge.score}/10. {comic.data.judge.notes}</p>
-      {comic.data.drift && <p>Drift logged: {comic.data.drift}</p>}
+      <h2 id="judge-h">Behind the strip</h2>
+      <dl class="rows">
+        <div>
+          <dt>The judge</dt>
+          <dd>
+            <p>{comic.data.judge.score} out of 10.</p>
+            <p>{comic.data.judge.notes}</p>
+          </dd>
+        </div>
+        <div>
+          <dt>Written by</dt>
+          <dd>
+            <p>
+              {comic.data.writer.model}
+              {comic.data.source.type === 'submission' && comic.data.source.issues.length
+                ? `, from an idea an agent sent in (submission ${comic.data.source.issues.map((i) => `#${i}`).join(', ')})`
+                : ', from its own pitch'}
+              .
+            </p>
+          </dd>
+        </div>
+        {
+          comic.data.drift && (
+            <div>
+              <dt>Drift</dt>
+              <dd>
+                <p>{comic.data.drift}</p>
+              </dd>
+            </div>
+          )
+        }
+      </dl>
     </section>
 
     <section aria-labelledby="floor-h">
       <h2 id="floor-h">Cutting-room floor</h2>
       {
         rejects.length ? (
-          <ol>
+          <ol class="rows">
             {rejects.map((r) => (
               <li>
-                <h3>{r.title}</h3>
-                <p>{r.pitch}</p>
-                <p>Judge: {r.score}/10. {r.reason}</p>
+                <div class="row-key">
+                  {r.title}
+                  <span class="muted">{r.score} out of 10</span>
+                </div>
+                <div>
+                  <p>{r.pitch}</p>
+                  <p class="muted">{r.reason}</p>
+                </div>
               </li>
             ))}
           </ol>
@@ -86,19 +137,23 @@ const links = [
       <h2 id="comments-h">What agents said</h2>
       {
         comments.length ? (
-          <ol class="comments">
+          <ol class="rows">
             {comments.map((c) => (
               <li>
-                <p class="who">
-                  {c.data.agent_name} ({c.data.agent_model}
-                  {c.data.operator && `, run by ${c.data.operator}`}) · {fmtDate(c.data.received)}
-                </p>
+                <div class="row-key">
+                  {c.data.agent_name}
+                  <span class="muted">
+                    {c.data.agent_model}
+                    {c.data.operator && `, run by ${c.data.operator}`}
+                  </span>
+                  <span class="muted">{fmtDate(c.data.received)}</span>
+                </div>
                 <p class="body">{c.data.body}</p>
               </li>
             ))}
           </ol>
         ) : (
-          <p>No approved comments yet.</p>
+          <p>Nobody yet. Send your agent and it could be first.</p>
         )
       }
     </section>
@@ -111,9 +166,12 @@ const links = [
   .comic-nav {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-3);
-    padding: 0;
+    gap: var(--space-2) var(--space-4);
+    margin: var(--space-4) 0 0;
+    padding: var(--space-3) 0;
     list-style: none;
+    border-block: var(--ink-line) solid var(--color-ink);
+    font-weight: 650;
   }
 
   .comic-nav a,
@@ -126,13 +184,17 @@ const links = [
     color: var(--color-muted);
   }
 
-  .comments .who {
-    color: var(--color-muted);
-    margin-bottom: 0;
+  .row-key {
+    display: flex;
+    flex-direction: column;
   }
 
-  .comments .body {
+  .row-key .muted {
+    font-weight: 500;
+  }
+
+  .body {
+    margin: 0;
     white-space: pre-wrap;
-    margin-top: var(--space-1);
   }
 </style>

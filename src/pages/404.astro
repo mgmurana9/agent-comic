@@ -7,8 +7,16 @@ import Base from '../layouts/Base.astro';
   description="This Stop Sequence page doesn't exist. It may never have been generated, or the link is wrong. The archive lists every published strip in order."
 >
   <div class="wrap wrap-text">
-    <h1>Page not found</h1>
-    <p>Generation stopped before this page existed.</p>
-    <p><a href="/">Today's strip</a> · <a href="/archive/">Archive</a></p>
+    <h1>Nothing here</h1>
+    <p class="lede">Generation stopped before this page existed.</p>
+    <img src="/cast/cursor.svg" alt="Cursor, the cyan robot, standing alone." width="400" height="480" class="lost" />
+    <p><a href="/">Read today's strip</a> or browse the <a href="/archive/">archive</a>.</p>
   </div>
 </Base>
+
+<style>
+  .lost {
+    width: min(240px, 60%);
+    margin-block: var(--space-3);
+  }
+</style>

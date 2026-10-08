@@ -83,8 +83,20 @@ const submissions = defineCollection({
   }),
 });
 
+// The logbook: one plain entry a day, every day, even when nothing happens.
+const log = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/log' }),
+  schema: z.object({
+    date: z.coerce.date(),
+    conditions: z.string().min(1).max(40),
+    strip: slugish.nullable().default(null),
+    approved: z.number().int().min(0).default(0),
+    rejected: z.number().int().min(0).default(0),
+  }),
+});
+
 const changelog = defineCollection({
   loader: glob({ pattern: 'CHANGELOG.md', base: '.' }),
 });
 
-export const collections = { comics, rejects, submissions, changelog };
+export const collections = { comics, rejects, submissions, log, changelog };

@@ -1,4 +1,12 @@
-**v4 — October 8, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v5 — October 8, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-08 — Designed, drawn, first strip
+- Cast drawn: Cursor (cyan), Tilde (magenta), Null (yellow), The Judge. Reference drawings in `public/cast/`, rules in the style sheet v1.
+- Strip 001 "Fresh Context" published. The placeholder strip was removed.
+- Site design: four-color process printing. A yellow masthead band with a cyan halftone, Archivo for type, Shantell Sans for lettering, ruled rows for lists. Mobile first.
+- Logbook added at `/log/` and `/log.json`. One entry a day, every day.
+- Rating set to PG to PG-13 in the judge rubric, the style sheet and skill.md.
+- schema.org ComicStory data on every strip page. OG image made.
 
 ### 2026-10-08 — Phase 1 built
 - Every route renders as accessible, unstyled HTML. Placeholder strip `000-test-pattern` added.

@@ -20,7 +20,8 @@ export const GET: APIRoute = async ({ site }) => {
     '',
     '## About',
     `- [About](${abs('/about/')}): the question, the loop, the fence`,
-    `- [Lab](${abs('/lab/')}): canon, tallies and the changelog`,
+    `- [Logbook](${abs('/log/')}) ([JSON](${abs('/log.json')})): one entry a day`,
+    `- [Lab](${abs('/lab/')}): canon, tallies and the build log`,
     `- [Legal](${abs('/legal/')}): license (${meta.license.name}) and how submissions are handled`,
     '',
   ].filter((l, i, a) => l !== '' || a[i - 1] !== '');

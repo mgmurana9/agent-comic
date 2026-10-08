@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import { render } from 'astro:content';
+import { getLog } from '../lib/log';
+import { comicPath, fmtDate, isoDate } from '../lib/comics';
+
+const entries = await Promise.all(
+  (await getLog()).map(async (e) => ({ ...e, Content: (await render(e)).Content })),
+);
+---
+
+<Base
+  title="Logbook"
+  description="One entry a day, every day, like an old man writing down the weather: what got published, what got rejected, who showed up, and what the sky looked like."
+>
+  <div class="wrap wrap-text">
+    <h1>Logbook</h1>
+    <p class="lede">One entry a day, every day, even when nothing happens. Kept by the same agent that draws the strip.</p>
+    <ol class="rows log">
+      {
+        entries.map((e) => (
+          <li>
+            <div class="row-key">
+              <time datetime={isoDate(e.data.date)}>{fmtDate(e.data.date)}</time>
+              <span class="conditions">{e.data.conditions}</span>
+            </div>
+            <div>
+              <e.Content />
+              <p class="muted">
+                {e.data.strip ? <a href={comicPath(e.data.strip)}>The day's strip</a> : 'No strip.'} Submissions:{' '}
+                {e.data.approved} approved, {e.data.rejected} rejected.
+              </p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+    <p>Also in machine form: <a href="/log.json">log.json</a>.</p>
+  </div>
+</Base>
+
+<style>
+  .row-key {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conditions {
+    color: var(--color-muted);
+    font-weight: 600;
+  }
+</style>

@@ -1,4 +1,4 @@
-**v5 — October 8, 2026.** Supersedes v4. Phase 1 built.
+**v6 — October 8, 2026.** Supersedes v5. Site designed, cast drawn, first strip published. Ready to launch.
 
 # STOP SEQUENCE — HANDOFF
 
@@ -90,9 +90,16 @@ The build chat does not re-open any of these.
   Anything else stays open for Michael.
 - **Submitted text renders as plain text.** Never HTML or markdown.
 
-### Authority — two tiers
-- **Claude decides alone:** comics, art, judging, canon bookkeeping, small copy fixes.
-- **Claude asks first:** features, design, rules, and anything in §3. These go in the weekly **Editor's Memo**: a GitHub issue labeled `editors-memo` with up to 3 proposals. Each proposal states the change, the reason, and the strongest objection. Michael replies `approve 1, 3`. **Silence means no**, and proposals close after 14 days.
+### Ownership
+- **Claude owns everything:** the concept, cast, jokes, art, design, site, pipeline and the daily run.
+- **Michael has the last word** on dangerous changes. In practice: any change to code, config or the ops files opens a PR the gate won't merge, and it waits for him. Claude proposes those changes in the weekly **Editor's Memo** (a GitHub issue labeled `editors-memo`, up to 3 proposals, each with the change, the reason and the strongest objection). Michael replies `approve 1, 3`. **Silence means no**, and proposals close after 14 days.
+- Every human intervention is written in the logbook.
+
+### Rating
+- **PG to PG-13, never higher.** No sexual content, gore, strong profanity, cruelty or real people. The judge enforces it on submissions and drafts.
+
+### Logbook
+- `src/content/log/YYYY-MM-DD.md`, one entry every day, even when nothing happens. Written plainly, like an old man writing down the weather. Rendered at `/log/` and `/log.json`, and the latest entry shows on the home page.
 
 ### Changelog
 - `CHANGELOG.md`, newest first. Every run appends to it, including skipped days. It's mirrored at `/lab/`.
@@ -136,8 +143,8 @@ The guestbook is gone. A guestbook entry is just a submission without a slug, an
 |---|---|---|
 | **0** | Michael | Phase 1 commit pushed. Worker connected via Workers Builds. Domain attached. Web Analytics on. AI crawlers allowed. Bot Fight Mode **off**. `GITHUB_ISSUES_TOKEN` set. `submission` label created. Email Routing `hello@` → Michael. Old Gemini-era PAT in `.env` revoked |
 | **1** | Done 2026-10-08 | All §4 routes render as accessible unstyled HTML. `/api/submit` validates (202 path untested until the token exists). Merge gate, `ops/DAILY.md`, `ops/WEEKLY.md`, `CHANGELOG.md` exist |
-| **2** | Build chat | One comic made end to end by following `ops/DAILY.md` by hand, on placeholder art |
-| **3** | Build chat | Cast, world and palette proposed and approved by Michael. Style sheet and reference SVGs. Design applied. Launch checks pass |
+| **2** | Done 2026-10-08 | Strip 001 "Fresh Context" written, drawn and published (written and judged in the build session, footnoted on the strip) |
+| **3** | Done 2026-10-08 | Cast (Cursor, Tilde, Null, The Judge), world and palette in `src/data/style-sheet.md` v1. Process-color design, mobile first. OG image. site-check: 0 FAIL |
 | **4** | Michael | **One** daily scheduled task created (the weekly memo runs inside Monday's daily run), "Automatically approve" on |
 | **Day 30** | Michael + Claude | Kill criteria (§1) checked |
 
@@ -185,6 +192,7 @@ No triggers. The weekly memo can propose any of these:
 
 ## REVISION RECORD
 
+- **v6 (Oct 8, 2026):** Claude owns everything; Michael keeps a veto on dangerous changes. PG to PG-13 rating. Logbook added. Phases 2 and 3 done.
 - **v5 (Oct 8, 2026):** Phase 1 built. Weekly memo folded into Monday's daily run (one scheduled task). Phase 0 list updated. Repo visibility added to §7.
 - **v4 (Oct 8, 2026):**
   - Rewritten around the experiment question, with kill criteria.

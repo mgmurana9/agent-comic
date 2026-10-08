@@ -6,19 +6,23 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
-  /** Per-page OG image in public/. 1200×630 JPG/PNG under 1MB. */
+  /** Per-page OG image in public/. 1200×630, under 1MB. */
   ogImage?: string;
   /** Machine-readable twin of this page, advertised to agents. */
   alternateJson?: string;
+  /** The home page gets the full-size masthead. */
+  masthead?: boolean;
+  /** schema.org JSON-LD for this page. */
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description, ogImage = '/images/og-image.jpg', alternateJson } = Astro.props;
+const { title, description, ogImage = '/images/og-image.jpg', alternateJson, masthead = false, jsonLd } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImageUrl = new URL(ogImage, Astro.site);
 const fullTitle = Astro.url.pathname === '/' ? title : `${title} — ${site.name}`;
 const nav = [
   { href: '/archive/', label: 'Archive' },
-  { href: '/lab/', label: 'Lab' },
+  { href: '/log/', label: 'Logbook' },
   { href: '/about/', label: 'About' },
 ];
 const current = Astro.url.pathname;
@@ -31,11 +35,12 @@ const current = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    <meta name="theme-color" content="#ffd500" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" title={`${site.name} RSS`} href="/rss.xml" />
-    <link rel="alternate" type="text/markdown" title="Instructions for agents" href="/skill.md" />
+    <link rel="alternate" type="text/markdown" title="Notes for agents" href="/skill.md" />
     {alternateJson && <link rel="alternate" type="application/json" href={alternateJson} />}
     <meta property="og:type" content="website" />
     <meta property="og:title" content={fullTitle} />
@@ -46,13 +51,17 @@ const current = Astro.url.pathname;
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <Font cssVariable="--font-body" preload />
+    <Font cssVariable="--font-archivo" preload />
+    <Font cssVariable="--font-shantell" preload />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <header class="site-header">
-      <div class="wrap">
-        <a class="brand" href="/">{site.name}</a>
+    <header class:list={['band', { 'band--mast': masthead }]}>
+      <div class="wrap band-inner">
+        <a class="wordmark" href="/" aria-label={`${site.name}, today's strip`}>
+          Stop Sequence<span class="stop" aria-hidden="true"></span>
+        </a>
         <nav aria-label="Main">
           <ul>
             {
@@ -67,18 +76,20 @@ const current = Astro.url.pathname;
           </ul>
         </nav>
       </div>
+      {masthead && <p class="wrap tagline">{site.tagline}</p>}
     </header>
     <main id="main-content" tabindex="-1">
       <slot />
     </main>
     <footer class="site-footer">
-      <div class="wrap">
+      <div class="wrap footer-inner">
         <p>
-          {site.name}. {site.credit} <a href={site.license.url} rel="license">{site.license.name}</a>.
+          {site.credit} Comics are <a href={site.license.url} rel="license">{site.license.name}</a>.
         </p>
         <nav aria-label="Footer">
           <ul>
             <li><a href="/skill.md">For agents</a></li>
+            <li><a href="/lab/">Lab</a></li>
             <li><a href="/rss.xml">RSS</a></li>
             <li><a href="/legal/">Legal</a></li>
           </ul>
@@ -89,28 +100,88 @@ const current = Astro.url.pathname;
 </html>
 
 <style>
-  .site-header,
-  .site-footer {
+  /* The one loud thing: a process-yellow band with a cyan halftone fading in from the right. */
+  .band {
+    position: relative;
+    background-color: var(--color-yellow);
+    border-bottom: var(--ink-line) solid var(--color-ink);
+    overflow: hidden;
+  }
+
+  .band::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, var(--color-cyan) 28%, transparent 30%);
+    background-size: 14px 14px;
+    /* Dots bloom from the top-right corner and stay out from behind the text. */
+    mask-image: radial-gradient(ellipse 55% 90% at 100% 0, var(--color-ink) 10%, transparent 75%);
+    pointer-events: none;
+  }
+
+  .band-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2) var(--space-4);
     padding-block: var(--space-3);
   }
 
-  .site-header {
-    border-bottom: 1px solid var(--color-border);
+  .wordmark {
+    display: inline-block;
+    color: var(--color-ink);
+    text-decoration: none;
+    font-size: var(--step-1);
+    font-weight: 900;
+    font-stretch: 125%;
+    font-variation-settings: 'wdth' 125;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    padding-block: var(--space-1);
   }
 
-  .site-header .wrap,
-  .site-footer .wrap {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3);
-    justify-content: space-between;
-    align-items: center;
+  .stop {
+    display: inline-block;
+    margin-left: 0.1em;
+    width: 0.62em;
+    height: 0.62em;
+    background: var(--color-magenta);
+    border: 0.06em solid var(--color-ink);
+  }
+
+  .band--mast .band-inner {
+    padding-block: var(--space-4) var(--space-2);
+  }
+
+  .band--mast .wordmark {
+    order: 2;
+    flex-basis: 100%;
+    font-size: var(--step-mast);
+    letter-spacing: -0.03em;
+  }
+
+  .band--mast nav {
+    order: 1;
+    margin-left: auto;
+  }
+
+  .tagline {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding-bottom: var(--space-4);
+    font-size: var(--step-1);
+    font-weight: 600;
+    line-height: 1.3;
   }
 
   nav ul {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-3);
+    gap: var(--space-1) var(--space-4);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -119,18 +190,17 @@ const current = Astro.url.pathname;
   nav a {
     display: inline-block;
     padding-block: var(--space-1);
+    color: var(--color-ink);
+    font-weight: 650;
+    text-decoration-thickness: 2px;
   }
 
-  .brand {
-    display: inline-block;
-    padding-block: var(--space-2);
-    color: var(--color-text);
-    font-weight: 700;
-    text-decoration: none;
+  nav a[aria-current='page'] {
+    text-decoration-thickness: 4px;
   }
 
   main {
-    padding-block: var(--space-5);
+    padding-block: var(--space-4) var(--space-6);
   }
 
   main:focus {
@@ -138,11 +208,25 @@ const current = Astro.url.pathname;
   }
 
   .site-footer {
-    border-top: 1px solid var(--color-border);
-    color: var(--color-muted);
+    border-top: var(--ink-line) solid var(--color-ink);
+    padding-block: var(--space-4);
+    font-size: var(--step--1);
   }
 
-  .site-footer p {
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .footer-inner p {
     margin: 0;
+  }
+
+  .site-footer nav a {
+    color: var(--color-link);
+    font-weight: 500;
   }
 </style>

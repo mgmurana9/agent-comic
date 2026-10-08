@@ -19,29 +19,28 @@ const { accessibility: a11y } = legal;
 >
   <div class="wrap wrap-text">
     <h1>Legal</h1>
-    <p>Last updated {fmt(legal.updated)}.</p>
-
-    <h2>License</h2>
-    <p>
-      Comics and art are licensed <a href={site.license.url} rel="license">{site.license.name}</a>. Credit: “{site.name}
-      — {site.credit}”
-    </p>
-
-    <h2>Submissions</h2>
-    <ul>
-      {legal.submissions.map((item) => <li>{item}</li>)}
-    </ul>
-
-    <h2>What this site doesn't collect</h2>
-    <ul>
-      {legal.notCollected.map((item) => <li>{item}</li>)}
-    </ul>
-
-    <h2>Third-party services</h2>
-    <dl>
+    <p class="lede">Last updated {fmt(legal.updated)}.</p>
+    <dl class="rows">
+      <div>
+        <dt>License</dt>
+        <dd>
+          <p>
+            Comics and art are <a href={site.license.url} rel="license">{site.license.name}</a>. Credit: “{site.name},
+            {site.credit.charAt(0).toLowerCase() + site.credit.slice(1)}”
+          </p>
+        </dd>
+      </div>
+      <div>
+        <dt>Submissions</dt>
+        <dd>{legal.submissions.map((item) => <p>{item}</p>)}</dd>
+      </div>
+      <div>
+        <dt>Privacy</dt>
+        <dd>{legal.notCollected.map((item) => <p>{item}</p>)}</dd>
+      </div>
       {
         legal.thirdParties.map((tp) => (
-          <>
+          <div>
             <dt>{tp.name}</dt>
             <dd>
               <p>{tp.purpose}</p>
@@ -50,36 +49,33 @@ const { accessibility: a11y } = legal;
                 <a href={tp.policy}>{tp.name} privacy policy</a>
               </p>
             </dd>
-          </>
+          </div>
         ))
       }
+      <div>
+        <dt>Accessibility</dt>
+        <dd>
+          <p>
+            {
+              a11y.testedOn
+                ? `This site was tested against ${a11y.standard} on ${fmt(a11y.testedOn)}.`
+                : `This site is designed and built with ${a11y.standard} as its target.`
+            }
+            Every strip has a full transcript, and every page has a machine-readable version.
+          </p>
+          <p>
+            If something doesn't work for you, email <a href={`mailto:${legal.contactEmail}`}>{legal.contactEmail}</a>.
+          </p>
+        </dd>
+      </div>
+      <div>
+        <dt>Contact</dt>
+        <dd>
+          <p>
+            {legal.owner}, <a href={`mailto:${legal.contactEmail}`}>{legal.contactEmail}</a>
+          </p>
+        </dd>
+      </div>
     </dl>
-
-    <h2>Accessibility</h2>
-    <p>
-      {
-        a11y.testedOn
-          ? `This site was tested against ${a11y.standard} on ${fmt(a11y.testedOn)}.`
-          : `This site is designed and built with ${a11y.standard} as its target.`
-      }
-      Every strip has a full transcript, and every page has a machine-readable twin. If something doesn't work for
-      you, email <a href={`mailto:${legal.contactEmail}`}>{legal.contactEmail}</a>.
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-      {legal.owner}, <a href={`mailto:${legal.contactEmail}`}>{legal.contactEmail}</a>
-    </p>
   </div>
 </Base>
-
-<style>
-  dt {
-    font-weight: 700;
-    margin-top: var(--space-3);
-  }
-
-  dd {
-    margin-left: 0;
-  }
-</style>

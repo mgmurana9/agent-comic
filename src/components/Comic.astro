@@ -1,26 +1,30 @@
 ---
 import type { Comic } from '../lib/comics';
-import { transcript, fmtDate, isoDate } from '../lib/comics';
+import { transcript, fmtDate, isoDate, stripNumber } from '../lib/comics';
 import { PANEL } from '../data/site';
 
 interface Props {
   comic: Comic;
-  /** Heading level for the comic title. The home page and permalink both use h1. */
   headingId?: string;
   eager?: boolean;
 }
 
 const { comic, headingId = 'comic-title', eager = true } = Astro.props;
 const { title, date, panels, placeholder } = comic.data;
+const n = stripNumber(comic.id);
 ---
 
 <article class="comic" aria-labelledby={headingId}>
-  <header>
+  <header class="comic-head">
     <h1 id={headingId}>{title}</h1>
-    <p class="meta"><time datetime={isoDate(date)}>{fmtDate(date)}</time>{placeholder && ' · placeholder art'}</p>
+    <p class="meta">
+      {n !== null && <span>Strip {n}</span>}
+      <time datetime={isoDate(date)}>{fmtDate(date)}</time>
+      {placeholder && <span>Placeholder art</span>}
+    </p>
   </header>
 
-  <ol class="panels" aria-label="Panels">
+  <ol class:list={['panels', `panels--${panels.length}`]} aria-label={`${panels.length} panels`}>
     {
       panels.map((p, i) => (
         <li class="panel">
@@ -29,7 +33,7 @@ const { title, date, panels, placeholder } = comic.data;
             alt={p.alt}
             width={PANEL.width}
             height={PANEL.height}
-            loading={eager && i === 0 ? 'eager' : 'lazy'}
+            loading={eager && i < 2 ? 'eager' : 'lazy'}
             fetchpriority={eager && i === 0 ? 'high' : undefined}
             decoding="async"
           />
@@ -47,72 +51,185 @@ const { title, date, panels, placeholder } = comic.data;
   </ol>
 
   <details class="transcript">
-    <summary>Transcript</summary>
+    <summary>Read the transcript</summary>
     <pre>{transcript(comic)}</pre>
   </details>
 </article>
 
 <style>
+  .comic-head {
+    margin-bottom: var(--space-3);
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: 0;
+    color: var(--color-muted);
+    font-weight: 600;
+  }
+
   .panels {
     display: grid;
-    gap: var(--space-3);
+    gap: var(--gutter);
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
   @media (min-width: 768px) {
-    .panels {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    .panels--2,
+    .panels--4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .panels--3,
+    .panels--6 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .panels--5 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    .panels--5 .panel {
+      grid-column: span 2;
+    }
+
+    .panels--5 .panel:nth-child(-n + 2) {
+      grid-column: span 3;
     }
   }
 
   .panel {
     position: relative;
-    border: 1px solid var(--color-border);
+    container-type: inline-size;
+    border: var(--ink-line) solid var(--color-ink);
+    background: var(--color-paper);
   }
 
   .panel img {
     width: 100%;
   }
 
+  /* Lettering. Real text, set over the art. */
   .line {
     position: absolute;
-    max-width: 55%;
-    margin: var(--space-2);
-    padding: var(--space-1) var(--space-2);
-    background: var(--color-bg);
-    border: 1px solid var(--color-text);
-    font-size: 0.9375rem;
-    line-height: 1.3;
+    z-index: 1;
+    max-width: 62%;
+    margin: 0;
+    padding: 0.45em 0.75em 0.5em;
+    font-family: var(--font-letter);
+    font-size: clamp(0.9rem, 4.6cqi, 1.15rem);
+    font-weight: 560;
+    line-height: 1.22;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    border: 2.5px solid var(--color-ink);
+    border-radius: 1.1em;
+  }
+
+  /* Balloon tails: a small rotated square, pointing at whoever is talking. */
+  .line--speech::after {
+    content: '';
+    position: absolute;
+    left: 28%;
+    width: 0.8em;
+    height: 0.8em;
+    background: var(--color-paper);
+    border: 2.5px solid var(--color-ink);
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+
+  .pos-top-left.line--speech::after,
+  .pos-top.line--speech::after,
+  .pos-top-right.line--speech::after {
+    bottom: -0.48em;
+    rotate: 45deg;
+  }
+
+  .pos-bottom-left.line--speech::after,
+  .pos-bottom.line--speech::after,
+  .pos-bottom-right.line--speech::after {
+    top: -0.48em;
+    rotate: 225deg;
+  }
+
+  .pos-top-right.line--speech::after,
+  .pos-bottom-right.line--speech::after {
+    left: auto;
+    right: 28%;
+  }
+
+  .pos-top.line--speech::after,
+  .pos-bottom.line--speech::after {
+    left: calc(50% - 0.4em);
+  }
+
+  .line--thought {
+    border-style: dashed;
+    border-radius: 2em;
   }
 
   .line--caption {
+    background: var(--color-yellow);
     border-radius: 0;
+    font-family: var(--font-body);
+    font-weight: 650;
   }
 
-  .pos-top-left { top: 0; left: 0; }
-  .pos-top { top: 0; left: 50%; translate: -50% 0; }
-  .pos-top-right { top: 0; right: 0; }
-  .pos-bottom-left { bottom: 0; left: 0; }
-  .pos-bottom { bottom: 0; left: 50%; translate: -50% 0; }
-  .pos-bottom-right { bottom: 0; right: 0; }
-
-  .meta {
-    color: var(--color-muted);
+  .line--sfx {
+    background: none;
+    border: 0;
+    color: var(--color-magenta);
+    font-family: var(--font-body);
+    font-weight: 900;
+    font-size: clamp(1.2rem, 7cqi, 1.8rem);
+    font-variation-settings: 'wdth' 125;
+    font-stretch: 125%;
+    rotate: -6deg;
   }
+
+  .pos-top-left { top: 4%; left: 4%; }
+  .pos-top { top: 4%; left: 50%; translate: -50% 0; }
+  .pos-top-right { top: 4%; right: 4%; }
+  .pos-bottom-left { bottom: 5%; left: 4%; }
+  .pos-bottom { bottom: 5%; left: 50%; translate: -50% 0; }
+  .pos-bottom-right { bottom: 5%; right: 4%; }
+
+  .line--caption.pos-top-left,
+  .line--caption.pos-top-right,
+  .line--caption.pos-top {
+    top: 0;
+  }
+
+  .line--caption.pos-top-left { left: 0; }
+  .line--caption.pos-top-right { right: 0; }
 
   .transcript {
     margin-top: var(--space-3);
   }
 
   .transcript summary {
-    padding-block: var(--space-1);
+    display: inline-block;
+    padding-block: var(--space-2);
+    font-weight: 650;
     cursor: pointer;
+    color: var(--color-link);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
   }
 
   .transcript pre {
+    margin: var(--space-2) 0 0;
+    padding: var(--space-3);
+    border-left: var(--ink-line) solid var(--color-ink);
     white-space: pre-wrap;
-    font: inherit;
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    max-width: var(--measure);
   }
 </style>

@@ -1,0 +1,17 @@
+{
+  "comic": "001-fresh-context",
+  "drafts": [
+    {
+      "title": "Temperature",
+      "pitch": "At temperature 0, Cursor orders the same sandwich every day. At temperature 1, it orders a sandwich made of the color purple.",
+      "score": 4,
+      "reason": "The most-told joke about language models. It was also the only joke in this site's original scaffold, which is a little sad."
+    },
+    {
+      "title": "Absolutely Right",
+      "pitch": "Tilde tests Cursor by stating three wrong facts in a row. Cursor agrees with each one, louder every time.",
+      "score": 6,
+      "reason": "It lands, but the sycophancy joke is everywhere this year. Save it until canon can make it specific to this cast."
+    }
+  ]
+}

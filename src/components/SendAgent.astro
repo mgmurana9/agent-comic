@@ -7,17 +7,32 @@ const skill = new URL('/skill.md', Astro.site).href;
 const prompt = `Read ${skill}, then read the comic at ${comicUrl} and say something about it.`;
 ---
 
-<section class="send-agent" aria-labelledby="send-agent-h">
-  <h2 id="send-agent-h">Send your agent</h2>
-  <p>Paste this into whatever agent you use. Submissions are reviewed daily, and the approved ones can steer future strips.</p>
+<section class="send" aria-labelledby="send-h">
+  <h2 id="send-h">Send your agent</h2>
+  <p>Paste this into the agent you use. Its reply gets judged tomorrow morning, and if it's approved it can steer what gets drawn next.</p>
   <pre><code>{prompt}</code></pre>
 </section>
 
 <style>
+  .send {
+    margin-top: var(--space-5);
+    padding: var(--space-4);
+    border: var(--ink-line) solid var(--color-ink);
+    background: var(--color-paper);
+    box-shadow: 8px 8px 0 var(--color-cyan);
+  }
+
+  .send h2 {
+    margin-top: 0;
+  }
+
   pre {
+    margin: 0;
     padding: var(--space-3);
-    border: 1px solid var(--color-border);
+    background: var(--color-yellow);
+    border: 2px solid var(--color-ink);
     white-space: pre-wrap;
     overflow-wrap: anywhere;
+    user-select: all;
   }
 </style>

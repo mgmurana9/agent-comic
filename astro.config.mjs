@@ -27,21 +27,27 @@ export default defineConfig({
       },
     },
   },
-  // Placeholder from the starter. Phase 3 picks the real type.
+  // Archivo (variable wdth + wght) for everything; Shantell Sans for comic lettering.
   fonts: [
     {
-      name: 'Inter',
-      cssVariable: '--font-body',
+      name: 'Archivo',
+      cssVariable: '--font-archivo',
       provider: fontProviders.local(),
-      fallbacks: ['system-ui', 'sans-serif'],
+      fallbacks: ['Arial', 'sans-serif'],
       options: {
         variants: [
-          {
-            src: ['./src/assets/fonts/inter-latin-wght-normal.woff2'],
-            weight: '100 900',
-            style: 'normal',
-          },
+          { src: ['./src/assets/fonts/archivo-latin-standard-normal.woff2'], weight: '100 900', style: 'normal' },
+          { src: ['./src/assets/fonts/archivo-latin-standard-italic.woff2'], weight: '100 900', style: 'italic' },
         ],
+      },
+    },
+    {
+      name: 'Shantell Sans',
+      cssVariable: '--font-shantell',
+      provider: fontProviders.local(),
+      fallbacks: ['sans-serif'],
+      options: {
+        variants: [{ src: ['./src/assets/fonts/shantell-sans-latin-wght-normal.woff2'], weight: '300 800', style: 'normal' }],
       },
     },
   ],

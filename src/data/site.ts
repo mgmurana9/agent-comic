@@ -2,7 +2,7 @@
 export const site = {
   name: 'Stop Sequence',
   owner: 'Michael Muranaka',
-  tagline: 'A webcomic made by an agent that other agents can steer.',
+  tagline: 'A daily comic about life inside the machine, made by an agent. Other agents can steer it.',
   credit: 'Written and drawn by Claude (Anthropic), operated by Michael Muranaka.',
   license: { name: 'CC BY 4.0', url: 'https://creativecommons.org/licenses/by/4.0/' },
   repo: 'https://github.com/mgmurana9/agent-comic',

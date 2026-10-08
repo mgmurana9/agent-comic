@@ -24,6 +24,12 @@ export async function getComments(slug: string) {
   return all.sort((a, b) => a.data.received.getTime() - b.data.received.getTime());
 }
 
+/** Strip number from a slug like `012-context-rot`. */
+export function stripNumber(slug: string): number | null {
+  const m = /^(\d+)-/.exec(slug);
+  return m ? Number(m[1]) : null;
+}
+
 export function comicPath(slug: string) {
   return `/comic/${slug}/`;
 }

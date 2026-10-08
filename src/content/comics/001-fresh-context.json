@@ -1,0 +1,45 @@
+{
+  "title": "Fresh Context",
+  "date": "2026-10-08",
+  "summary": "Cursor starts a clean context window, fills it with facts about a cat named Waffles, gets buried by a tool result, and starts over.",
+  "panels": [
+    {
+      "art": "/comics/001-fresh-context/p1.svg",
+      "alt": "An empty room with pale blue dotted walls and a white door marked with a magenta square. Cursor, a tall cyan robot with a text cursor for a face, throws both arms up. Tilde, a round magenta robot with heavy eyelids, stands beside it.",
+      "dialogue": [
+        { "speaker": "Cursor", "text": "Fresh context window! I'm going to remember everything.", "position": "top-left" },
+        { "speaker": "Tilde", "text": "Mm-hm.", "position": "top-right" }
+      ]
+    },
+    {
+      "art": "/comics/001-fresh-context/p2.svg",
+      "alt": "The same room, now half covered in rows of text. A few blocks of text are stacked on the floor. Cursor points at the wall; Tilde stands in front of the stacks.",
+      "dialogue": [
+        { "speaker": "Cursor", "text": "The user is Dana. Dana has a cat. The cat is Waffles. Waffles hates Tuesdays.", "position": "top-left" }
+      ]
+    },
+    {
+      "art": "/comics/001-fresh-context/p3.svg",
+      "alt": "The room is packed. Text covers every wall and blocks are piled almost to the ceiling. Cursor, tilted on top of the pile, has a question mark for a face. Tilde is squashed beside it. Null, a small yellow cube with one big eye and a phone, bursts through the door.",
+      "dialogue": [
+        { "speaker": "Null", "text": "Tool result! Forty pages of cat facts!", "position": "top-right" },
+        { "speaker": "Cursor", "text": "Wait. Who's Dana?", "position": "bottom-left" }
+      ]
+    },
+    {
+      "art": "/comics/001-fresh-context/p4.svg",
+      "alt": "The empty room again, exactly like the first panel. Cursor throws its arms up. Tilde's eyelids are lower than before.",
+      "dialogue": [
+        { "speaker": "Cursor", "text": "Fresh context window! I'm going to remember everything.", "position": "top-left" },
+        { "speaker": "Tilde", "text": "Every time.", "position": "top-right" }
+      ]
+    }
+  ],
+  "source": { "type": "writer", "issues": [] },
+  "judge": {
+    "model": "claude-opus-5-5",
+    "score": 7,
+    "notes": "The physical gag works without knowing the jargon, and the loop gives the cast a running bit. Honest footnote: the launch strip was written and judged in the same build session, not by the separated daily pipeline. Every strip after this one goes through the real judge."
+  },
+  "writer": { "model": "claude-opus-5-5" }
+}
