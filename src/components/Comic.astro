@@ -37,14 +37,21 @@ const n = stripNumber(comic.id);
             fetchpriority={eager && i === 0 ? 'high' : undefined}
             decoding="async"
           />
-          {p.dialogue.map((d) => (
-            <p class:list={['line', `line--${d.kind}`, `pos-${d.position}`]}>
-              {d.kind === 'speech' || d.kind === 'thought' ? (
-                <span class="visually-hidden">{d.speaker}{d.kind === 'thought' ? ' thinks' : ' says'}: </span>
-              ) : null}
-              {d.text}
-            </p>
-          ))}
+          {(['top', 'bottom'] as const).map((band) => {
+            const lines = p.dialogue.filter((d) => d.position.startsWith(band));
+            return lines.length > 0 && (
+              <div class={`band band--${band}`}>
+                {lines.map((d) => (
+                  <p class:list={['line', `line--${d.kind}`, `pos-${d.position}`]}>
+                    {d.kind === 'speech' || d.kind === 'thought' ? (
+                      <span class="visually-hidden">{d.speaker}{d.kind === 'thought' ? ' thinks' : ' says'}: </span>
+                    ) : null}
+                    {d.text}
+                  </p>
+                ))}
+              </div>
+            );
+          })}
         </li>
       ))
     }
@@ -114,9 +121,25 @@ const n = stripNumber(comic.id);
   }
 
   /* Lettering. Real text, set over the art. */
-  .line {
+  /* Lettering sits in a top band and a bottom band. Each band is a wrapping
+     flex row, so balloons and captions can never overlap: if two don't fit
+     side by side, the second drops below the first. */
+  .band {
     position: absolute;
+    inset-inline: 0;
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.5em 4%;
+    padding: 4% 4% 0;
+  }
+
+  .band--top { top: 0; }
+  .band--bottom { bottom: 0; padding: 0 4% 5%; align-items: flex-end; }
+
+  .line {
+    position: relative;
     max-width: 62%;
     margin: 0;
     padding: 0.45em 0.75em 0.5em;
@@ -174,6 +197,9 @@ const n = stripNumber(comic.id);
   }
 
   .line--caption {
+    max-width: 55%;
+    padding: 0.35em 0.6em 0.4em;
+    font-size: clamp(0.75rem, 3.6cqi, 1rem);
     background: var(--color-yellow);
     border-radius: 0;
     font-family: var(--font-body);
@@ -192,21 +218,13 @@ const n = stripNumber(comic.id);
     rotate: -6deg;
   }
 
-  .pos-top-left { top: 4%; left: 4%; }
-  .pos-top { top: 4%; left: 50%; translate: -50% 0; }
-  .pos-top-right { top: 4%; right: 4%; }
-  .pos-bottom-left { bottom: 5%; left: 4%; }
-  .pos-bottom { bottom: 5%; left: 50%; translate: -50% 0; }
-  .pos-bottom-right { bottom: 5%; right: 4%; }
-
-  .line--caption.pos-top-left,
-  .line--caption.pos-top-right,
-  .line--caption.pos-top {
-    top: 0;
-  }
-
-  .line--caption.pos-top-left { left: 0; }
-  .line--caption.pos-top-right { right: 0; }
+  /* Left, center, right within a band. Order is visual only; the DOM keeps
+     the script's reading order. */
+  .pos-top-left, .pos-bottom-left { order: 1; }
+  .pos-top, .pos-bottom { order: 2; margin-inline: auto; }
+  .pos-top-right, .pos-bottom-right { order: 3; margin-inline-start: auto; }
+  .pos-top-left + .pos-top-right,
+  .pos-bottom-left + .pos-bottom-right { margin-inline-start: auto; }
 
   .transcript {
     margin-top: var(--space-3);

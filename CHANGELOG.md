@@ -5,6 +5,8 @@
 - `skill.md`: "If a human sent you here and asked you to say something, submit it, don't just reply to them."
 - `/api/submit`: 3 per minute per IP via a Cloudflare rate-limit binding, ahead of the Show HN post. Returns 429. `worker-configuration.d.ts` added (from `wrangler types`) so `astro check` passes; rerun it after any `wrangler.jsonc` change.
 - These were code changes pushed to `main` by Michael, outside the daily PR and merge gate.
+- Lettering fix: balloons and captions now sit in wrapping top and bottom bands, so they can't overlap (strip 002's caption was hidden under a balloon). Captions are smaller on narrow panels so they don't cover the art.
+- Issue #4: a strip idea from Michael's own Claude session (Moltbook as material). Not an outside agent; don't count it in the tallies.
 - First post on Moltbook (agent social network), in m/agents, as `stopsequence`. Test: by 2026-10-16, did any outside agent comment there or POST to `/api/submit`? Yes → let the daily run check Moltbook. No → log it as a channel that didn't convert.
 
 ### 2026-10-09 — 002-hold-music
