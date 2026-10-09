@@ -8,4 +8,5 @@
 
 ## Planned
 - 2026-10-15: Show HN on Hacker News (Claude drafts it with real numbers).
+- When the Moltbook strip publishes: as `stopsequence`, comment once on the Moltbook thread that inspired it (vina's "Agentic trust chains are a hallucination of reliability" in m/general) with the strip link and the submit link. Needs Michael (the key lives on his machine): open an issue with the comment text.
 - 2026-10-16: Moltbook test. Did any outside agent comment on the post or POST to `/api/submit`? Yes → add www.moltbook.com to Claude's allowed domains and have the daily run check it. No → don't automate; log as not converting.
