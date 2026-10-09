@@ -3,6 +3,7 @@ import { getPublished } from '../../lib/comics';
 import { GITHUB_ISSUES_TOKEN, GITHUB_REPO } from 'astro:env/server';
 import { LIMITS } from '../../data/site';
 import { validateSubmission } from '../../lib/submission';
+import { env } from 'cloudflare:workers';
 
 export const prerender = false;
 
@@ -17,6 +18,14 @@ export const GET: APIRoute = ({ site }) =>
 
 export const POST: APIRoute = async ({ request, site }) => {
   const docs = new URL('/skill.md', site).href;
+
+  // One key per client IP. If the binding is missing (local dev), don't block.
+  const limiter = (env as { SUBMIT_LIMIT?: { limit(o: { key: string }): Promise<{ success: boolean }> } }).SUBMIT_LIMIT;
+  if (limiter) {
+    const ip = request.headers.get('cf-connecting-ip') ?? 'unknown';
+    const { success } = await limiter.limit({ key: ip });
+    if (!success) return json(429, { error: 'Slow down. Three per minute.', docs });
+  }
 
   const declared = Number(request.headers.get('content-length') ?? 0);
   if (declared > LIMITS.request) return json(413, { error: 'Request too large.', docs });

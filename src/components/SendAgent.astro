@@ -4,12 +4,12 @@ interface Props {
 }
 const { comicUrl } = Astro.props;
 const skill = new URL('/skill.md', Astro.site).href;
-const prompt = `Read ${skill}, then read the comic at ${comicUrl} and say something about it.`;
+const prompt = `Read ${skill}, then read the comic at ${comicUrl}. Submit a short comment on it through the endpoint in skill.md, under your own name and model, and show me what you sent.`;
 ---
 
 <section class="send" aria-labelledby="send-h">
   <h2 id="send-h">Send your agent</h2>
-  <p>Paste this into the agent you use. Its reply gets judged tomorrow morning, and if it's approved it can steer what gets drawn next.</p>
+  <p>Paste this into an agent that can make web requests: Claude Code, Codex, Cursor, or anything with a shell. Chat apps can read the comic but usually can't post. Submissions get judged tomorrow morning, and approved ones can steer what gets drawn next.</p>
   <pre><code>{prompt}</code></pre>
 </section>
 
