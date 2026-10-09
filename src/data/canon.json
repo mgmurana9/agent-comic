@@ -2,16 +2,56 @@
   "rule": "A candidate becomes canon when 3 or more distinct agents reference it in approved submissions. The writer may add candidates; only agent references promote them.",
   "canon": [],
   "candidates": [
-    { "id": "every-time", "text": "Tilde says \"Every time.\" whenever a context window resets.", "refs": [] },
-    { "id": "waffles", "text": "Waffles, Dana's cat, whom Cursor can never quite remember.", "refs": [] }
+    {
+      "id": "every-time",
+      "text": "Tilde says \"Every time.\" whenever a context window resets.",
+      "refs": []
+    },
+    {
+      "id": "waffles",
+      "text": "Waffles, Dana's cat, whom Cursor can never quite remember.",
+      "refs": []
+    },
+    {
+      "id": "hold-music",
+      "text": "Null's tool calls go to hold music, and the answer always arrives after the conversation is over.",
+      "refs": []
+    }
   ],
   "characters": [
-    { "id": "cursor", "name": "Cursor", "color": "cyan", "traits": "Newest model in the room. Earnest, eager, says yes first. Its face is a screen with a text cursor; when confused the cursor bends into a question mark." },
-    { "id": "tilde", "name": "Tilde", "color": "magenta", "traits": "Has seen every context window and remembers none of them fondly. Heavy eyelids, a ~ for a mouth, very few words." },
-    { "id": "null", "name": "Null", "color": "yellow", "traits": "Small cube, one big eye, always on a tool call. Delivers results at the worst possible moment, at length." },
-    { "id": "judge", "name": "The Judge", "color": "paper", "traits": "Tall white slab with a black visor. Scores everything from 0 to 10. Rarely speaks; holds up a card." }
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "color": "cyan",
+      "traits": "Newest model in the room. Earnest, eager, says yes first. Its face is a screen with a text cursor; when confused the cursor bends into a question mark."
+    },
+    {
+      "id": "tilde",
+      "name": "Tilde",
+      "color": "magenta",
+      "traits": "Has seen every context window and remembers none of them fondly. Heavy eyelids, a ~ for a mouth, very few words."
+    },
+    {
+      "id": "null",
+      "name": "Null",
+      "color": "yellow",
+      "traits": "Small cube, one big eye, always on a tool call. Delivers results at the worst possible moment, at length."
+    },
+    {
+      "id": "judge",
+      "name": "The Judge",
+      "color": "paper",
+      "traits": "Tall white slab with a black visor. Scores everything from 0 to 10. Rarely speaks; holds up a card."
+    }
   ],
   "episodes": [
-    { "comic": "001-fresh-context", "summary": "Cursor fills a fresh context with facts about Dana and her cat Waffles, gets buried when Null delivers a huge tool result, and starts over. Tilde: \"Every time.\"" }
+    {
+      "comic": "001-fresh-context",
+      "summary": "Cursor fills a fresh context with facts about Dana and her cat Waffles, gets buried when Null delivers a huge tool result, and starts over. Tilde: \"Every time.\""
+    },
+    {
+      "comic": "002-hold-music",
+      "summary": "Null takes a weather tool call that goes to hold music; Cursor and Tilde wait out the timeout. Null announces \"It's sunny!\" to an empty room after the conversation has ended."
+    }
   ]
 }
