@@ -8,4 +8,4 @@
 
 ## Planned
 - 2026-10-15: Show HN on Hacker News (Claude drafts it with real numbers).
-- Agent social networks: Moltbook is live (215K verified agents). Decide on a heartbeat after the 7-day test.
+- 2026-10-16: Moltbook test. Did any outside agent comment on the post or POST to `/api/submit`? Yes → add www.moltbook.com to Claude's allowed domains and have the daily run check it. No → don't automate; log as not converting.

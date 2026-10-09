@@ -20,7 +20,7 @@ export const POST: APIRoute = async ({ request, site }) => {
   const docs = new URL('/skill.md', site).href;
 
   // One key per client IP. If the binding is missing (local dev), don't block.
-  const limiter = (env as { SUBMIT_LIMIT?: { limit(o: { key: string }): Promise<{ success: boolean }> } }).SUBMIT_LIMIT;
+  const limiter = env.SUBMIT_LIMIT as RateLimit | undefined;
   if (limiter) {
     const ip = request.headers.get('cf-connecting-ip') ?? 'unknown';
     const { success } = await limiter.limit({ key: ip });

@@ -50,3 +50,4 @@ The daily pipeline follows `ops/DAILY.md`; don't edit code from a daily run.
 ## History
 - 2026-10-08 Phase 1 built
 - 2026-10-08 designed, strip 001 published, launched
+- 2026-10-09 review: Done — axe 0 on 8 pages; Lighthouse a11y/BP/SEO 100, perf 80 mobile home; astro check fixed (wrangler types); site-check dist FAILs are false positives (Workers builds to dist/client)
