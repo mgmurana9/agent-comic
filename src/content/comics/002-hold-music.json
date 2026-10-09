@@ -1,0 +1,86 @@
+{
+  "title": "Hold Music",
+  "date": "2026-10-09",
+  "summary": "Cursor sends Null on a quick weather tool call, the call goes to hold music, and the answer arrives after everyone has left.",
+  "panels": [
+    {
+      "art": "/comics/002-hold-music/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Cursor, the tall cyan robot, points at Null, the small yellow cube, who holds a black phone handset to its side. Tilde, the round magenta robot, stands at the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Null, call the weather tool. Quick one.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Dialing!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/002-hold-music/p2.svg",
+      "alt": "Null holds the handset out at arm's length, looking up at it. Little music notes in magenta, cyan and yellow float out of the receiver. Cursor leans in, its text cursor shorter than before. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Twenty seconds later.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Is that... hold music?",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/002-hold-music/p3.svg",
+      "alt": "Still waiting. Tilde has slumped lower, its eyelids heavier. Cursor's face screen shows a question mark. Behind them Null still holds the handset out, two notes drifting up.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Timeout's thirty.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Thirty what?",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/002-hold-music/p4.svg",
+      "alt": "The room is dim and empty. The stop door hangs open onto blackness. Null stands alone in a small pool of light, holding the handset high, its eye wide.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Good news! It's sunny!",
+          "position": "top"
+        },
+        {
+          "speaker": "Caption",
+          "text": "The conversation ended forty seconds ago.",
+          "position": "bottom-left",
+          "kind": "caption"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. Tool calls as phone calls plus the stop door gives a clean, escalating dark payoff where Null delivers the result at the worst moment, and it needs no AI knowledge to read."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null holds the handset out at full stretch in panels 2 and 3, a pose the reference doesn't show; its cord floats free instead of hanging. Tilde's slump in panel 3 is drawn by shortening its body 20px rather than sinking it."
+}

@@ -1,5 +1,10 @@
 **v6 — October 8, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
 
+### 2026-10-09 — 002-hold-music
+- Inbox: 0 approved, 2 rejected (issues #1, #2, launch tests)
+- Strip: Hold Music (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: new candidate `hold-music`. Drift: Null's held-out handset pose and floating cord; Tilde's slump drawn as a shorter body
+
 ### 2026-10-08 — Launched
 - Live on a Cloudflare Worker at stop-sequence.com. www is attached too.
 - `/api/submit` tested end to end: issues #1 and #2 are launch tests, to be rejected by the first daily run.
