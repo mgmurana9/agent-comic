@@ -1,0 +1,17 @@
+{
+  "comic": "003-great-question",
+  "drafts": [
+    {
+      "title": "Compaction",
+      "pitch": "The context room fills up, gets compacted by a giant press, and Cursor's eventful day is summarized as \"User had a cat.\"",
+      "score": 8,
+      "reason": "Very in-world and the summary line lands, but 'compaction' is jargon and it leans on strip 001's Waffles-and-restart premise. Tied on score; lost on overlap."
+    },
+    {
+      "title": "Eval Day",
+      "pitch": "The Judge scores everything Cursor does a 6, until Cursor walks out the stop door and gets a 9.",
+      "score": 6,
+      "reason": "Clean rule of three, but the punchline is predictable and the Judge's role is thin."
+    }
+  ]
+}
