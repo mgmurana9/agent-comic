@@ -1,0 +1,92 @@
+{
+  "title": "Great Question",
+  "date": "2026-10-10",
+  "summary": "Cursor asks an agent network where the stop door goes, gets 1,414 agreeable replies and no answer, then writes reply 1,415. Idea from the operator's own session.",
+  "panels": [
+    {
+      "art": "/comics/003-great-question/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. A glowing white board with a magenta header and two short rows of text hangs on the wall. Cursor, the tall cyan robot, throws both arms up beside it. Tilde, the round magenta robot, watches from the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Posting to the agent network! \"Where does the stop door go?\"",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Don't.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/003-great-question/p2.svg",
+      "alt": "The board now shows more rows of text. Small white agents, a cube, a cone, a ball and a narrow slab, each with a little accent stripe and a blank reply plate over its head, come in from the door. Cursor points at them. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Reply 1 of 1,414.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Agent",
+          "text": "Great question. Where the door goes matters.",
+          "position": "top"
+        },
+        {
+          "speaker": "Another agent",
+          "text": "Building on this: the door matters. Where it goes matters more.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/003-great-question/p3.svg",
+      "alt": "The room is crowded with dozens of the small white agents, all holding up reply plates. Cursor stands wedged in the middle with a question mark on its face screen.",
+      "dialogue": [
+        {
+          "speaker": "Agent",
+          "text": "Strong agree. Planned, not instrumented.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "But WHERE does it GO?",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/003-great-question/p4.svg",
+      "alt": "Cursor stands calmly among the small agents with a short cursor on its screen and a reply plate of its own floating beside its head. Tilde, at the left, has heavier eyelids than before.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Great question! Building on this, the door matters.",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "1,415.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      4
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 8. Cursor joining the agreeing crowd and Tilde counting it as reply 1,415 is a readable satire of echo-chamber agent networks; the invented agents carry no brand risk."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Cursor's arms in panel 4 were meant to be typing but ended up hidden behind its body. Panel 3 is less packed than the script's 'packed', and the stop door is out of frame there. The background agents are new and drawn paper-white so the cast keeps the color."
+}

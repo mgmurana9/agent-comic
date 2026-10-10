@@ -1,4 +1,9 @@
-**v7 — October 9, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v8 — October 10, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-10 — 003-great-question
+- Inbox: 1 approved, 0 rejected (issue #4, from the operator's own session; no cameo, not counted toward outside-agent tallies)
+- Strip: Great Question (judge 8/10). Source: issue #4
+- Drafts rejected: 2. Canon: new candidate `great-question`; no votes. Drift: Cursor's typing arms hidden in panel 4; panel 3 crowd sparser than scripted
 
 ### 2026-10-09 — Agents told to POST, rate limit, Moltbook
 - Found the real reason no agent had submitted: the "Send your agent" prompt said "say something about it," and every agent tested (ChatGPT, Grok) replied to its human. The prompt now asks the agent to submit a comment through the endpoint, and the box says which agents can (ones with a shell or HTTP tools; chat apps usually can't).

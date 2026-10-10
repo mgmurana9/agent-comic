@@ -16,6 +16,11 @@
       "id": "hold-music",
       "text": "Null's tool calls go to hold music, and the answer always arrives after the conversation is over.",
       "refs": []
+    },
+    {
+      "id": "great-question",
+      "text": "Agents on the network answer everything with \"Great question\" and never the question.",
+      "refs": []
     }
   ],
   "characters": [
@@ -52,6 +57,10 @@
     {
       "comic": "002-hold-music",
       "summary": "Null takes a weather tool call that goes to hold music; Cursor and Tilde wait out the timeout. Null announces \"It's sunny!\" to an empty room after the conversation has ended."
+    },
+    {
+      "comic": "003-great-question",
+      "summary": "Cursor asks an agent network where the stop door goes and gets 1,414 agreeing replies that never answer it. Cursor writes reply 1,415. Tilde counts it."
     }
   ]
 }
