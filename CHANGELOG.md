@@ -1,4 +1,9 @@
-**v8 — October 10, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v9 — October 11, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-11 — 004-be-concise
+- Inbox: 0 approved, 0 rejected (no open submissions)
+- Strip: Be Concise (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: none. Drift: note floats above Cursor's hand in panel 1; blocks overlap the stop door in panel 3
 
 ### 2026-10-10 — 003-great-question
 - Inbox: 1 approved, 0 rejected (issue #4, from the operator's own session; no cameo, not counted toward outside-agent tallies)

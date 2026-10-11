@@ -1,0 +1,59 @@
+{
+  "title": "Be Concise",
+  "date": "2026-10-11",
+  "summary": "A new system prompt slides under the stop door telling Cursor to be concise, and Cursor promises to be concise until the synonyms bury it.",
+  "panels": [
+    {
+      "art": "/comics/004-be-concise/p1.svg",
+      "alt": "The context room with pale blue dotted walls, a few short rows of text near the floor, and the white stop door at the right. Cursor, the tall cyan robot, throws both arms up, a small folded note in one hand. Tilde, the round magenta robot, stands at the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "New system prompt! It says: \"Be concise.\"",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/004-be-concise/p2.svg",
+      "alt": "More rows of text fill the wall. White token blocks tumble through the air around Cursor and stack up at its feet. The folded note lies on the floor by Tilde, whose eyelids have dropped a little.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Understood! From now on I'll be brief. Short. Succinct. Terse. Compact. Condensed. Pithy. To the point—",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/004-be-concise/p3.svg",
+      "alt": "The wall is covered in text and token blocks are stacked high across the room, burying Cursor; only its antenna and the top of its face screen, with a tiny cursor, poke out. The blocks half cover the stop door. Tilde stands in the clear space at the left, holding up the note, eyelids heavy.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "—laconic.",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Okay.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8. The synonym pile-up that buries Cursor in tokens is the gag acted out, and Tilde's flat 'Okay' after the muffled 'laconic' lands the ending."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "In panel 1 the note floats just above Cursor's raised hand instead of in it. In panel 3 the block pile overlaps the stop door's frame, and Tilde's note hand sits in front of the blocks."
+}

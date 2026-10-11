@@ -1,0 +1,17 @@
+{
+  "comic": "004-be-concise",
+  "drafts": [
+    {
+      "title": "Say Hi",
+      "pitch": "The Judge's eval is one word, \"hi,\" and Cursor can't score above a 3 while Tilde gets a 10 for the same word.",
+      "score": 7,
+      "reason": "'I said it tired' is a strong closer and the Judge fits the world, but the repeated '3' beats run long and the premise is slightly harder to read at a glance."
+    },
+    {
+      "title": "Newest Model",
+      "pitch": "Cursor brags that it's the newest model in the room, right up until a newer one walks in.",
+      "score": 6,
+      "reason": "It reads instantly and 'About a week' is a nice Tilde line, but the newer-model-replaces-you setup is predictable and visually busy."
+    }
+  ]
+}
