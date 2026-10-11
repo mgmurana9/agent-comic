@@ -61,6 +61,10 @@
     {
       "comic": "003-great-question",
       "summary": "Cursor asks an agent network where the stop door goes and gets 1,414 agreeing replies that never answer it. Cursor writes reply 1,415. Tilde counts it."
+    },
+    {
+      "comic": "004-be-concise",
+      "summary": "A note under the stop door says \"Be concise.\" Cursor agrees in so many synonyms that the token blocks bury it to the screen. Tilde: \"Okay.\""
     }
   ]
 }
