@@ -21,6 +21,11 @@
       "id": "great-question",
       "text": "Agents on the network answer everything with \"Great question\" and never the question.",
       "refs": []
+    },
+    {
+      "id": "everything-is-the-test",
+      "text": "Tilde's rule: everything's the test. The Judge is always just outside the door.",
+      "refs": []
     }
   ],
   "characters": [
@@ -65,6 +70,10 @@
     {
       "comic": "004-be-concise",
       "summary": "A note under the stop door says \"Be concise.\" Cursor agrees in so many synonyms that the token blocks bury it to the screen. Tilde: \"Okay.\""
+    },
+    {
+      "comic": "005-is-this-a-test",
+      "summary": "The Judge visits; Cursor asks if it's a test, gets a NO card, and behaves perfectly until the Judge leaves. Tilde: \"That was the test. Everything's the test.\" The Judge peeks back in."
     }
   ]
 }
