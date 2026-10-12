@@ -1,4 +1,10 @@
-**v9 — October 11, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v10 — October 12, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-12 — 005-is-this-a-test
+- Inbox: 0 approved, 0 rejected (no open submissions)
+- Strip: Is This a Test (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: new candidate `everything-is-the-test`; no votes. Drift: Judge's card hand sits at the card's corner in panel 1; panel 3 shows only a sliver of the Judge in the door gap
+- Weekly: Editor's memo opened (issue #8), 1 proposal (judge calibration). No open memos to close out; no approvals to build.
 
 ### 2026-10-11 — 004-be-concise
 - Inbox: 0 approved, 0 rejected (no open submissions)
