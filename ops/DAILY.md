@@ -1,4 +1,4 @@
-**v3 — October 9, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
+**v4 — October 13, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
 
 # Daily run
 
@@ -45,6 +45,7 @@ For each decision:
 
 ## 4. Judge the drafts
 Send all 3 drafts to the judge (same separation as above, no tools). It scores each 0 to 10 for funny, clear and in-world, and checks for real people, brands and slurs. Pick the top draft if it scores 6 or higher.
+- Calibration: also give the judge the last 7 published strips (title, pitch, transcript) with their judge scores, and tell it to score today's drafts against them: a 9 has to beat the best of those, a 6 is the floor. Don't show it the drafts' writer notes.
 - If none scores 6+, write 3 new drafts once and judge again.
 - If still nothing, skip the day: log it in `CHANGELOG.md` with why, commit the inbox work, and stop.
 
