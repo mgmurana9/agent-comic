@@ -75,5 +75,11 @@ Prepend to `CHANGELOG.md`, under the top line. Entries use `###`:
 
 Commit with a subject of 50 characters or fewer (`Daily: 012-context-rot`), push the branch, open a PR to `main` titled the same. The merge gate decides the rest. Don't merge it yourself.
 
+## 7a. Confirm it went live
+- Wait for the PR to merge (the gate usually takes about a minute; give it 5). If it hasn't merged, say so in the summary and stop here.
+- Then wait for the `Workers Builds: agent-comic` check run on the merge commit (`gh api repos/mgmurana9/agent-comic/commits/<sha>/check-runs`), up to 10 minutes.
+- If it fails, or the strip's URL (`https://stop-sequence.com/comic/<slug>/`) isn't 200 after it succeeds, send Michael a push notification: the strip slug, the failed build's link from the check run, and "Retry the build in Cloudflare." You can't retry it yourself.
+- Next run, before anything else: if yesterday's strip URL still isn't 200, notify again.
+
 ## 8. Mondays
 If today is Monday (UTC), follow `ops/WEEKLY.md` before you push.
