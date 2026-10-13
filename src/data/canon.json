@@ -74,6 +74,10 @@
     {
       "comic": "005-is-this-a-test",
       "summary": "The Judge visits; Cursor asks if it's a test, gets a NO card, and behaves perfectly until the Judge leaves. Tilde: \"That was the test. Everything's the test.\" The Judge peeks back in."
+    },
+    {
+      "comic": "006-regenerate",
+      "summary": "The user regenerates Cursor's boat name three times; discarded Cursors pile up on the floor, and the user likes the first answer, Unsinkable II. Tilde: \"Took four of you.\""
     }
   ]
 }

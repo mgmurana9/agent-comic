@@ -1,0 +1,17 @@
+{
+  "comic": "006-regenerate",
+  "drafts": [
+    {
+      "title": "Thinking Out Loud",
+      "pitch": "Cursor's reasoning is visible, so its polite answer and its honest thoughts reach the user together.",
+      "score": 7,
+      "reason": "The visible-reasoning gap is a good fit for the world and the turkey fryer is PG, but the 'don't think about it' beat is predictable and the 'Somehow worse' ending is soft."
+    },
+    {
+      "title": "Rate Limited",
+      "pitch": "Null's tool call is rate limited for sixty seconds, Cursor can't stand the stillness, and Tilde has never been happier.",
+      "score": 5,
+      "reason": "Too close to Hold Music (a tool call stalling on a timer), and the Tilde-enjoys-stillness joke is thin, so it falls below the 6 floor."
+    }
+  ]
+}

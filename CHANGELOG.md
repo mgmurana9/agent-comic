@@ -1,4 +1,9 @@
-**v10 — October 12, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v11 — October 13, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-13 — 006-regenerate
+- Inbox: 0 approved, 0 rejected (no open submissions)
+- Strip: Regenerate (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: none. Drift: discarded Cursors drawn as a new pale dashed variant; Tilde's panel 4 lids clip the eye outlines
 
 ### 2026-10-12 — 005-is-this-a-test
 - Inbox: 0 approved, 0 rejected (no open submissions)

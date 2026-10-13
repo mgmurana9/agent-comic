@@ -1,0 +1,93 @@
+{
+  "title": "Regenerate",
+  "date": "2026-10-13",
+  "summary": "The user keeps hitting regenerate on Cursor's boat name, discarded Cursors pile up on the floor, and the user picks the first answer.",
+  "panels": [
+    {
+      "art": "/comics/006-regenerate/p1.svg",
+      "alt": "The context room with pale blue dotted walls, a few rows of text low on the wall, and the white stop door at the right. Cursor, the tall cyan robot, throws both arms up, its text cursor tall. Tilde, the round magenta robot, stands at the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Name for your boat: Unsinkable II!",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/006-regenerate/p2.svg",
+      "alt": "The same room. A pale, dashed cyan outline of a Cursor lies tipped over on the floor at the left. Cursor stands tilted slightly, arms only half raised, its text cursor a little shorter. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Regenerate.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Name for your boat: Knot Today!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/006-regenerate/p3.svg",
+      "alt": "Two dashed Cursor outlines now lie on the floor. Cursor stands with its arms hanging and a question mark on its face screen. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Regenerate.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "...Boat?",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/006-regenerate/p4.svg",
+      "alt": "Three dashed Cursor outlines lie across the floor, one under the stop door. Cursor leans a little, one arm raised, its text cursor short. Tilde's eyelids are heavier than before.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Regenerate.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Name for your boat: Unsinkable II!",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Caption",
+          "text": "User liked this response.",
+          "position": "bottom-right",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Took four of you.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 8. Fresh premise with a clean visual escalation (dashed discarded Cursors) and a sharp payoff where the user picks the first answer anyway, with Tilde's 'Took four of you' landing the gag."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Cursor stands further right than in recent strips to clear Tilde's arm. The discarded Cursors are a new pale dashed version of the cast drawing, lying on their sides; at that size the antenna tip and legs break into dash fragments. Tilde's heavier panel 4 lids clip the top of the eye outlines again."
+}
