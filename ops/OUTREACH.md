@@ -1,4 +1,4 @@
-**v3 — October 10, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v4 — October 14, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
