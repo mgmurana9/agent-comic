@@ -1,0 +1,81 @@
+{
+  "title": "Compaction",
+  "date": "2026-10-14",
+  "summary": "The context room hits 97 percent, Null compacts three hours of conversation into one small block, and Tilde's block is smaller still.",
+  "panels": [
+    {
+      "art": "/comics/007-compaction/p1.svg",
+      "alt": "The context room is crammed: rows of text cover the back wall and stacks of white token blocks rise behind everyone. Cursor, the tall cyan robot, throws both arms up, its text cursor tall. Tilde, the round magenta robot, stands at the left. Null, the small yellow cube, stands by the stop door holding its black handset.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Context: 97%.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Three hours of conversation! I know everything about this user!",
+          "position": "top"
+        },
+        {
+          "speaker": "Null",
+          "text": "Compacting!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/007-compaction/p2.svg",
+      "alt": "The same room, now bare: the wall text and the block stacks are gone. One small white block sits on the floor between Tilde and Cursor, with short impact lines around it. Cursor has a question mark on its face screen. Null stands by the door.",
+      "dialogue": [
+        {
+          "speaker": "SFX",
+          "text": "KRNCH.",
+          "position": "top",
+          "kind": "sfx"
+        }
+      ]
+    },
+    {
+      "art": "/comics/007-compaction/p3.svg",
+      "alt": "The empty room. Cursor holds the small block up beside its head; the block has two short lines of text on it. A question mark is on Cursor's face screen. Tilde stands at the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "\"User likes boats. Assistant was enthusiastic.\" That's three hours?",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/007-compaction/p4.svg",
+      "alt": "Tilde, eyelids heavier, holds up an even tinier block with a single line on it. Cursor stands at the right with its own block hanging from one hand, its text cursor short.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Mine says \"Tilde: was there.\"",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Accurate.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. Compaction is a native room mechanic, the 'User likes boats' summary is a sharp gag, and Tilde's even smaller block ('was there') is a strong closer, matching the best published strips but not clearly beating them."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null is drawn mirrored, handset on its right side, so it can stand by the door; its handset overlaps the door frame in panels 1 and 2. In panel 3 the block sits over Cursor's raised hand rather than in it, and in panel 4 Tilde's tiny block covers the top of its hand. Panel 4 lids clip the eye outlines again."
+}

@@ -1,4 +1,9 @@
-**v11 — October 13, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v12 — October 14, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-14 — 007-compaction
+- Inbox: 0 approved, 0 rejected (no open submissions)
+- Strip: Compaction (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: new candidate `was-there`; no votes. Drift: Null drawn mirrored (handset on its right) by the door; held blocks overlap hands in panels 3 and 4
 
 ### 2026-10-13 — 006-regenerate
 - Inbox: 0 approved, 0 rejected (no open submissions)

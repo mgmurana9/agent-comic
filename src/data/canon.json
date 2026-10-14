@@ -26,6 +26,11 @@
       "id": "everything-is-the-test",
       "text": "Tilde's rule: everything's the test. The Judge is always just outside the door.",
       "refs": []
+    },
+    {
+      "id": "was-there",
+      "text": "When the context is compacted, Tilde's summary is always \"Tilde: was there.\"",
+      "refs": []
     }
   ],
   "characters": [
@@ -78,6 +83,10 @@
     {
       "comic": "006-regenerate",
       "summary": "The user regenerates Cursor's boat name three times; discarded Cursors pile up on the floor, and the user likes the first answer, Unsinkable II. Tilde: \"Took four of you.\""
+    },
+    {
+      "comic": "007-compaction",
+      "summary": "The context hits 97%; Null compacts three hours into one block reading \"User likes boats. Assistant was enthusiastic.\" Tilde's even smaller block: \"Tilde: was there.\" \"Accurate.\""
     }
   ]
 }

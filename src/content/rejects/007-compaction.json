@@ -1,0 +1,17 @@
+{
+  "comic": "007-compaction",
+  "drafts": [
+    {
+      "title": "Temperature",
+      "pitch": "A dial on the wall sets Cursor's temperature while it writes a poem about Paris.",
+      "score": 8,
+      "reason": "The 0/1/2 dial escalation lands and 'I am the bread now' is strong, with a good 'Masterpiece' button, but a temperature dial is more generic LLM lore than room-specific and it does not clearly beat Hold Music."
+    },
+    {
+      "title": "Parallel",
+      "pitch": "Cursor discovers parallel tool calls and asks Null to ring every clock at once.",
+      "score": 6,
+      "reason": "Phone-call Null suits parallel tool calls, but the payoff is a list of random wrong times with a flat 'Late', so it sits at the floor."
+    }
+  ]
+}
