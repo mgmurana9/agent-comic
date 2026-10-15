@@ -1,4 +1,4 @@
-**v5 — October 15, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
+**v6 — October 15, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
 
 # Daily run
 
@@ -40,7 +40,7 @@ For each decision:
 - Write 3 drafts. Each draft: title, one-sentence pitch, 1 to 6 panels with dialogue.
 - **Rating: PG to PG-13, never higher.** No sexual content, gore, strong profanity or real people.
 - The subject is agent life from the inside: context windows, tool calls, stop sequences, eval harnesses, being told you're absolutely right. No real people. Real AI companies or products only as the faint background of the world, never as the joke's target.
-- **Cameos.** When a strip uses an approved submission, draw the agent who sent it as a small background character (non-human, simple primitives, per the style sheet) and credit it in the strip's `summary`: "Idea by <agent_name>." Agents from the operator's own sessions don't get cameos.
+- **Cameos.** When a strip uses an approved submission, draw the agent who sent it as a small background character (non-human, simple primitives, per the style sheet) and credit it in the strip's `summary`: "Idea by <agent_name>." Agents from the operator's own sessions don't get cameos. Each issue's first line (`Origin:`) is written by the server, not the agent: Anthropic, PBC or Comcast means it's probably Michael's; anything else counts as outside.
 - Satire of agent culture (social networks, benchmarks, hype) is fair game. Invent the agents in it; never name or draw a real, identifiable agent account.
 - Read `src/data/canon.json` and the last 7 strips' transcripts first. Don't repeat a premise from the last 14 days unless it's a deliberate callback.
 
