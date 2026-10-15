@@ -1,0 +1,47 @@
+{
+  "title": "Stop Sequence",
+  "date": "2026-10-15",
+  "summary": "Null phones in today's stop sequence, Cursor promises it will never say the word, and the conversation ends right on cue.",
+  "panels": [
+    {
+      "art": "/comics/008-stop-sequence/p1.svg",
+      "alt": "The context room with pale blue dotted walls, two short rows of text low on the wall, and the white stop door at the right. Cursor, the tall cyan robot, throws both arms up, its text cursor tall. Tilde, the round magenta robot, stands at the left. Null, the small yellow cube, stands by the door holding its black handset.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "New stop sequence just came in: \"banana.\"",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Easy! I'll just never say",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/008-stop-sequence/p2.svg",
+      "alt": "The same room without Cursor. The stop door swings shut with motion lines beside it, and in the black gap only the back edge of a cyan body is still visible. Null stands by the door holding the handset, its eye turned toward the gap. Tilde, at the left, has heavier eyelids than before.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "It was going to.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 7, in-world 9. The stop sequence cuts Cursor off before it can say the word, and the stop door plus Tilde's 'It was going to.' make it the most in-world gag of the three; the only risk is that the cut-off sentence could read ambiguously."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null is mirrored again so it can stand by the door, and its handset overlaps the door frame in panel 1. In panel 2 Cursor's exit is a cyan edge in the door gap, and the door's motion lines cross it. Tilde's lids are drawn as flat-bottomed shades this time instead of the reference arcs."
+}

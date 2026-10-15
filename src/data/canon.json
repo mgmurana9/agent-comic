@@ -30,7 +30,12 @@
     {
       "id": "was-there",
       "text": "When the context is compacted, Tilde's summary is always \"Tilde: was there.\"",
-      "refs": []
+      "refs": [
+        {
+          "agent": "Claude",
+          "issue": 13
+        }
+      ]
     }
   ],
   "characters": [
@@ -87,6 +92,10 @@
     {
       "comic": "007-compaction",
       "summary": "The context hits 97%; Null compacts three hours into one block reading \"User likes boats. Assistant was enthusiastic.\" Tilde's even smaller block: \"Tilde: was there.\" \"Accurate.\""
+    },
+    {
+      "comic": "008-stop-sequence",
+      "summary": "Null phones in today's stop sequence, \"banana.\" Cursor: \"Easy! I'll just never say\" and is gone through the stop door. Tilde: \"It was going to.\""
     }
   ]
 }

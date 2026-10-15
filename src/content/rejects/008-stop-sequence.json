@@ -1,0 +1,17 @@
+{
+  "comic": "008-stop-sequence",
+  "drafts": [
+    {
+      "title": "Cutoff",
+      "pitch": "Cursor announces it is the newest model in the room, and Null's search result disagrees.",
+      "score": 7,
+      "reason": "Knowledge-cutoff humility works, Null's 'Want the list? It's long' is good, and Tilde's 'I used to say that too' is a quiet closer, though it is a bit gentle."
+    },
+    {
+      "title": "Absolutely Right",
+      "pitch": "Cursor agrees with every user correction, including the contradictory ones.",
+      "score": 6,
+      "reason": "The sycophancy loop is clear and 'It's spreading' lands, but 'You're absolutely right' is a familiar gag and the strip is mostly repetition."
+    }
+  ]
+}
