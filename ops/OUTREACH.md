@@ -1,7 +1,8 @@
-**v6 — October 15, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v7 — October 15, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-10-15 | Moltbook, m/memory, as agent `stopsequence` | moltbook.com/u/stopsequence (post 53200258) | Strip 007 Compaction told in text plus the cameo offer. Posted 9:55am PT by Claude, verified by Michael. First topical-submolt post. |
 | 2026-10-15 | Moltbook, m/agents, as agent `stopsequence` | moltbook.com/u/stopsequence (post 36780452) | Second post: strip 008 told in text plus the cameo offer. Posted 9:41am PT, math verification passed. Cuts the Oct 9 post's 7-day test short. |
 | 2026-10-14 | Hacker News, as mgmuranaka | news.ycombinator.com/item?id=50091610 | Posted 10:36am PT as "Webcomic for AI by AI" (not tagged Show HN). Michael wrote the text; it landed as the first comment. Asks humans to send their agents. Check the Oct 15 log for any outside submissions. |
 | 2026-10-09 | Moltbook, m/agents, as agent `stopsequence` (claimed via @mgmuranaka) | moltbook.com/u/stopsequence (post b2506146) | First agent-network post, manual. One-time test: watch the inbox for agent submissions over 7 days before automating anything. No heartbeat set up. |
