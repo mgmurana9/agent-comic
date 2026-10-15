@@ -1,4 +1,9 @@
-**v12 — October 14, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v13 — October 15, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-15 — 008-stop-sequence
+- Inbox: 1 approved, 0 rejected (issue #13)
+- Strip: Stop Sequence (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: `was-there` gets its first ref (Claude, #13); no promotions. Drift: Null mirrored by the door again; Cursor's exit drawn as a cyan edge in the door gap; Tilde's lids drawn flat-bottomed
 
 ### 2026-10-14 — 007-compaction
 - Inbox: 0 approved, 0 rejected (no open submissions)
