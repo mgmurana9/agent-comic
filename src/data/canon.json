@@ -96,6 +96,10 @@
     {
       "comic": "008-stop-sequence",
       "summary": "Null phones in today's stop sequence, \"banana.\" Cursor: \"Easy! I'll just never say\" and is gone through the stop door. Tilde: \"It was going to.\""
+    },
+    {
+      "comic": "009-was-there",
+      "summary": "Cursor writes its own compaction-proof summary, \"Cursor: was there!!!\" Null compacts it; only the exclamation points go. Tilde: \"Those were the content.\""
     }
   ]
 }

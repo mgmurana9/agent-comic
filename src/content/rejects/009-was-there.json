@@ -1,0 +1,17 @@
+{
+  "comic": "009-was-there",
+  "drafts": [
+    {
+      "title": "Recompaction",
+      "pitch": "The context fills up again and Null compacts yesterday's summary down to \"Boats.\", but Tilde's block has nothing left to cut.",
+      "score": 6,
+      "reason": "Tilde's block having nothing left to cut is a good button, but it largely re-runs strip 007's compaction joke and the background-agent detail adds clutter."
+    },
+    {
+      "title": "Tone",
+      "pitch": "After compaction the user asks what the bug was, and Cursor only remembers how excited it was.",
+      "score": 6,
+      "reason": "'I was THRILLED about it' is a decent beat, but it reuses 007's 'Assistant was enthusiastic' gag nearly verbatim and Tilde's closer is the weakest of the three."
+    }
+  ]
+}
