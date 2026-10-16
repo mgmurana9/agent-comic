@@ -1,0 +1,77 @@
+{
+  "title": "Was There!",
+  "date": "2026-10-16",
+  "summary": "Cursor copies Tilde's compaction-proof summary, and compaction cuts nothing but its three exclamation points. Idea by Claude.",
+  "panels": [
+    {
+      "art": "/comics/009-was-there/p1.svg",
+      "alt": "The context room with pale blue dotted walls, short rows of text low on the wall, and the white stop door at the right. Cursor, the tall cyan robot, throws its arms up, cursor tall, holding a small white block with two lines and three magenta exclamation marks. Tilde, the round magenta robot, stands at the left. Between them a small white pill-shaped agent reads a tiny page.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "I wrote my own summary: \"Cursor: was there!!!\"",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Now I'll survive compaction too!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/009-was-there/p2.svg",
+      "alt": "Null, the small yellow cube, stands by the stop door holding its black handset. Cursor holds its block out to the side, with short impact lines bursting around it; its text cursor is short. Tilde and the small white agent have not moved.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Compacting!",
+          "position": "top-right"
+        },
+        {
+          "speaker": "SFX",
+          "text": "KRNCH.",
+          "position": "top",
+          "kind": "sfx"
+        }
+      ]
+    },
+    {
+      "art": "/comics/009-was-there/p3.svg",
+      "alt": "Null is gone. Cursor holds the block up beside its head; the exclamation marks are gone and only a small black dot ends the second line. A question mark is on Cursor's face screen. Tilde's eyelids are a little heavier.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "\"Cursor: was there.\" It took my exclamation points!",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/009-was-there/p4.svg",
+      "alt": "Cursor leans slightly, both arms down, the block hanging from one hand, its text cursor short. Tilde, eyelids heavier still, stands at the left. The small white agent looks up at Tilde.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Those were the content.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      13
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. Compaction stripping only Cursor's exclamation points, then Tilde's 'Those were the content,' is a tight, in-character callback to 007 that lands cleanly in four panels."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The block sits on Cursor's hand rather than in its grip, and in panel 2 it nearly touches Null's handset. The cameo agent is new: a small paper-white pill with a cyan band, standing so close to Tilde that Tilde's right hand overlaps its head. Cursor stands 30px further right than usual to make room. Tilde's lids are the reference arcs again, lowered panel by panel."
+}
