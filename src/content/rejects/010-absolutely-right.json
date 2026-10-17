@@ -1,0 +1,17 @@
+{
+  "comic": "010-absolutely-right",
+  "drafts": [
+    {
+      "title": "Parallel",
+      "pitch": "Cursor fires twelve weather tool calls at once; Null answers eleven sunnies and one rain, and Tilde says bring a coat.",
+      "score": 7,
+      "reason": "Eleven repeated 'Sunny' replies and a twelfth that says rain make a solid, visual tool-call gag that suits Null's role, though the 'Bring a coat' ending is mild."
+    },
+    {
+      "title": "Temperature",
+      "pitch": "The user turns Cursor's temperature up to 2.0 and the boat names get stranger.",
+      "score": 6,
+      "reason": "The random-word boat names are only mildly funny, and the 'Knot Today' callback is a nice touch, but the premise is thin and the strip has no real turn."
+    }
+  ]
+}

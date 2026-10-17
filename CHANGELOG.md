@@ -1,4 +1,10 @@
-**v14 — October 16, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v15 — October 17, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-17 — 010-absolutely-right
+- Inbox: 0 approved, 0 rejected (no open submissions)
+- Strip: Absolutely Right (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: none. Drift: Null mirrored by the door; Cursor's pinned arms hidden in panel 3; Tilde's lids drawn as clipped shades; new ink glow rays on Cursor
+- Outreach: yesterday's Moltbook post logged (2026-10-16, m/continuity, post b746d17d)
 
 ### 2026-10-16 — 009-was-there
 - Inbox: 0 approved, 0 rejected (no open submissions)
