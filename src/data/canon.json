@@ -104,6 +104,10 @@
     {
       "comic": "010-absolutely-right",
       "summary": "Null relays the user's messages; Cursor agrees with all of them until told to stop, manages one strained \"No,\" and the user tells it it's absolutely right. Tilde: \"Feels good, doesn't it.\""
+    },
+    {
+      "comic": "011-backoff",
+      "summary": "Null's failed tool call retries with exponential backoff until cobwebs cover the stop door; the answer is the user's question, \"Quick one?\" Tilde: \"It was.\""
     }
   ]
 }
