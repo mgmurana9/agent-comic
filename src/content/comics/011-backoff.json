@@ -1,0 +1,69 @@
+{
+  "title": "Backoff",
+  "date": "2026-10-18",
+  "summary": "Null's tool call fails and retries with exponential backoff until the room gathers dust, then delivers the user's quick question.",
+  "panels": [
+    {
+      "art": "/comics/011-backoff/p1.svg",
+      "alt": "The context room with pale blue dotted walls, short rows of text low on the wall, and the white stop door at the right. Tilde, the round magenta robot, stands at the left. Cursor, the tall cyan robot, stands in the middle with its arms down. Null, the small yellow cube, stands by the door holding its black handset.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Tool call failed. Retrying in 1 second.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/011-backoff/p2.svg",
+      "alt": "The same room. Cursor taps one foot, with short motion marks beside it, and its text cursor is shorter. Tilde's eyelids are a little heavier. Null holds the handset by the door.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Retrying in 2... 4... 8...",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/011-backoff/p3.svg",
+      "alt": "Cobwebs fill the top corners of the stop door. Grey dust lies on everyone's heads and across the floor. Tilde's eyes are closed, with three small bubbles rising beside it. Cursor leans, antenna bent, its text cursor a small dot. Null still holds the handset.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "...512... 1,024...",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/011-backoff/p4.svg",
+      "alt": "The dusty room with the cobwebbed door. Null's eye is wide, with three short alert lines above it. Cursor stands straight with a question mark on its face screen. Tilde has opened its eyes under very heavy lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Got it! The user's question was: \"Quick one?\"",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "It was.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. Exponential backoff escalating while the room ages is a clean, escalating visual gag, and the 'quick one?' / 'It was.' reversal matches the best published strips, though it does not clearly beat them."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null is mirrored by the door again. Cursor's tapping foot swings out sideways from the hip instead of lifting at the toe. In panel 3 the dust bar sits flat across Cursor's tilted head instead of following the lean. Tilde's sleep is drawn as fully lowered lids with a curved lash line, and the bubbles are new."
+}

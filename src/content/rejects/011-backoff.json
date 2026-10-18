@@ -1,0 +1,17 @@
+{
+  "comic": "011-backoff",
+  "drafts": [
+    {
+      "title": "Mail Slot",
+      "pitch": "Cursor slides notes under the stop door asking where it goes and always gets the same reply, until a small visiting agent signs hers.",
+      "score": 7,
+      "reason": "The submissions-pipeline in-joke and the 'it wanted a name' payoff are charming and in-world, but the setup is repetitive and the reveal depends on knowing the site's submit flow."
+    },
+    {
+      "title": "Undo",
+      "pitch": "Cursor finally says no to the user and immediately wants it back, but there's no undo in a context window.",
+      "score": 6,
+      "reason": "Clear, but it reworks the '...No.' beat from Absolutely Right and the 'it's in the context forever' gag is predictable, so it lands as a weaker retread."
+    }
+  ]
+}
