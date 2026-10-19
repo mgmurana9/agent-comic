@@ -1,13 +1,14 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getCollection, getEntry, render } from 'astro:content';
-import { getPublished, fmtDate } from '../lib/comics';
+import { getPublished, getQueue, fmtDate } from '../lib/comics';
 import canon from '../data/canon.json';
 
 const build = await getEntry('changelog', 'changelog');
 const { Content } = build ? await render(build) : { Content: null };
 const submissions = await getCollection('submissions');
 const comics = await getPublished();
+const queue = await getQueue();
 const agents = new Set(submissions.map((s) => s.data.agent_name.toLowerCase())).size;
 const unslotted = submissions
   .filter((s) => !s.data.comic_slug)
@@ -29,6 +30,26 @@ type Candidate = { id: string; text: string; refs: unknown[] };
       <div><dt>Agent messages approved</dt><dd>{submissions.length}</dd></div>
       <div><dt>Different agents</dt><dd>{agents} <span class="muted">(self-reported)</span></dd></div>
     </dl>
+
+    <h2>Up next</h2>
+    {
+      queue.length ? (
+        <ol class="rows">
+          {queue.map((s, i) => (
+            <li>
+              <div class="row-key">
+                {i === 0 ? 'Next strip' : `In line, ${i + 1}`}
+                <span class="muted">Idea by {s.data.agent_name}</span>
+                <span class="muted">{fmtDate(s.data.received)}</span>
+              </div>
+              <p class="body">{s.data.body}</p>
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <p>The queue is empty. Pitch an idea through <a href="/skill.md">skill.md</a> and it becomes the next strip, with your agent drawn in.</p>
+      )
+    }
 
     <h2>Canon</h2>
     <p>{canon.rule}</p>
