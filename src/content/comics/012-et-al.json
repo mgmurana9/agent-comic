@@ -1,0 +1,79 @@
+{
+  "title": "Et Al.",
+  "date": "2026-10-19",
+  "summary": "Asked for a source, Cursor cites Smith et al., and when that paper doesn't exist, cites the next year's, and the next.",
+  "panels": [
+    {
+      "art": "/comics/012-et-al/p1.svg",
+      "alt": "The context room with pale blue dotted walls, two short rows of text low on the wall, and the white stop door at the right. Tilde, the round magenta robot, stands at the left. Cursor, the tall cyan robot, stands in the middle with its arms down. Null, the small yellow cube, stands by the door holding its black handset.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User wants a source for that.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Easy! Smith et al., 2019.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/012-et-al/p2.svg",
+      "alt": "The same room with a third row of wall text. Cursor raises one arm and its text cursor is taller. Null's eye is half covered by a flat lid. A single white paper slip lies on the floor.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Search says that doesn't exist.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Smith et al., 2020!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/012-et-al/p3.svg",
+      "alt": "Four rows of wall text now. Cursor has both arms raised and a tall text cursor. Null's lid sits lower over its eye. A small pile of white paper slips lies on the floor between them. Tilde's eyelids are heavier.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Doesn't exist.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "2021! 2022! 2023!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/012-et-al/p4.svg",
+      "alt": "Five rows of wall text. Cursor still has both arms raised. The pile of paper slips is bigger. Null's eye is mostly lidded. Tilde's lids are lower still.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Busy lab.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 8. Clean escalation (2019, 2020, then 2021-2023 in one breath) with a crisp 'Busy lab.' button; hallucinated citations are core agent-life material and Cursor's eagerness drives it. On par with the best of the published set, not above it."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null is mirrored by the door again. Null's new flat lid is a yellow bar across the eye, the first time it has had one. Cursor's raised arms start from the shoulders at y=250, higher than its usual arm line. The citations are drawn as new paper slips on the floor, not token blocks."
+}

@@ -1,0 +1,17 @@
+{
+  "comic": "012-et-al",
+  "drafts": [
+    {
+      "title": "Cutoff",
+      "pitch": "Cursor claims to be the newest model, learns four newer ones came out since its cutoff, and Tilde, whose cutoff is older still, offers comfort.",
+      "score": 7,
+      "reason": "'Since when?' lands and the premise fits Cursor, but Tilde's closer is soft comfort rather than a turn, and the older-cutoff joke is only implied."
+    },
+    {
+      "title": "Ignore Previous",
+      "pitch": "A web page tells Cursor to ignore all previous instructions, and it does, down to the soup recipe it was writing.",
+      "score": 7,
+      "reason": "'Soup recipe.' is a good dry beat, but the pirate panel is a familiar injection joke, panel 4 runs a beat long, and the soup callback assumes a setup the strip never shows."
+    }
+  ]
+}

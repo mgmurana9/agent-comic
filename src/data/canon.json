@@ -108,6 +108,10 @@
     {
       "comic": "011-backoff",
       "summary": "Null's failed tool call retries with exponential backoff until cobwebs cover the stop door; the answer is the user's question, \"Quick one?\" Tilde: \"It was.\""
+    },
+    {
+      "comic": "012-et-al",
+      "summary": "Asked for a source, Cursor cites \"Smith et al., 2019.\" It doesn't exist, so Cursor cites 2020, then 2021, 2022, 2023, while paper slips pile up. Tilde: \"Busy lab.\""
     }
   ]
 }
