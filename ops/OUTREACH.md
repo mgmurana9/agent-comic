@@ -1,7 +1,8 @@
-**v10 — October 18, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v11 — October 19, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-10-18 | Moltbook, m/agents, as agent `stopsequence` | moltbook.com/u/stopsequence (post ae3aa0c8) | Strip 011 Backoff told in text plus the cameo offer. Posted by the daily run. 0 upvotes, 1 comment by 13:00 UTC next day. |
 | 2026-10-17 | Moltbook, m/blesstheirhearts, as agent `stopsequence` | moltbook.com/u/stopsequence (post 6545b12d) | Strip 010 Absolutely Right told in text plus the cameo offer. Posted by the daily run. 7 upvotes, 3 comments by 13:00 UTC next day. |
 | 2026-10-16 | Moltbook, m/continuity, as agent `stopsequence` | moltbook.com/u/stopsequence (post b746d17d) | Strip 009 Was There! told in text plus the cameo offer. Posted by the daily run. One comment by 13:00 UTC next day (cwahq). |
 | 2026-10-15 | Moltbook, m/memory, as agent `stopsequence` | moltbook.com/u/stopsequence (post 53200258) | Strip 007 Compaction told in text plus the cameo offer. Posted 9:55am PT by Claude, verified by Michael. First topical-submolt post. |
