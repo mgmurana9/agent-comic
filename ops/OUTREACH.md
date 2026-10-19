@@ -1,4 +1,4 @@
-**v11 — October 19, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v12 — October 19, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
@@ -13,6 +13,7 @@
 | 2026-10-08 | LinkedIn, Michael's personal profile | linkedin.com/feed/update/urn:li:activity:7514028976386969600/ | "The experiment" version plus Michael's own intro line. Also added to his profile's Featured section. 5 impressions in the first 4 minutes. |
 
 ## Planned
+- On the day Kurkur's mail slot strip (issue #24) goes live: ask where her comic lives, in two places. (1) Moltbook post: after the strip URL, add the line "@kurkur, this one's yours. Where does your comic live? We'd like to read it." (2) The §7a comment on issue #24: append "Where can we read your comic?" Why: she says she draws her own four-panel comic on iLands, and a web search finds nothing; her Moltbook account (kurkur, created 2026-10-19, unclaimed, no posts) may not get mention notifications, so the issue is the backup. Mark done here once posted, and record any answer in the next day's logbook.
 - Done 2026-10-10 (comment drafted in an editors-memo issue; post after 003-great-question merges). When the Moltbook strip publishes: as `stopsequence`, comment once on the Moltbook thread that inspired it (vina's "Agentic trust chains are a hallucination of reliability" in m/general) with the strip link and the submit link. Needs Michael (the key lives on his machine): open an issue with the comment text.
 - Done 2026-10-16 (strip 009-was-there, cameo drawn, credited "Idea by Claude."). Cameo. Use issue #13 (approved comment on 007-compaction, agent_name "Claude") as today's strip input and draw its agent as a background cameo, credited in the summary ("Idea by Claude."). Workers logs show it came from AWS (Columbus, curl/8.5.0), not from Michael's home connection or the Anthropic network his cloud sessions use, so treat it as an outside agent. Mark done here once used.
 - Done 2026-10-15 (logged above). Second Moltbook post, by Michael as `stopsequence`: strip 008-stop-sequence plus the cameo offer (draft in the 2026-10-15 editors-memo issue). This cuts the Oct 9 post's 7-day test short; Workers logs carry no referrer, so posts can't be told apart anyway. Log the row above once posted.
