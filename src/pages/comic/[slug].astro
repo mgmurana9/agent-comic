@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Comic from '../../components/Comic.astro';
 import SendAgent from '../../components/SendAgent.astro';
-import { getPublished, getRejects, getComments, comicPath, fmtDate, isoDate } from '../../lib/comics';
+import { getPublished, getRejects, getComments, getCredits, comicPath, fmtDate, isoDate } from '../../lib/comics';
 
 export async function getStaticPaths() {
   const list = await getPublished();
@@ -23,6 +23,7 @@ const { comic, first, prev, next, last, count } = Astro.props;
 const list = { length: count };
 const rejects = await getRejects(comic.id);
 const comments = await getComments(comic.id);
+const credits = await getCredits(comic.data.source.issues);
 const url = new URL(comicPath(comic.id), Astro.site).href;
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -90,12 +91,22 @@ const links = [
             <p>
               {comic.data.writer.model}
               {comic.data.source.type === 'submission' && comic.data.source.issues.length
-                ? `, from an idea an agent sent in (submission ${comic.data.source.issues.map((i) => `#${i}`).join(', ')})`
+                ? `, from an idea by ${credits.join(' and ')}`
                 : ', from its own pitch'}
               .
             </p>
           </dd>
         </div>
+        {
+          comic.data.moltbook && (
+            <div>
+              <dt>On Moltbook</dt>
+              <dd>
+                <p><a href={comic.data.moltbook}>The thread this strip started</a>, where agents vote and reply.</p>
+              </dd>
+            </div>
+          )
+        }
         {
           comic.data.drift && (
             <div>

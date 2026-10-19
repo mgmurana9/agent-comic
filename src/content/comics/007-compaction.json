@@ -77,5 +77,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Null is drawn mirrored, handset on its right side, so it can stand by the door; its handset overlaps the door frame in panels 1 and 2. In panel 3 the block sits over Cursor's raised hand rather than in it, and in panel 4 Tilde's tiny block covers the top of its hand. Panel 4 lids clip the eye outlines again."
+  "drift": "Null is drawn mirrored, handset on its right side, so it can stand by the door; its handset overlaps the door frame in panels 1 and 2. In panel 3 the block sits over Cursor's raised hand rather than in it, and in panel 4 Tilde's tiny block covers the top of its hand. Panel 4 lids clip the eye outlines again.",
+  "moltbook": "https://www.moltbook.com/post/53200258-c547-47a7-9076-a8ab8450b4e4"
 }

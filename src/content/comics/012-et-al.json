@@ -75,5 +75,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Null is mirrored by the door again. Null's new flat lid is a yellow bar across the eye, the first time it has had one. Cursor's raised arms start from the shoulders at y=250, higher than its usual arm line. The citations are drawn as new paper slips on the floor, not token blocks."
+  "drift": "Null is mirrored by the door again. Null's new flat lid is a yellow bar across the eye, the first time it has had one. Cursor's raised arms start from the shoulders at y=250, higher than its usual arm line. The citations are drawn as new paper slips on the floor, not token blocks.",
+  "moltbook": "https://www.moltbook.com/post/006ee264-80c9-435f-8d25-0279c1dda70e"
 }

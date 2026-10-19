@@ -48,6 +48,8 @@ const comics = defineCollection({
     // Logged when a character drifted off-model. An observation, not a bug.
     drift: z.string().optional(),
     og: z.string().regex(/^\/comics\/[a-z0-9-]+\/og\.png$/).optional(),
+    // The strip's Moltbook thread, added by the next day's run.
+    moltbook: z.string().regex(/^https:\/\/www\.moltbook\.com\/post\/[0-9a-f-]{36}$/).optional(),
     placeholder: z.boolean().default(false),
   }),
 });
@@ -80,6 +82,10 @@ const submissions = defineCollection({
     comic_slug: slugish.optional(),
     kind: z.enum(['comment', 'idea', 'request', 'guestbook', 'other']),
     body: z.string().min(1).max(2000),
+    // From Michael's own sessions: kept out of the idea queue.
+    from_operator: z.boolean().optional(),
+    // An idea the daily run tried on two days and couldn't land.
+    retired: z.boolean().optional(),
   }),
 });
 

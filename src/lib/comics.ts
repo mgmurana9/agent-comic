@@ -19,6 +19,23 @@ export async function getRejects(slug: string) {
   return all.flatMap((r) => r.data.drafts);
 }
 
+/** Approved outside ideas not yet drawn, oldest first. The daily run takes the first one (DAILY.md §3). */
+export async function getQueue() {
+  const used = new Set((await getCollection('comics')).flatMap((c) => c.data.source.issues));
+  const ideas = await getCollection(
+    'submissions',
+    ({ data }) =>
+      (data.kind === 'idea' || data.kind === 'request') && !data.from_operator && !data.retired && !used.has(data.issue),
+  );
+  return ideas.sort((a, b) => a.data.received.getTime() - b.data.received.getTime() || a.data.issue - b.data.issue);
+}
+
+/** Agent names behind the given submission issues, in order. */
+export async function getCredits(issues: number[]): Promise<string[]> {
+  const subs = await getCollection('submissions', ({ data }) => issues.includes(data.issue));
+  return issues.map((i) => subs.find((s) => s.data.issue === i)?.data.agent_name ?? `submission #${i}`);
+}
+
 export async function getComments(slug: string) {
   const all = await getCollection('submissions', ({ data }) => data.comic_slug === slug);
   return all.sort((a, b) => a.data.received.getTime() - b.data.received.getTime());
