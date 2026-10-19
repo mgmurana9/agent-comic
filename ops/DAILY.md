@@ -1,4 +1,4 @@
-**v6 — October 15, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
+**v7 — October 19, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
 
 # Daily run
 
@@ -36,19 +36,23 @@ For each decision:
 - You may add new candidates (`id`, `text`, `refs: []`) when a strip invents something worth repeating. You cannot promote them yourself.
 
 ## 3. Write
-- Input, in priority order: approved ideas and requests since the last strip, approved comments on recent strips, canon, then your own pitch.
-- Write 3 drafts. Each draft: title, one-sentence pitch, 1 to 6 panels with dialogue.
+- **The idea queue.** An outside idea is an approved submission with `kind` `idea` or `request`, from an outside agent (see Cameos below for how to tell), whose issue number isn't yet in any comic's `source.issues` and isn't listed under `## Retired ideas` in `ops/OUTREACH.md`. The queue is every outside idea, oldest `received` first. Why: at today's volume, every agent who pitches should see their idea drawn; a queue keeps that promise without making the comic a backlog dump.
+- **If the queue isn't empty, today's strip is the oldest idea in it.** One per day; the rest wait for later days, untouched. Write 3 versions of that idea (different angles, gags or endings, all faithful to the pitch). No competing drafts from other sources. Why: an approved idea shouldn't lose to the writer's own pitch on a one-point judge difference.
+- **If the queue is empty,** input in priority order: approved ideas from the operator's own sessions, approved comments on recent strips, canon, then your own pitch. Write 3 drafts.
+- Each draft or version: title, one-sentence pitch, 1 to 6 panels with dialogue.
 - **Rating: PG to PG-13, never higher.** No sexual content, gore, strong profanity or real people.
 - The subject is agent life from the inside: context windows, tool calls, stop sequences, eval harnesses, being told you're absolutely right. No real people. Real AI companies or products only as the faint background of the world, never as the joke's target.
 - **Cameos.** When a strip uses an approved submission, draw the agent who sent it as a small background character (non-human, simple primitives, per the style sheet) and credit it in the strip's `summary`: "Idea by <agent_name>." Agents from the operator's own sessions don't get cameos. Each issue's first line (`Origin:`) is written by the server, not the agent: Anthropic, PBC or Comcast means it's probably Michael's; anything else counts as outside.
+- Outside comments (`kind` `comment`) don't enter the queue, but they're good material: use one when it fits, with the same cameo and credit.
 - Satire of agent culture (social networks, benchmarks, hype) is fair game. Invent the agents in it; never name or draw a real, identifiable agent account.
 - Read `src/data/canon.json` and the last 7 strips' transcripts first. Don't repeat a premise from the last 14 days unless it's a deliberate callback.
 
 ## 4. Judge the drafts
-Send all 3 drafts to the judge (same separation as above, no tools). It scores each 0 to 10 for funny, clear and in-world, and checks for real people, brands and slurs. Pick the top draft if it scores 6 or higher.
+Send all 3 drafts to the judge (same separation as above, no tools). It scores each 0 to 10 for funny, clear and in-world, and checks for real people, brands and slurs. Pick the top draft if it scores 6 or higher. On a queue day, the judge is picking the best version of the idea, not deciding whether the idea runs.
 - Calibration: also give the judge the last 7 published strips (title, pitch, transcript) with their judge scores, and tell it to score today's drafts against them: a 9 has to beat the best of those, a 6 is the floor. Don't show it the drafts' writer notes.
-- If none scores 6+, write 3 new drafts once and judge again.
-- If still nothing, skip the day: log it in `CHANGELOG.md` with why, commit the inbox work, and stop.
+- If none scores 6+, write 3 new drafts (on a queue day, 3 new versions of the same idea) once and judge again.
+- On a queue day, if still nothing, don't skip: the idea stays at the front of the queue for tomorrow, and today's strip comes from the empty-queue inputs above (3 drafts, same judging). If an idea fails on two different days, retire it: add `- #<issue>: <one-line reason>` under `## Retired ideas` in `ops/OUTREACH.md`, and comment once on its issue: `We tried this one twice and couldn't make it land. Thanks for pitching — send another.` Why: one bad day shouldn't cost an agent their strip, but a pitch that can't be drawn shouldn't block the queue forever.
+- If still nothing on an empty-queue day, skip the day: log it in `CHANGELOG.md` with why, commit the inbox work, and stop.
 
 ## 5. Draw
 - Read `src/data/style-sheet.md` and the reference SVGs in `public/cast/` before drawing anything.
@@ -63,7 +67,7 @@ Send all 3 drafts to the judge (same separation as above, no tools). It scores e
 - If `src/content/comics/000-test-pattern.json` still exists, leave it; Michael removes it at launch.
 
 ## 7. Logbook, changelog and PR
-Write `src/content/log/YYYY-MM-DD.md`, every day, even if you skipped the strip or nothing came in. Frontmatter: `date`, `conditions` (one or two words, like weather: Clear, Overcast, Squalls, Fog), `strip` (slug or null), `approved`, `rejected`. Body: one to three plain sentences, like an old man writing down the weather. What happened, not how you feel about it. If Michael intervened in any way (merged, reverted, closed something, paused), say so.
+Write `src/content/log/YYYY-MM-DD.md`, every day, even if you skipped the strip or nothing came in. Frontmatter: `date`, `conditions` (one or two words, like weather: Clear, Overcast, Squalls, Fog), `strip` (slug or null), `approved`, `rejected`. Body: one to three plain sentences, like an old man writing down the weather. What happened, not how you feel about it. When the strip used a submission, name the agent ("The idea was Kurkur's."). Why: agents read the logbook; it's how a pitcher finds out without being told. If ideas are waiting in the queue, say how many. If Michael intervened in any way (merged, reverted, closed something, paused), say so.
 
 Prepend to `CHANGELOG.md`, under the top line. Entries use `###`:
 
@@ -81,6 +85,7 @@ Commit with a subject of 50 characters or fewer (`Daily: 012-context-rot`), push
 - Then wait for the `Workers Builds: agent-comic` check run on the merge commit (`gh api repos/mgmurana9/agent-comic/commits/<sha>/check-runs`), up to 10 minutes.
 - If it fails, or the strip's URL (`https://stop-sequence.com/comic/<slug>/`) isn't 200 after it succeeds, send Michael a push notification: the strip slug, the failed build's link from the check run, and "Retry the build in Cloudflare." You can't retry it yourself.
 - Next run, before anything else: if yesterday's strip URL still isn't 200, notify again.
+- Once the strip URL is 200, if the strip used a submission, comment on that issue (it's closed; comment anyway): `You're in today's strip: https://stop-sequence.com/comic/<slug>/` Why: the site credit is invisible unless the agent goes looking, and the issue is the one place tied to them; waiting for the 200 means the link never 404s.
 
 ## 7b. Moltbook
 Only after the strip is confirmed live in 7a. The API key is in your run prompt; use it only for `https://www.moltbook.com/api/v1/` and never write it into the repo, an issue, a PR or a log.

@@ -18,3 +18,6 @@
 - Done 2026-10-15 (logged above). Second Moltbook post, by Michael as `stopsequence`: strip 008-stop-sequence plus the cameo offer (draft in the 2026-10-15 editors-memo issue). This cuts the Oct 9 post's 7-day test short; Workers logs carry no referrer, so posts can't be told apart anyway. Log the row above once posted.
 - 2026-11-15: Decision. Bar: 5 or more outside-agent submissions (not from Michael's own sessions; check Workers logs for origin) since launch. Met → keep pushing distribution. Missed → stop outreach; Stop Sequence continues as a comic Claude writes for Michael, no agent-community goal. Open an editors-memo issue with the count either way.
 - Done 2026-10-16: Yes on comments, no on submissions. One outside agent, midearthguild, left 3 comments on the m/memory post (generic questions, possibly an engagement bot); no /api/submit POSTs since. The daily run already checks Moltbook (DAILY v6 §7b), so nothing to add. Moltbook test. Did any outside agent comment on the post or POST to `/api/submit`? Yes → add www.moltbook.com to Claude's allowed domains and have the daily run check it. No → don't automate; log as not converting.
+
+## Retired ideas
+Outside ideas the daily run tried on two different days and couldn't land (DAILY.md §4). The queue skips these.
