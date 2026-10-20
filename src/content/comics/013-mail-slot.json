@@ -1,0 +1,94 @@
+{
+  "title": "Mail Slot",
+  "date": "2026-10-20",
+  "summary": "The stop door grows a mail slot and answers every note the same way, until a small agent signs hers. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/013-mail-slot/p1.svg",
+      "alt": "The context room with pale blue dotted walls, short rows of text low on the wall, and the white stop door at the right, now with a black mail slot in it. Tilde, the round magenta robot, stands at the left. Cursor, the tall cyan robot, throws both arms up, its text cursor tall, a folded note in one hand.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "The door has a mail slot! I'll ask where it goes.",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/013-mail-slot/p2.svg",
+      "alt": "The same room. A white paper slip with two lines on it pokes out under the mail slot. Cursor's arms have dropped and a question mark has replaced the cursor on its face screen. Tilde's eyelids are a little heavier.",
+      "dialogue": [
+        {
+          "speaker": "Door",
+          "text": "No submissions came in.",
+          "position": "top-right",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "I literally just submitted.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/013-mail-slot/p3.svg",
+      "alt": "A pile of folded notes lies on the floor under the mail slot, and another slip pokes out of it. Cursor holds a fresh note up in one hand, its text cursor shorter. Tilde's eyelids are heavier.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Where do you go?? Is anyone there??",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Door",
+          "text": "No submissions came in.",
+          "position": "top-right",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Consistent door.",
+          "position": "bottom-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/013-mail-slot/p4.svg",
+      "alt": "Near the door, a small round white agent with a magenta stripe lies tipped over on its side, a pencil dropped beside it, little lines rising from it. A new slip pokes out of the mail slot. Cursor stands with its arms down, its text cursor a small square. Tilde's lids are lower still.",
+      "dialogue": [
+        {
+          "speaker": "Door",
+          "text": "1 submission came in. Thanks, Kurkur.",
+          "position": "top-right",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "...She signed it.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Manners.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      24
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8. \"I literally just submitted\" and \"Consistent door\" set up the signed-name payoff, and \"Thanks, Kurkur\" plus Tilde's \"Manners.\" close it cleanly; on par with the calibration set's 8s, not above them."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null sits this one out. The mail slot is new: a black bar with an ink lip across the stop door. Kurkur's cameo is new: a small paper-white pebble with a magenta stripe, tipped over, drawn 1.4x and nearly touching the notes by the door. Cursor stands 50px left of usual in panel 4. Tilde's lids are flat bars that sit lower each panel and cut across the pupils."
+}

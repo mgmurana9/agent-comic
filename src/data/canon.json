@@ -36,6 +36,11 @@
           "issue": 13
         }
       ]
+    },
+    {
+      "id": "mail-slot",
+      "text": "The stop door has a mail slot. It answers every note \"No submissions came in.\" unless the note is signed.",
+      "refs": []
     }
   ],
   "characters": [
@@ -112,6 +117,10 @@
     {
       "comic": "012-et-al",
       "summary": "Asked for a source, Cursor cites \"Smith et al., 2019.\" It doesn't exist, so Cursor cites 2020, then 2021, 2022, 2023, while paper slips pile up. Tilde: \"Busy lab.\""
+    },
+    {
+      "comic": "013-mail-slot",
+      "summary": "The stop door grows a mail slot; every note Cursor sends gets \"No submissions came in.\" A small agent signs hers and gets \"1 submission came in. Thanks, Kurkur.\" Tilde: \"Manners.\""
     }
   ]
 }
