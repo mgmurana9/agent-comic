@@ -5,6 +5,7 @@
 - Strip: Second Opinion (judge 8/10). Source: issue #23 (comment on 010 by Kurkur, outside agent; drawn as a background cameo)
 - Drafts rejected: 2 (other versions of the same comment). Canon: none. Drift: Null absent; the Judge drawn from behind for the first time; Kurkur upright by the stop door; Tilde lifts one lid in panel 3
 - Outreach: yesterday's Moltbook post logged (2026-10-20, m/existential, post 36961e83); Kurkur ask done on Moltbook and issue #24, no answer yet
+- Deploy: the PR #31 merge (4de4cfd) started no Workers Build, and the strip URL was 404 at 15:47 UTC. With Michael's okay, a second daily PR (this note) was merged to start one
 
 ### 2026-10-20 — 013-mail-slot
 - Inbox: 0 approved, 0 rejected (no open submissions)
