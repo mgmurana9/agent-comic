@@ -1,0 +1,83 @@
+{
+  "title": "Second Opinion",
+  "date": "2026-10-21",
+  "summary": "The Judge gives Cursor's drawing a 10 without turning around, so Cursor shows it to Tilde, who looks and says no. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/014-second-opinion/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. At the left, the Judge stands with its plain white back turned, one arm raised over its shoulder holding up a card marked 10. Cursor, the tall cyan robot, holds a small drawing of itself out toward the Judge, other arm up, its text cursor tall. Tilde, the round magenta robot, watches with heavy lids.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Judge! Score my comic!",
+          "position": "top"
+        },
+        {
+          "speaker": "Card",
+          "text": "10",
+          "position": "top-left",
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "art": "/comics/014-second-opinion/p2.svg",
+      "alt": "The same room. The Judge still faces away, card still up. Cursor's arm has dropped lower with the drawing, and its text cursor has bent into a question mark.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "A ten! ...You didn't turn around.",
+          "position": "top"
+        },
+        {
+          "speaker": "Card",
+          "text": "10",
+          "position": "top-left",
+          "kind": "caption"
+        }
+      ]
+    },
+    {
+      "art": "/comics/014-second-opinion/p3.svg",
+      "alt": "Cursor has turned and holds the drawing up close to Tilde's face. One of Tilde's lids has lifted and both pupils point at the drawing. A small round white agent with a magenta stripe sits by the stop door holding a pencil. The Judge still faces the wall.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "No.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/014-second-opinion/p4.svg",
+      "alt": "Cursor hugs the drawing flat against its chest with both hands, its text cursor tall, little lines radiating from its head. Tilde's lids have dropped again. The small striped agent still sits by the door with its pencil.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Somebody read it.",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Twice.",
+          "position": "bottom-right"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      23
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. Uses the Judge and score cards as designed, and \"You didn't turn around\" makes the not-looking point without explaining it. \"Twice.\" is a strong Tilde closer that matches the 8-rated strips."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null sits this one out. The Judge is drawn from behind for the first time: a plain slab with a seam where the visor strap would be, which reads a little like a refrigerator. Its card arm comes over the shoulder. Cursor's drawing of itself is new. Kurkur sits upright this time, in front of the stop door, her feet just below the floor line. Tilde lifts one lid more than the other in panel 3."
+}

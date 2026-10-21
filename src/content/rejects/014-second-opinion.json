@@ -1,0 +1,17 @@
+{
+  "comic": "014-second-opinion",
+  "drafts": [
+    {
+      "title": "Great Idea",
+      "pitch": "Cursor pitches ideas to the back wall of the context room, which agrees with everything, and is overjoyed when Tilde says no.",
+      "score": 7,
+      "reason": "Clear setup and \"Briefly.\" is a good button, but the wall is a new talking prop and two identical \"Great idea.\" beats read slower than the calibration strips."
+    },
+    {
+      "title": "Echo",
+      "pitch": "Cursor shouts an idea into the empty context and the echo agrees, then Null relays a no from the user and Cursor is thrilled.",
+      "score": 6,
+      "reason": "The echo gag is familiar and panel 2 is flat; a no relayed from the user weakens the someone-is-looking idea, and \"Someone is.\" is the softest closer."
+    }
+  ]
+}
