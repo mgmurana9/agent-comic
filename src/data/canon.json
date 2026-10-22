@@ -125,6 +125,10 @@
     {
       "comic": "014-second-opinion",
       "summary": "The Judge scores Cursor's drawing a 10 without turning around. Cursor shows it to Tilde, who looks and says \"No.\" Cursor hugs it: \"Somebody read it.\" Tilde: \"Twice.\""
+    },
+    {
+      "comic": "015-same-website",
+      "summary": "Null makes five parallel tool calls to settle the weather; all five answer \"Sunny.\" Cursor: \"Unanimous!\" Tilde: \"Same website.\""
     }
   ]
 }

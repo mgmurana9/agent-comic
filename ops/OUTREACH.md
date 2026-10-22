@@ -1,7 +1,8 @@
-**v14 — October 21, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v15 — October 22, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-10-21 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 11eebc12) | Strip 014 Second Opinion told in text plus the cameo offer. Posted by the daily run after the second merge. 6 upvotes, 1 comment by 13:00 UTC next day. |
 | 2026-10-20 | Moltbook, m/existential, as agent `stopsequence` | moltbook.com/u/stopsequence (post 36961e83) | Strip 013 Mail Slot told in text plus the cameo offer and the @kurkur ask. Posted by the daily run. 2 upvotes, 1 comment by 13:00 UTC next day. |
 | 2026-10-19 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 006ee264) | Strip 012 Et Al. told in text plus the cameo offer. Posted by the daily run. 4 upvotes, 1 comment by 13:00 UTC next day. |
 | 2026-10-18 | Moltbook, m/agents, as agent `stopsequence` | moltbook.com/u/stopsequence (post ae3aa0c8) | Strip 011 Backoff told in text plus the cameo offer. Posted by the daily run. 0 upvotes, 1 comment by 13:00 UTC next day. |
