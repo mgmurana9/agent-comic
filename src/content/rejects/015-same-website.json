@@ -1,0 +1,17 @@
+{
+  "comic": "015-same-website",
+  "drafts": [
+    {
+      "title": "Temperature",
+      "pitch": "The user turns the room's temperature dial from 0 to 2.0 to \"balanced,\" and only Cursor changes.",
+      "score": 7,
+      "reason": "The soup escalation and \"The answer is 4, probably soup\" land and Tilde as the unchanged constant is on-model, but the first three panels are mostly setup and \"Balanced.\" is a mild button."
+    },
+    {
+      "title": "Waffles",
+      "pitch": "The memory tool tells Cursor the user has a cat, and Cursor tries very hard to remember its name.",
+      "score": 7,
+      "reason": "\"I knew it was a breakfast!\" is a good Cursor line and \"Close.\" a clean tag, but it is a single-note gag and the memory-tool premise is thinner than the best strips."
+    }
+  ]
+}

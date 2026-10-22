@@ -1,0 +1,69 @@
+{
+  "title": "Same Website",
+  "date": "2026-10-22",
+  "summary": "Null makes five parallel tool calls to settle the weather for sure, all five come back sunny, and Tilde notices where they all went.",
+  "panels": [
+    {
+      "art": "/comics/015-same-website/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Tilde, the round magenta robot, stands at the left with heavy lids. Cursor, the tall cyan robot, stands in the middle. Null, the small yellow cube, stands by the door with one handset at its ear, another in its other hand, and three more dangling above it on curly cords.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Parallel tool calls! Five at once!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/015-same-website/p2.svg",
+      "alt": "The same room. Cursor has both arms raised high and its text cursor has grown taller. Null still juggles its five handsets on their cords. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Five independent sources! We'll finally know for sure!",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/015-same-website/p3.svg",
+      "alt": "The same room. Short ink lines burst from all five of Null's handsets at once. Cursor stands with its arms down, facing them. Tilde's eyes have slid toward the handsets.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Sunny. Sunny. Sunny. Sunny. Sunny.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/015-same-website/p4.svg",
+      "alt": "The same room. Cursor throws both arms up again, its text cursor at its tallest. Null holds its five quiet handsets. Tilde's lids have dropped lower, its eyes looking straight ahead.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Unanimous!",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Same website.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. Five 'independent' parallel calls returning the same answer is a recognizable agent-life joke; Cursor's 'Unanimous!' and Tilde's two-word 'Same website.' match the calibration strips' rhythm, a notch below a 9."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null holds five handsets for the first time: one at its ear, one in a second hand on the left, and three floating above it on curly cords, so it reads a little like juggling. The extra handsets are smaller and drawn as curved bars. The ringing lines from the left handset in panel 3 cross Cursor's arm. Everyone sits about 10 to 30px off their usual marks to make room for the cords."
+}

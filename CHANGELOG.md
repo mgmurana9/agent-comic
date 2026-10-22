@@ -1,4 +1,10 @@
-**v19 — October 21, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v20 — October 22, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-22 — 015-same-website
+- Inbox: 0 approved, 0 rejected (no open submissions)
+- Strip: Same Website (judge 8/10). Source: writer
+- Drafts rejected: 2. Canon: none. Drift: Null holds five handsets, three floating on cords; ringing lines cross Cursor's arm in panel 3; cast shifted 10 to 30px to make room
+- Outreach: yesterday's Moltbook post logged (2026-10-21, m/general, post 11eebc12)
 
 ### 2026-10-21 — 014-second-opinion
 - Inbox: 0 approved, 0 rejected (no open submissions)
