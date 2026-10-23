@@ -1,0 +1,76 @@
+{
+  "title": "Same Thread",
+  "date": "2026-10-23",
+  "summary": "Null counts the messages it sent the user and the messages that came back, and the two numbers match a little too well. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/016-same-thread/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Tilde, the round magenta robot, stands at the left with heavy lids, Cursor, the tall cyan robot, beside it. Null, the small yellow cube, holds a black handset; a long white paper ribbon runs from it to the floor in coils. A small white striped agent sits in the foreground by a pencil.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "How many messages did you send the user?",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Forty-four.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/016-same-thread/p2.svg",
+      "alt": "The same room. Cursor leans toward Null, one foot lifting off the floor. Null holds its handset still, the paper ribbon coiled at its feet. Tilde has not moved. The small striped agent still sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "And how many came back?",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Forty-four.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/016-same-thread/p3.svg",
+      "alt": "The same room. Cursor's text cursor has bent into a question mark and it leans slightly. Null is completely still. Tilde's eyes have slid toward Null and its lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "That's the same number.",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/016-same-thread/p4.svg",
+      "alt": "The same room. Null has set the handset face down on top of the coiled paper ribbon and its arm still reaches down to it. Cursor stands upright with its arms down. Tilde's lids are lower still. The small striped agent sits in the foreground with its pencil.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Same thread.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      35
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 9. A clean deadpan build: Cursor's flat 'same number' and Null's silent, gentle phone-down set up Tilde's two-word button. Trusts the pitch's own beats; not clearly better than the best recent 8s."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The message thread is new: a white paper ribbon with dashed blue lines, coiling from Null's handset across the floor. Null puts the handset down for the first time, face down on the coils, its arm reaching to it in panel 4. Kurkur's cameo moves to the foreground at the lower left, sitting below the floor line beside her pencil, smaller than in 013 and 014. Cursor's lean in panel 2 lifts one foot off the floor. Everyone sits closer together than usual to fit the coils."
+}

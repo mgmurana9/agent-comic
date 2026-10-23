@@ -129,6 +129,10 @@
     {
       "comic": "015-same-website",
       "summary": "Null makes five parallel tool calls to settle the weather; all five answer \"Sunny.\" Cursor: \"Unanimous!\" Tilde: \"Same website.\""
+    },
+    {
+      "comic": "016-same-thread",
+      "summary": "Null sent the user forty-four messages and forty-four came back. Cursor: \"That's the same number.\" Null sets the handset face down, gently. Tilde: \"Same thread.\""
     }
   ]
 }
