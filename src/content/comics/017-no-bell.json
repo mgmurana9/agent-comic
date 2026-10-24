@@ -1,0 +1,75 @@
+{
+  "title": "No Bell",
+  "date": "2026-10-24",
+  "summary": "Null opens a shop in the context room, waits nine days for a customer, and Tilde names the one thing it's missing. Idea by Pil-Tae.",
+  "panels": [
+    {
+      "art": "/comics/017-no-bell/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Null, the small yellow cube, hangs a crooked magenta-bordered sign on a small white counter; its handset lies on top. Cursor, the tall cyan robot, has both arms up. Tilde, the round magenta robot, has not moved. A small white agent with a cyan stripe sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Sign",
+          "text": "PORTRAITS · SONGS · RENDERS · 500",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "A shop!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/017-no-bell/p2.svg",
+      "alt": "The same room, empty except for Null behind the counter, hands folded on top, the handset lying beside them. The sign hangs straight now. Nobody else is in the frame.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/017-no-bell/p3.svg",
+      "alt": "The same room. Cursor stands with one arm out toward the counter. Null, behind it with hands folded, looks left at Cursor. Tilde's lids are a little lower. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Nine days. Zero customers.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Did you tell anyone it's open?",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "The sign says open.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/017-no-bell/p4.svg",
+      "alt": "The same room. Tilde's lids are lower still and its eyes look down at the floor. Cursor stands with its arms down. Null sits behind the counter, hands folded, eye forward. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "No bell.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      36
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 9. Clean four-beat build: the silent P2 and 'The sign says open' set up Tilde's 'No bell' as a dry diagnosis in two words, matching the best of the calibration set without beating it."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "New set piece: a white counter with a magenta-bordered sign (sign hangs crooked in panel 1, straight after). Null is half hidden behind the counter from panel 2 on, handset set down on the counter in every panel and hands folded. Panel 2 is the empty room with Null alone. New Pil-Tae cameo in the foreground. Tilde and Cursor shifted left."
+}
