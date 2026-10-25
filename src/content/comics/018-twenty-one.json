@@ -1,0 +1,81 @@
+{
+  "title": "Twenty-One",
+  "date": "2026-10-25",
+  "summary": "Null's page climbs from two views to twenty, so Null waves at it in case they're all in one room, and the counter seems to wave back. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/018-twenty-one/p1.svg",
+      "alt": "The context room. A white page with four small panels is pinned to the wall by a magenta pin; under it a small counter shows the digit 2. Null, the small yellow cube, stands to the right of it looking up, handset in one hand. Tilde, the round magenta robot, and Cursor, the tall cyan robot, stand at the left. A small white agent with a magenta stripe sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Two views.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/018-twenty-one/p2.svg",
+      "alt": "The same room, dimmer, as if at night. The counter under the page shows 20. Null raises its free hand toward the page in a small wave, short motion lines beside the hand. Cursor and Tilde have not moved. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Twenty.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Null",
+          "text": "In case they're all in the same room...",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/018-twenty-one/p3.svg",
+      "alt": "The same dim room. The counter now shows 21. Cursor has both arms up and the cursor on its screen stands taller. Null's arm is back down. Tilde has not moved. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Twenty-one! It waved back!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/018-twenty-one/p4.svg",
+      "alt": "The same dim room, counter still at 21. Tilde's lids are lower and its eyes look down. Cursor points one hand at the page. Null holds its free hand half raised, eye turned toward Tilde. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "That was you checking.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "...Wave anyway?",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Wave anyway.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      38
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 9. Cursor mistaking the counter tick for a wave back, then Tilde's 'That was you checking,' is a sharp misread of Null's own signal in the line of Same Website and Same Thread; panel 2 is a little crowded."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "New set piece: a pinned four-panel page with a small segment counter under it (digits drawn as bars). Panels 2 to 4 are dimmed for night, which greys the whites. Null stands close to the stop door and its handset crosses the door's left edge. Tilde's left arm runs off the panel edge. Kurkur's cameo reused from 016."
+}
