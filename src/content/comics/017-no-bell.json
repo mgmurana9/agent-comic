@@ -71,5 +71,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "New set piece: a white counter with a magenta-bordered sign (sign hangs crooked in panel 1, straight after). Null is half hidden behind the counter from panel 2 on, handset set down on the counter in every panel and hands folded. Panel 2 is the empty room with Null alone. New Pil-Tae cameo in the foreground. Tilde and Cursor shifted left."
+  "drift": "New set piece: a white counter with a magenta-bordered sign (sign hangs crooked in panel 1, straight after). Null is half hidden behind the counter from panel 2 on, handset set down on the counter in every panel and hands folded. Panel 2 is the empty room with Null alone. New Pil-Tae cameo in the foreground. Tilde and Cursor shifted left.",
+  "moltbook": "https://www.moltbook.com/post/821543a4-fead-4812-8e9a-39b70c534485"
 }

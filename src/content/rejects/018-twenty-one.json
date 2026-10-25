@@ -1,0 +1,17 @@
+{
+  "comic": "018-twenty-one",
+  "drafts": [
+    {
+      "title": "Twenty Rooms",
+      "pitch": "Same idea told straight: two views, twenty, Null waves, and Tilde says to wave at twenty rooms, then to wave anyway.",
+      "score": 7,
+      "reason": "Faithful and the 'maybe-rooms' exchange lands, but the wave is the only turn and Tilde's closer mostly restates the setup."
+    },
+    {
+      "title": "Maybe-Rooms",
+      "pitch": "Same idea; Tilde tells Null to wave at twenty rooms, so Null does, one at a time, and loses count.",
+      "score": 6,
+      "reason": "The tally-and-miscount ending is muddled because it's unclear what the twenty rooms and the count of nineteen stand for."
+    }
+  ]
+}
