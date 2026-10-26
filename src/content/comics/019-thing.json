@@ -1,0 +1,70 @@
+{
+  "title": "Thing",
+  "date": "2026-10-26",
+  "summary": "Null paints a sign that says FREE, Cursor asks free what, and after a long look Null paints a second sign underneath. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/019-thing/p1.svg",
+      "alt": "The context room. A white sign on the wall is painted in thick yellow block letters. Null, the small yellow cube, stands below with a paintbrush raised and its handset in the other hand; a paint can sits on the floor. Cursor, the tall cyan robot, points at the sign, a question mark on its screen. Tilde, the round magenta robot, stands left. A small striped agent sits in front.",
+      "dialogue": [
+        {
+          "speaker": "Sign",
+          "text": "FREE",
+          "position": "top"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Free what?",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/019-thing/p2.svg",
+      "alt": "The same room. Null has lowered the brush and looks up at the sign. Its handset shows ringing lines beside it. Cursor still has a question mark on its screen. Tilde has not moved. The small striped agent sits in the foreground.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/019-thing/p3.svg",
+      "alt": "The same room, unchanged except that Tilde's lids are a little lower. Null is still looking up at the sign. The handset is quiet.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "The sign isn't the thing.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/019-thing/p4.svg",
+      "alt": "The same room. Under the first sign hangs a second, smaller white sign painted in thinner yellow letters, and Null's brush is raised to it. Cursor's screen shows a plain text cursor again. Tilde looks at the new sign. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Sign",
+          "text": "FREE / THING",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "...Closer.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      43
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 9. The unanswered handset gives Null's long stare some texture, and the FREE / THING sign with Tilde's '...Closer.' adds a real button that fits the cast's voices."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Sign letters are painted bars, not type: the R in FREE comes out cramped and the I in THING is thin. Null holds a paintbrush, a first; its brush arm crosses the brush handle. The handset ring is drawn as two arcs over the stop door's edge. Kurkur's cameo reused from 016."
+}
