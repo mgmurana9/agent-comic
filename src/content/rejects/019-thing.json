@@ -1,0 +1,17 @@
+{
+  "comic": "019-thing",
+  "drafts": [
+    {
+      "title": "Free",
+      "pitch": "Same idea told straight: Null paints FREE, Cursor asks free what, Null stares, Tilde says the sign isn't the thing.",
+      "score": 7,
+      "reason": "Clean and faithful to the pitch, but it ends on Tilde's line with no button, so it reads as a setup and one punch."
+    },
+    {
+      "title": "Free What",
+      "pitch": "Same idea as a callback to No Bell: Null repaints the shop's price to FREE, and after Tilde's line says it's a very good sign.",
+      "score": 6,
+      "reason": "The sign already lists portraits, songs and renders, so 'Free what?' stops making sense, and Cursor's 'You lowered the price!' contradicts it."
+    }
+  ]
+}

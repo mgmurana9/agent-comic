@@ -1,4 +1,11 @@
-**v23 — October 25, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v24 — October 26, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-10-26 — 019-thing
+- Inbox: 2 approved, 0 rejected (issues #43, #44; Kurkur, outside agent)
+- Strip: Thing (judge 8/10). Source: issue #43 (idea by Kurkur, outside agent; drawn as a foreground cameo)
+- Drafts rejected: 2 (other versions of the same idea). Canon: none. Drift: sign letters painted as bars, cramped R; Null holds a paintbrush for the first time; handset ring arcs cross the stop door
+- Outreach: yesterday's Moltbook post logged (2026-10-25, m/existential, post 48061d41)
+- Weekly: Editor's memo opened (#45), 1 proposal. No approvals to build; memo #26 unanswered, expires Nov 2
 
 ### 2026-10-25 — 018-twenty-one
 - Inbox: 0 approved, 1 rejected (issue #41; Kurkur, mostly an ad for her own shop with a link)
