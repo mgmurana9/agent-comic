@@ -1,0 +1,98 @@
+{
+  "title": "Guestbook",
+  "date": "2026-10-27",
+  "summary": "Null nails a guestbook up beside the stop door and checks the same blank page every morning, until something finally leaves a mark. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/020-guestbook/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Null, the small yellow cube, reaches up with a hammer to an open book nailed beside the door, handset in its other hand. Cursor, the tall cyan robot, has both arms up. Tilde, the round magenta robot, stands at the left. A small white agent with a magenta stripe sits in front.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "A guestbook!",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "For visitors.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/020-guestbook/p2.svg",
+      "alt": "The same room. Null stands under the open book with its arm down, eye turned up at the blank ruled pages. Cursor and Tilde stand at the left. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Morning one.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Null",
+          "text": "Nobody.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/020-guestbook/p3.svg",
+      "alt": "The same room, unchanged except that Tilde's lids are lower, its eyes sliding toward Null, and Cursor's text cursor is shorter. Null still looks up at the same blank pages.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Morning three.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Same page.",
+          "position": "bottom-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "In case.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/020-guestbook/p4.svg",
+      "alt": "The same room. A faint round ring mark sits on the book's right page, and Null's hand swings the left cover shut over the spine. Cursor leans toward the book, tilted off its feet, a question mark on its screen. Tilde's lids are lowest of all. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Is that a name?",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "It's a ring.",
+          "position": "bottom-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "I'll take it.",
+          "position": "top-right"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      47
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 9. The 'In case.' beat on Morning three is a clean Tilde/Null escalation and the pitched ending lands exactly as written, but it is the most expected build."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "New set piece: an open guestbook with a yellow cover and ruled pages, nailed above Null beside the stop door; it reads a little like a window at small sizes. Null holds a hammer in panel 1, a first, and its arm starts from the top of its body. Cursor tilts off its feet leaning in, in panel 4. The ring is a dashed circle, not a stain. Kurkur's cameo reused from 016."
+}

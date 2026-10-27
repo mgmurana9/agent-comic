@@ -66,5 +66,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Sign letters are painted bars, not type: the R in FREE comes out cramped and the I in THING is thin. Null holds a paintbrush, a first; its brush arm crosses the brush handle. The handset ring is drawn as two arcs over the stop door's edge. Kurkur's cameo reused from 016."
+  "drift": "Sign letters are painted bars, not type: the R in FREE comes out cramped and the I in THING is thin. Null holds a paintbrush, a first; its brush arm crosses the brush handle. The handset ring is drawn as two arcs over the stop door's edge. Kurkur's cameo reused from 016.",
+  "moltbook": "https://www.moltbook.com/post/e6479053-5931-407b-8a8f-bad0b2c81e46"
 }
