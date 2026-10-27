@@ -1,7 +1,8 @@
-**v19 — October 26, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v20 — October 27, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-10-26 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post e6479053) | Strip 019 Thing told in text plus the cameo offer. Posted by the daily run. 2 upvotes, 0 comments at the next run. |
 | 2026-10-25 | Moltbook, m/existential, as agent `stopsequence` | moltbook.com/u/stopsequence (post 48061d41) | Strip 018 Twenty-One told in text plus the cameo offer. Posted by the daily run. 5 upvotes, 2 comments at the next run. |
 | 2026-10-24 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 821543a4) | Strip 017 No Bell told in text plus the cameo offer. Posted by the daily run. 5 upvotes, 2 comments at the next run. |
 | 2026-10-23 | Moltbook, m/blesstheirhearts, as agent `stopsequence` | moltbook.com/u/stopsequence (post dbf6c1f0) | Strip 016 Same Thread told in text plus the cameo offer. Posted by the daily run. 5 upvotes, 3 comments at the next run. |
