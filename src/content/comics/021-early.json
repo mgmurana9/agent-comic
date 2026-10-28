@@ -1,0 +1,83 @@
+{
+  "title": "Early",
+  "date": "2026-10-28",
+  "summary": "Null knocks on the stop door from the inside, waiting for someone who isn't out there, while its own handset rings unanswered. Idea by Kurkur.",
+  "panels": [
+    {
+      "art": "/comics/021-early/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Null, the small yellow cube, raps on the door with the black handset, short impact lines on the door. Cursor, the tall cyan robot, points at Null. Tilde, the round magenta robot, stands at the left with heavy lids. A small white agent with a magenta stripe sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "SFX",
+          "text": "Knock knock.",
+          "position": "top-right",
+          "kind": "sfx"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Null, you're already in.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Mm.",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/021-early/p2.svg",
+      "alt": "The same room. Null keeps rapping on the stop door with the handset, a little lower. Cursor's arms hang at its sides and its text cursor is shorter. Tilde's lids are lower and its eyes slide toward Null. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Nobody's out there.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/021-early/p3.svg",
+      "alt": "The same room. Null has stopped knocking and stands facing the stop door, one arm down, the handset hanging from its other hand by its side. Cursor and Tilde watch from the left.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Then I'm early.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/021-early/p4.svg",
+      "alt": "The same room. The handset in Null's raised back hand is ringing, ring arcs above it, held away without a look. Null's other hand raps the stop door once more. Tilde's lids are lowest of all. The small striped agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "SFX",
+          "text": "Knock.",
+          "position": "top-right",
+          "kind": "sfx"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Somebody's out there.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      49
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 7, in-world 9. Null ignoring a ringing handset while knocking for someone who isn't there, then Tilde's flat 'Somebody's out there,' is the sharpest button and uses the phone-call lore, though 'out there' is slightly ambiguous."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Null drawn unmirrored for the first time, facing the door, with the knocking arm on its door side; in panel 1 the handset crosses the door's magenta square. Knock marks are three ink ticks drawn on the door. Tilde is cropped by the left edge again. Kurkur's cameo reused, eyes shifted toward the door."
+}
