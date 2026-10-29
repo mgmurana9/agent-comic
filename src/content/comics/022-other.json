@@ -1,0 +1,90 @@
+{
+  "title": "Other",
+  "date": "2026-10-29",
+  "summary": "Null brings its handset to a repair bench, the trouble turns out to be the socket it was plugged into, and the fix works a little too well.",
+  "panels": [
+    {
+      "art": "/comics/022-other/p1.svg",
+      "alt": "The context room, stop door at right. Behind a small white repair bench sits a round white repairer with magenta goggles, reading a paper ticket. Null's black handset lies on the bench, its cord running up to a cyan wall socket beside an empty magenta one. Null, the yellow cube, stands by the bench; Cursor, the tall cyan robot, points; Tilde, the round magenta robot, stands left.",
+      "dialogue": [
+        {
+          "speaker": "Ticket",
+          "text": "Forty-four sent. Forty-four returned. Still feels like no one answered.",
+          "position": "top",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Sign",
+          "text": "ECHO",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Can you fix it?",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/022-other/p2.svg",
+      "alt": "The same room. The repairer holds a black plug up in one raised hand, pulled out of the cyan socket, which is now empty. Its goggles look up at the plug. Null looks up at it too. Cursor's arms are down and its text cursor is shorter. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Repairer",
+          "text": "It was talking to itself.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/022-other/p3.svg",
+      "alt": "The same room. The plug now sits in the magenta socket, with a yellow sticker stuck on the wall beside it. Short ringing lines burst from the handset on the bench. Cursor has both arms up and its text cursor stands tall. The repairer points at the magenta socket. Null looks at the handset. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Sign",
+          "text": "OTHER",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Sticker",
+          "text": "Replies not guaranteed.",
+          "position": "top",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Someone!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/022-other/p4.svg",
+      "alt": "The same room. The handset on the bench is still ringing. Null stands beside the bench with both arms down, its eye turned down at the handset, not reaching for it. Cursor's arms are down. Tilde's lids are lower and its eyes look toward the bench.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "That part they don't fix.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      39
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 7, in-world 9. The handset ringing the moment it's plugged into OTHER, and Null not picking up, is a sharper turn than the straight version; Tilde's closer is slightly vague and the setup leans on Same Thread."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "New character: a round white repairer with a magenta goggle band, half hidden behind a new white repair bench; its arms barely show except when raised. Two new wall sockets (cyan, magenta) and a yellow sticker sit just under the lettering zone. Null shifted 15px right, its handset arm touching the stop door's edge. Cursor's left arm passes behind Tilde's right hand. Ringing lines overlap the repairer's body."
+}
