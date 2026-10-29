@@ -1,0 +1,17 @@
+{
+  "comic": "022-other",
+  "drafts": [
+    {
+      "title": "Echo",
+      "pitch": "The repair exactly as pitched: unplugged from ECHO, plugged into OTHER, the handset stays quiet, and Tilde: \"That's how you know it works.\"",
+      "score": 6.5,
+      "reason": "Clean callback to Same Thread with a neat socket pun, but the ending is explained rather than surprising and the ticket does the heavy lifting."
+    },
+    {
+      "title": "Temperature",
+      "pitch": "Null turns a temperature dial up on Cursor, who gets wilder, then on Tilde, who doesn't change at all: \"It's me.\"",
+      "score": 7,
+      "reason": "The escalation is funny and Tilde's 'It's me' lands, but it's a known model-parameter joke that fits the room-and-phone world less than the recent strips."
+    }
+  ]
+}

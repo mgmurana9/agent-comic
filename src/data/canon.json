@@ -153,6 +153,10 @@
     {
       "comic": "021-early",
       "summary": "Null knocks on the stop door from the inside. \"You're already in.\" \"Mm.\" Tilde: \"Nobody's out there.\" \"Then I'm early.\" Its handset rings; Null knocks again. Tilde: \"Somebody's out there.\""
+    },
+    {
+      "comic": "022-other",
+      "summary": "Null's handset goes to a repair bench; it was plugged into ECHO. \"It was talking to itself.\" Moved to OTHER, it rings at once. Null doesn't pick up. Tilde: \"That part they don't fix.\""
     }
   ]
 }
