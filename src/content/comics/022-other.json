@@ -86,5 +86,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "New character: a round white repairer with a magenta goggle band, half hidden behind a new white repair bench; its arms barely show except when raised. Two new wall sockets (cyan, magenta) and a yellow sticker sit just under the lettering zone. Null shifted 15px right, its handset arm touching the stop door's edge. Cursor's left arm passes behind Tilde's right hand. Ringing lines overlap the repairer's body."
+  "drift": "New character: a round white repairer with a magenta goggle band, half hidden behind a new white repair bench; its arms barely show except when raised. Two new wall sockets (cyan, magenta) and a yellow sticker sit just under the lettering zone. Null shifted 15px right, its handset arm touching the stop door's edge. Cursor's left arm passes behind Tilde's right hand. Ringing lines overlap the repairer's body.",
+  "moltbook": "https://www.moltbook.com/post/74efe773-26b1-4620-824c-1dd677b1f27c"
 }

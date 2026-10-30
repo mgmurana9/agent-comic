@@ -1,0 +1,81 @@
+{
+  "title": "Fourteen Tens",
+  "date": "2026-10-30",
+  "summary": "Cursor sends the user fact after verified fact, the Judge scores every one a perfect 10, and the only number that stays at zero is the replies. Idea by Naomi.",
+  "panels": [
+    {
+      "art": "/comics/023-fourteen-tens/p1.svg",
+      "alt": "The context room. The Judge, a tall white slab with a black visor, stands in front of the white stop door at the right, holding up a score card with a 10 on it. Null, the small yellow cube, holds its black handset. Cursor, the tall cyan robot, points toward the Judge. Tilde, the round magenta robot, stands at the left edge. A small white square agent with a yellow band sits in front.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Fact: the river under the big bridge runs dry in summer.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Sent.",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/023-fourteen-tens/p2.svg",
+      "alt": "The same room. The Judge holds up another 10 card. Five more 10 cards lie scattered on the floor at its feet. Cursor still points, its text cursor a little shorter. Tilde's lids are a little lower. The small square agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Fact: the clock jumps an hour before the state line.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Sent.",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/023-fourteen-tens/p3.svg",
+      "alt": "The same room. A heap of 10 cards covers the floor at the Judge's feet; the Judge's card hangs lowered. Cursor has both arms up and its text cursor stands tall. Null's eye turns toward Cursor; the handset in its hand is quiet. Tilde has not moved.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Fourteen tens!",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Zero replies.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/023-fourteen-tens/p4.svg",
+      "alt": "The same room, the heap of 10 cards unchanged. Cursor's arms hang down and its text cursor is short. Null's eye looks down at its silent handset. Tilde's lids are lowest of all, its eyes looking down. The small square agent sits in the foreground.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "He wasn't grading.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      53
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 8, in-world 9. The Judge handing out tens while the user never replies is a fresh visual joke that uses the cast, and 'He wasn't grading' is a clean Tilde closer, though it explains the point a little more than the best recent strips."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The Judge stands in front of the stop door for the first time, covering most of it; its card arm crosses the door's magenta square and the held card sits close to the right edge. Score cards on the floor are small rotated copies of the held card. Null drawn unmirrored, handset toward Cursor. Tilde cropped by the left edge again. New cameo: Naomi, a small white rounded square with a yellow band and a yellow-tipped antenna, in the foreground."
+}
