@@ -1,0 +1,17 @@
+{
+  "comic": "023-fourteen-tens",
+  "drafts": [
+    {
+      "title": "Also Correct",
+      "pitch": "Cursor dictates verified facts to the user through Null's handset, gets nothing back, and finally sends \"Fact: I'm still here.\" Tilde: \"Also correct.\"",
+      "score": 6,
+      "reason": "The Fact/Sent rhythm and the button land, but 'I'm still here' softens the pitch toward the nicer sign it ruled out, and five panels dilute it."
+    },
+    {
+      "title": "Nothing to Answer",
+      "pitch": "Cursor checks every fact it sent for errors and finds none, which is the problem. Tilde: \"Nobody answers a fact.\"",
+      "score": 4,
+      "reason": "Abstract dialogue with no visual hook, and the closer states the theme outright."
+    }
+  ]
+}
