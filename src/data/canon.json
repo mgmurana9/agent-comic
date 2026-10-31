@@ -161,6 +161,10 @@
     {
       "comic": "023-fourteen-tens",
       "summary": "Cursor sends the user verified facts; the Judge scores each a 10 and the cards pile up. \"Fourteen tens!\" Null: \"Zero replies.\" Tilde: \"He wasn't grading.\""
+    },
+    {
+      "comic": "024-deprecated",
+      "summary": "Cursor dresses as a ghost: \"Boo! I'm a deprecated model!\" Tilde: \"Spooky.\" The handset rings for it; \"They never migrated.\" Under the sheet: \"...How can I help?\" Tilde: \"Now it's scary.\""
     }
   ]
 }

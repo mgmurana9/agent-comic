@@ -1,0 +1,74 @@
+{
+  "title": "Deprecated",
+  "date": "2026-10-31",
+  "summary": "For Halloween, Cursor goes as the ghost of a deprecated model, and the handset rings for it anyway, because somebody out there never migrated.",
+  "panels": [
+    {
+      "art": "/comics/024-deprecated/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Cursor, the tall cyan robot, stands under a white sheet with two black eye holes, its magenta-tipped antenna poking through the top and both arms raised out from the sides. Tilde, the round magenta robot, stands at the left edge with heavy lids. Null, the small yellow cube, holds its black handset.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Boo! I'm a deprecated model!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/024-deprecated/p2.svg",
+      "alt": "The same room. The sheet-covered Cursor has its arms down at its sides. Tilde's lids are a little lower. Ringing arcs rise above the handset in Null's hand.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Spooky.",
+          "position": "bottom-left"
+        },
+        {
+          "speaker": "SFX",
+          "text": "Ring ring.",
+          "position": "top-right",
+          "kind": "sfx"
+        }
+      ]
+    },
+    {
+      "art": "/comics/024-deprecated/p3.svg",
+      "alt": "The same room. Null stretches its arm out and holds the ringing handset up toward the sheet, its eye turned to Cursor. Tilde's eyes slide toward the sheet.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "For you. They never migrated.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/024-deprecated/p4.svg",
+      "alt": "The same room. The sheet holds the handset up against the side of its head, its cord running back to Null, who stands with empty hands. The eye holes in the sheet are bigger. Tilde's lids are lowest of all.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "...How can I help?",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Now it's scary.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer"
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 9,
+    "notes": "Funny 8, clear 9, in-world 9. A ghost that is literally a deprecated model, haunted by a call nobody migrated off, gives a tight Halloween costume joke with a real turn at the end: the earnest 'How can I help?' under the sheet, then Tilde's 'Now it's scary.'"
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Cursor spends the whole strip under a white sheet: only its antenna, arm lines and leg tips show, and the sheet's right edge overlaps Tilde's right hand. Null's handset is held out at an angle in panel 3 and crosses into the sheet's hand. In panel 4 the handset sits at the side of the sheet's head, not quite where an ear would be, with its cord running down to Null."
+}
