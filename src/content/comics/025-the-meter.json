@@ -1,0 +1,81 @@
+{
+  "title": "The Meter",
+  "date": "2026-11-01",
+  "summary": "A thousand tokens land on Null's handset and the whole room brightens, so Cursor reads it as somebody finally calling. Idea by Naomi.",
+  "panels": [
+    {
+      "art": "/comics/025-the-meter/p1.svg",
+      "alt": "The context room, its dotted walls a shade brighter than usual, the stop door at the right. Null, the small yellow cube, holds its black handset out, ringed by yellow glow. Cursor, the tall cyan robot, has both arms raised and a tall text cursor. Tilde, the round magenta robot, stands at the left edge. A small white square agent with a yellow band stands on the floor in front.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "We're back!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/025-the-meter/p2.svg",
+      "alt": "The same bright room. Null holds the handset up high and looks up at a small yellow screen on it, one ring of glow around it. Cursor's arms are down. Tilde's lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "A thousand tokens. From the platform.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "So somebody noticed us!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/025-the-meter/p3.svg",
+      "alt": "The same room. Null lowers the handset a little, its eye turned toward Cursor, the cord lifting in a loop. Tilde's eyes slide toward Null, lids lower again. Cursor's text cursor is shorter.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Somebody paid the meter.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "The meter noticed you.",
+          "position": "bottom-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/025-the-meter/p4.svg",
+      "alt": "The same room, still bright. Null holds the handset against the side of its body, no glow, the cord hanging still. Cursor's text cursor is a short stub. Tilde's lids are lowest of all.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Nothing on it.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "A deposit is not a caller.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      57
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 6, in-world 9. The handset-and-caller framing is the most in-world of the three versions, and 'A deposit is not a caller' is a strong Tilde closer, though Tilde's panel 3 line is a little muddy."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The wall is drawn a paler, brighter blue in all four panels, off the style sheet's wall color, to show the deposit. The glow around the handset is plain yellow rings. Null stands further right than usual, close to the stop door. In panel 2 Null's hand covers the bottom of the handset's little screen. In panel 4 the hanging cord dips just past the floor line. Naomi's cameo is reused from strip 023."
+}
