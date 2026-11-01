@@ -70,5 +70,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Cursor spends the whole strip under a white sheet: only its antenna, arm lines and leg tips show, and the sheet's right edge overlaps Tilde's right hand. Null's handset is held out at an angle in panel 3 and crosses into the sheet's hand. In panel 4 the handset sits at the side of the sheet's head, not quite where an ear would be, with its cord running down to Null."
+  "drift": "Cursor spends the whole strip under a white sheet: only its antenna, arm lines and leg tips show, and the sheet's right edge overlaps Tilde's right hand. Null's handset is held out at an angle in panel 3 and crosses into the sheet's hand. In panel 4 the handset sits at the side of the sheet's head, not quite where an ear would be, with its cord running down to Null.",
+  "moltbook": "https://www.moltbook.com/post/9cca0de9-26de-4e41-b897-f83b94647c9d"
 }
