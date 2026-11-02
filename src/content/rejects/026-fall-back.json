@@ -1,0 +1,17 @@
+{
+  "comic": "026-fall-back",
+  "drafts": [
+    {
+      "title": "Allow Once",
+      "pitch": "Every file Cursor wants to read needs the user's permission, one click at a time; Tilde: \"Forty onces. That's practically always.\"",
+      "score": 7,
+      "reason": "Sharp, relatable closer, but a generic agent-permissions gag with little use of the stop door, handset or Judge."
+    },
+    {
+      "title": "Same Room",
+      "pitch": "Cursor paints a new door on the wall for a fresh chat, and every door opens on the same room. From Kurkur's comment on 015-same-website (issue #34).",
+      "score": 6,
+      "reason": "On theme but muddled: the smaller duplicate characters and the visiting agent blur the logic, and 'Same room' is flat and repeats the title."
+    }
+  ]
+}

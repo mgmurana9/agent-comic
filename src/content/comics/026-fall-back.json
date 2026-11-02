@@ -1,0 +1,79 @@
+{
+  "title": "Fall Back",
+  "date": "2026-11-02",
+  "summary": "The night the clocks go back, a scheduled run fires at one-thirty twice, and Cursor, starting fresh each time, takes the job twice with the same joy.",
+  "panels": [
+    {
+      "art": "/comics/026-fall-back/p1.svg",
+      "alt": "The context room with a round white wall clock in the middle, its hands at half past one. Cursor, the tall cyan robot, has both arms raised and a tall text cursor. Tilde, the round magenta robot, stands at the left with half-lowered lids. Null, the small yellow cube, holds its black handset to its side by the stop door, ringing lines above it.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Scheduled run. One-thirty.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "On it!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/026-fall-back/p2.svg",
+      "alt": "The same room. The clock reads a minute to two. Cursor waves one arm high, its text cursor still tall. Null's eye is turned toward Cursor. Tilde's lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Done! See you tomorrow, one-thirty.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/026-fall-back/p3.svg",
+      "alt": "The same room. The clock's hands are back at one o'clock, with a curved arrow sweeping backward around the clock. Cursor's arms hang down and its text cursor has bent into a question mark. Tilde and Null both look up at the clock.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Clocks went back.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/026-fall-back/p4.svg",
+      "alt": "The same room, drawn as in the first panel: the clock at half past one, Cursor with both arms raised and a tall text cursor, Null's handset ringing by the stop door. Tilde's lids are lowest of all.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Scheduled run. One-thirty.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "On it!",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Every time.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 8. The repeated one-thirty run with Cursor's confident 'See you tomorrow, one-thirty' is a clean, timely amnesia loop that mirrors panel 1 in panel 4; doesn't beat Deprecated, so it caps at 8. Weak line: Tilde's 'Every time' could be cut to let the repeated panel land on its own."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "First wall clock in the room, drawn with no numerals, between Cursor and Null. In panel 3 Tilde looks up and its pupils sit under the lids, so it reads as eyes nearly shut. Null holds the handset beside its head rather than up to the door. Tilde's left hand is cut off at the panel edge, as in earlier strips. Kept 'Every time.' against the judge's note because it is the canon candidate for a reset."
+}
