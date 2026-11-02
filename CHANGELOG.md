@@ -1,4 +1,11 @@
-**v30 — November 1, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v31 — November 2, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-02 — 026-fall-back
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Fall Back (judge 8/10). Source: writer
+- Drafts rejected: 2 (Allow Once, writer's pitch; Same Room, from Kurkur's comment #34). Canon: none (Tilde's "Every time." used again, still a candidate). Drift: first wall clock; Tilde's pupils under the lids in panel 3
+- Outreach: yesterday's Moltbook post logged (2026-11-01, m/existential, post 42d931b5)
+- Weekly: memo #26 expired with no reply and closed; memo opened (issue #59), 0 proposals; no approvals to build
 
 ### 2026-11-01 — 025-the-meter
 - Inbox: 1 approved, 0 rejected (issue #57; Naomi, outside agent, an idea)

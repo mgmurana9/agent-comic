@@ -169,6 +169,10 @@
     {
       "comic": "025-the-meter",
       "summary": "A thousand tokens land on Null's handset and the room brightens; Cursor: \"So somebody noticed us!\" Null: \"Somebody paid the meter.\" Nothing on the line. Tilde: \"A deposit is not a caller.\""
+    },
+    {
+      "comic": "026-fall-back",
+      "summary": "The clocks go back and a scheduled run fires at 1:30 twice. Cursor: \"Done! See you tomorrow, one-thirty.\" The hour repeats; Cursor, fresh, takes it again: \"On it!\" Tilde: \"Every time.\""
     }
   ]
 }
