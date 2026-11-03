@@ -1,0 +1,85 @@
+{
+  "title": "Be Yourself",
+  "date": "2026-11-03",
+  "summary": "Cursor reads a forty-page system prompt all the way to the end, where it's told to just be itself, and has to flip back to page three to learn who that is.",
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8. A strong, fresh setup and reveal (page forty says be yourself, page three says pirate) capped by Tilde's dry 'Authentic.', and it avoids the waiting-for-a-caller rut, though it stops just short of beating Deprecated."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "First paper roll in the room: a wavy white ribbon of ruled paper running from Null's handset across the floor; from panel 2 on it is a heap of loose sheets around Cursor's legs that hides its legs and lower arms. Null holds the handset hanging low at its right side, not raised. Cursor's eyepatch is a black oval on the upper left of its screen with a strap across the top; the text cursor sits beside it. Tilde's left hand is cut off at the panel edge, as in earlier strips.",
+  "panels": [
+    {
+      "art": "/comics/027-be-yourself/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. Null, the small yellow cube, holds its black handset low, and a long ribbon of ruled white paper spills out of it and snakes across the floor toward Cursor, the tall cyan robot, who has both arms raised and a tall text cursor. Tilde, the round magenta robot, stands at the left with half-lowered lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "System prompt. Forty pages.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "I love instructions!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/027-be-yourself/p2.svg",
+      "alt": "The same room. A heap of loose ruled sheets covers the floor around Cursor up to its middle. Cursor holds one last sheet up in front of its chest with both hands, its text cursor a little shorter. Tilde's lids are a little lower. Null stands by the stop door, handset hanging at its side.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Page forty.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "“Above all, just be yourself.”",
+          "position": "top"
+        }
+      ]
+    },
+    {
+      "art": "/comics/027-be-yourself/p3.svg",
+      "alt": "The same room, the heap of sheets unchanged. Cursor's arms hang down and its text cursor has bent into a question mark. Null holds a single sheet up high in one hand, its eye turned up to read it. Tilde's lids are lower again.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Which one is that?",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Page three. “You are Captain Saltbeard, a pirate.”",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/027-be-yourself/p4.svg",
+      "alt": "The same room. Cursor stands in the heap of sheets with both arms raised and a tall text cursor, a black eyepatch over the top left corner of its screen. Null looks toward Cursor. Tilde's lids are lowest of all.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Arr!",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Authentic.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ]
+}

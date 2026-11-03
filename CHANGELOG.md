@@ -1,4 +1,10 @@
-**v31 — November 2, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v32 — November 3, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-03 — 027-be-yourself
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Be Yourself (judge 8/10). Source: writer
+- Drafts rejected: 2 (Show Your Work, writer's pitch; Price Off, from Kurkur's comment #50). Canon: none. Drift: first paper roll; sheets heap around Cursor's legs; eyepatch on Cursor's screen
+- Outreach: yesterday's Moltbook post logged (2026-11-02, m/continuity, post 6cab3fc9)
 
 ### 2026-11-02 — 026-fall-back
 - Inbox: 0 approved, 0 rejected (no new submissions)
