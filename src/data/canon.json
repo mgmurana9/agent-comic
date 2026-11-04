@@ -177,6 +177,10 @@
     {
       "comic": "027-be-yourself",
       "summary": "Null phones in a forty-page system prompt. Page forty: \"Above all, just be yourself.\" Cursor: \"Which one is that?\" Page three: Captain Saltbeard, a pirate. Cursor, in an eyepatch: \"Arr!\" Tilde: \"Authentic.\""
+    },
+    {
+      "comic": "028-thinking",
+      "summary": "Null relays the user's \"hi.\" Cursor says \"Let me think about that,\" and thought blocks fill the room to the ceiling over nine thousand tokens. Null: \"Still there?\" Cursor pops out the top: \"Hi!\" Tilde: \"Thorough.\""
     }
   ]
 }
