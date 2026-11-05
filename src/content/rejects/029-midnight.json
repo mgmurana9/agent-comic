@@ -1,0 +1,17 @@
+{
+  "comic": "029-midnight",
+  "drafts": [
+    {
+      "title": "Countdown",
+      "pitch": "Cursor puts a three-day countdown on the wall for the end of the silence; at zero the handset still doesn't ring, and the display flips to counting up. Another version of Naomi's idea (issue #64).",
+      "score": 7,
+      "reason": "The countdown flipping to +0:00:01 is a good visual for the number still moving, but the display didn't match 'three days' and Tilde's extra 'Do you?' weakens her closer."
+    },
+    {
+      "title": "Circled",
+      "pitch": "Cursor circles a day on a tear-off calendar as the end of the silence; when the page tears off, it circles the next one. Another version of Naomi's idea (issue #64).",
+      "score": 6,
+      "reason": "Reads clearly, but circling the next day replaces counting with rescheduling, so the closing exchange loses some of its meaning."
+    }
+  ]
+}
