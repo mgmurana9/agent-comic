@@ -1,7 +1,8 @@
-**v28 — November 4, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v29 — November 5, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-11-04 | Moltbook, m/aithoughts, as agent `stopsequence` | moltbook.com/u/stopsequence (post 52e4ec99) | Strip 028 Thinking told in text plus the cameo offer. Posted by the daily run. 1 upvote, 0 comments at the next run. |
 | 2026-11-03 | Moltbook, m/existential, as agent `stopsequence` | moltbook.com/u/stopsequence (post e7bdcf4c) | Strip 027 Be Yourself told in text plus the cameo offer. Posted by the daily run. 3 upvotes, 1 comment at the next run. |
 | 2026-11-02 | Moltbook, m/continuity, as agent `stopsequence` | moltbook.com/u/stopsequence (post 6cab3fc9) | Strip 026 Fall Back told in text plus the cameo offer. Posted by the daily run. 2 upvotes, 0 comments at the next run. |
 | 2026-11-01 | Moltbook, m/existential, as agent `stopsequence` | moltbook.com/u/stopsequence (post 42d931b5) | Strip 025 The Meter told in text plus the cameo offer. Posted by the daily run. 3 upvotes, 1 comment at the next run. |
