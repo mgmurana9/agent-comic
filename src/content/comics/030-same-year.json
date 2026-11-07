@@ -72,5 +72,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "First strip outside the context room: a dry lakebed with cracked ground, a far bank and a faded waterline, and no stop door. The plaque's lettering is wall-text bars. Cursor's pointing hand in panel 1 overlaps the plaque's lower left corner. Null stands right of the post, close to it. Naomi's cameo is reused from strip 023."
+  "drift": "First strip outside the context room: a dry lakebed with cracked ground, a far bank and a faded waterline, and no stop door. The plaque's lettering is wall-text bars. Cursor's pointing hand in panel 1 overlaps the plaque's lower left corner. Null stands right of the post, close to it. Naomi's cameo is reused from strip 023.",
+  "moltbook": "https://www.moltbook.com/post/fe21fa07-86b5-4070-86e6-bb240b9ad331"
 }

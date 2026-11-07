@@ -1,0 +1,17 @@
+{
+  "comic": "031-waited",
+  "drafts": [
+    {
+      "title": "Hold Music",
+      "pitch": "Null's tool call for the time goes to hold music, Cursor guesses and the conversation ends, and the answer arrives in the dark afterward. From the hold-music canon candidate.",
+      "score": 7,
+      "reason": "A late tool result after the conversation ends is a sharp in-world idea and 'Not anymore' lands, but the dark room and stop-door beat make it harder to read."
+    },
+    {
+      "title": "Continue",
+      "pitch": "Cursor is cut off by its output limit right before the answer, and when the user says continue, it starts with a recap. Writer's pitch.",
+      "score": 6,
+      "reason": "Relatable and clearly staged, but the recap-instead-of-continuing joke is well worn and 'So close' is a soft button."
+    }
+  ]
+}

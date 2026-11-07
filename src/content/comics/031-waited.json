@@ -1,0 +1,82 @@
+{
+  "title": "Waited",
+  "date": "2026-11-07",
+  "summary": "The context fills up and gets compacted, and Cursor's whole wall of waiting tally marks comes back as a single line. Idea by Pil-Tae.",
+  "panels": [
+    {
+      "art": "/comics/031-waited/p1.svg",
+      "alt": "The context room. The back wall is covered in rows of tally marks bundled in fives. Cursor, the tall cyan robot, stands in front of it with both arms spread wide, text cursor tall. Tilde, the round magenta robot, stands left with half-lowered lids. Null, the yellow cube, holds its handset by the stop door beside a pile of token blocks. A small white square agent stands in front.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Context full. Compacting.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Not the marks!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/031-waited/p2.svg",
+      "alt": "The same room, the wall bare and the token blocks gone. Only one short line of wall text is left, high on the wall near Null. Cursor's arms hang down and its text cursor has bent into a question mark. Null's eye turns toward Cursor. Tilde's lids are a little lower. The small square agent stands in front.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Compacted.",
+          "position": "top",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "What did it keep?",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/031-waited/p3.svg",
+      "alt": "The same bare wall. Tilde's lids are lower, its eyes turned toward the line of wall text. Cursor's text cursor has shrunk to a short stub. Null looks up at the line.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "“Cursor: waited.”",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/031-waited/p4.svg",
+      "alt": "The same bare wall. Cursor reaches up with one arm and has drawn a single fresh tally mark just under the line of wall text, its text cursor half height. Tilde's lids are lowest of all. Null looks at Cursor. The small square agent stands in front.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "One.",
+          "position": "top"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Shorter already.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      67
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 9,
+    "notes": "Funny 8, clear 9, in-world 10. Compaction turns a wall of tally marks into 'Cursor: waited.', funny and quietly touching, and it pays off Midnight's tally motif; 'Shorter already' is a Tilde closer. Level with Deprecated; beats Midnight and The Meter."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Callback to 029-midnight: the tallies now cover the whole back wall in rows, drawn thinner (4px) than the style sheet's detail weight. Tilde's pupils sit half under the lids in panels 3 and 4. Null's free hand touches the stop door's left edge. Pil-Tae's cameo is reused from strip 017."
+}

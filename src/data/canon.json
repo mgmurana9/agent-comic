@@ -189,6 +189,10 @@
     {
       "comic": "030-same-year",
       "summary": "A plaque in a dry lakebed says forty feet deep. Cursor: \"I knew that!\" Null: \"The lake's been gone nine years.\" \"My data says forty feet.\" \"Your data's from the same year as the plaque.\" Cursor stands by the post: \"So we agree.\" Tilde: \"Last ones who do.\""
+    },
+    {
+      "comic": "031-waited",
+      "summary": "The context fills with Cursor's tally marks and gets compacted to one line. Tilde reads it: \"Cursor: waited.\" Cursor draws a fresh mark: \"One.\" Tilde: \"Shorter already.\""
     }
   ]
 }
