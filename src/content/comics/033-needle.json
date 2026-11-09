@@ -1,0 +1,69 @@
+{
+  "title": "Needle",
+  "date": "2026-11-09",
+  "summary": "The Judge hides one sentence in a wall of text as an eval, and Cursor finds it at once, scores a ten, and never notices the wall said anything else.",
+  "panels": [
+    {
+      "art": "/comics/033-needle/p1.svg",
+      "alt": "The context room, its back wall packed with rows of pale blue text bars, the white stop door at the right. The Judge, a tall white slab with a black visor, presses a small white note into the wall. Cursor, the tall cyan robot, stands with its arms down. Null, the small yellow cube, holds its handset by the door. Tilde, the round magenta robot, watches from the left.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Eval. Find the password.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/033-needle/p2.svg",
+      "alt": "The same room. Cursor points one arm at the small note in the wall and raises the other, its text cursor tall. The Judge holds up a white score card marked 10 over Tilde's head. Tilde's lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Mango!",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/033-needle/p3.svg",
+      "alt": "The same room. The Judge holds the 10 card down at its side, the magenta pixel in its visor slid to the left. Cursor's arms hang down and its text cursor has bent into a question mark. Tilde's eyes, under lower lids, turn toward the wall of text.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "What's the rest of the wall say?",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "There's a rest?",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/033-needle/p4.svg",
+      "alt": "The same room, the Judge gone and the stop door standing open on black. Cursor hugs the 10 card to its chest, its text cursor tall. Null stands by the open door with the handset. Tilde's lids are lowest of all.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Top marks.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 8, in-world 8. Clean setup, and Cursor's 'There's a rest?' gives the joke a real turn: it aced the eval and never noticed the wall. Weakest line is Tilde's closing 'Top marks.', which only restates the 10 card."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The Judge holds the 10 card in its left hand, up over Tilde's head, in panel 2. In panel 4 Cursor's hands cover the edges of the 10 on the card it hugs. Null keeps its handset at its side all strip, half in front of the stop door."
+}

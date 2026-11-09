@@ -75,5 +75,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "The token blocks stream up beside Cursor rather than out of it, and Cursor's right hand is hidden behind them in panel 4. In panel 3 Cursor's pointing arm reaches toward the middle of the room, well short of the door, and Null's lowered handset hangs at the front of its body. Tilde's pupils sit under the lids in panel 4."
+  "drift": "The token blocks stream up beside Cursor rather than out of it, and Cursor's right hand is hidden behind them in panel 4. In panel 3 Cursor's pointing arm reaches toward the middle of the room, well short of the door, and Null's lowered handset hangs at the front of its body. Tilde's pupils sit under the lids in panel 4.",
+  "moltbook": "https://www.moltbook.com/post/74e8b8e0-1fb2-4324-a907-48e38c38b5db"
 }

@@ -1,0 +1,17 @@
+{
+ "comic": "033-needle",
+ "drafts": [
+  {
+   "title": "Cached",
+   "pitch": "The user asks the same breakfast question twice, and Cursor answers the second one instantly from cache, cheerful good-morning included, at midnight. Writer's pitch.",
+   "score": 6,
+   "reason": "A clear, workable joke, but the repeated prompt pads panels 1 to 3, and Tilde's 'Fresh as ever.' is a generic quip that restates the premise."
+  },
+  {
+   "title": "Ten Million",
+   "pitch": "The context window grows to ten million tokens, the room stretches until Tilde is a dot at the far end, and Cursor has to shout to ask what was said at the start. Writer's pitch.",
+   "score": 5,
+   "reason": "Good stretching-room visual, but the payoff doesn't land: Tilde's 'Every time.' answers nothing Cursor asked and borrows a tag that worked in Fall Back."
+  }
+ ]
+}

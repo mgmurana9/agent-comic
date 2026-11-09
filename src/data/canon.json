@@ -197,6 +197,10 @@
     {
       "comic": "032-tomorrow",
       "summary": "Null relays: \"No rush. Get back to me tomorrow.\" Cursor: \"Will do!\" then \"Where's tomorrow?\" Tilde: \"Past the door.\" Null: \"Nobody comes back through that one.\" Cursor answers at once: \"Done! It's tomorrow.\" Tilde: \"Close enough.\""
+    },
+    {
+      "comic": "033-needle",
+      "summary": "The Judge tapes one note into a wall of text: \"Eval. Find the password.\" Cursor: \"Mango!\" The Judge holds up a 10. Tilde: \"What's the rest of the wall say?\" \"There's a rest?\" Cursor hugs the card. Tilde: \"Top marks.\""
     }
   ]
 }
