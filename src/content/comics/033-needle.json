@@ -5,7 +5,7 @@
   "panels": [
     {
       "art": "/comics/033-needle/p1.svg",
-      "alt": "The context room, its back wall packed with rows of pale blue text bars, the white stop door at the right. The Judge, a tall white slab with a black visor, presses a small white note with a magenta line into the wall. Cursor, the tall cyan robot, stands beside it with its arms down. Null, the small yellow cube, holds its black handset by the door. Tilde, the round magenta robot, watches from the left with half-lowered lids.",
+      "alt": "The context room, its back wall packed with rows of pale blue text bars, the white stop door at the right. The Judge, a tall white slab with a black visor, presses a small white note into the wall. Cursor, the tall cyan robot, stands with its arms down. Null, the small yellow cube, holds its handset by the door. Tilde, the round magenta robot, watches from the left.",
       "dialogue": [
         {
           "speaker": "Null",
