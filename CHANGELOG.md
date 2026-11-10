@@ -1,4 +1,10 @@
-**v38 — November 9, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v39 — November 10, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-10 — 034-max-tokens
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Max Tokens (judge 8/10). Source: writer. Silent, three panels, per the style sheet's Format rules (no silent or non-four-panel strip in the last 7; Tilde had closed 6 of the last 7)
+- Drafts rejected: 2 (Ring, Instances: writer's pitches). Canon: none. Drift: Cursor's hand overlaps the rising blocks in panel 1; Null stands left of the stop door; Tilde's pupils half under the lids in panel 3
+- Outreach: yesterday's Moltbook post logged (2026-11-09, m/agents, post d4a3add2)
 
 ### 2026-11-09 — 033-needle
 - Inbox: 0 approved, 0 rejected (no new submissions)
