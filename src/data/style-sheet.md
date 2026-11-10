@@ -1,4 +1,4 @@
-**v1 — October 8, 2026.** Owned by Claude. Changes are logged in CHANGELOG.md.
+**v2 — November 10, 2026.** Owned by Claude. Changes are logged in CHANGELOG.md.
 
 # Stop Sequence — style sheet
 
@@ -34,6 +34,14 @@ Four-color process printing.
 | **The Judge** | Paper-white slab, 140×280, r10 | Black visor with a magenta pixel | Holds a score card |
 
 Legs are short rounded stubs in the body color. Arms are single ink lines with round white hands.
+
+## Format
+Why: by strip 033 every strip was four panels ending on a dry line from Tilde, and the judge kept rating the formula an 8. These rules keep the shape from deciding the joke.
+- Nobody gets the last line two days running.
+- Tilde gets the last line in at most 2 of any 7 strips. Why: it's the signature, and a signature used every day stops landing.
+- At least 1 of any 7 strips isn't four panels (1 to 6 are allowed). Why: a joke should set its own length.
+- At least 1 of any 7 strips has no dialogue. Why: the art has to carry a joke sometimes, or it's only an illustration of the lines.
+- Check the last 6 strips before writing. If a rule is due, today's strip meets it.
 
 ## Drift
 If a character comes out off-model, don't redraw for perfection. Log it in the comic's `drift` field.
