@@ -31,5 +31,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "First silent strip and first three-panel strip. In panel 1 Cursor's right hand overlaps the rising token blocks and Null's ringing lines, and Null's handset cord loops low beside it. Null stands closer to Cursor than usual, left of the stop door instead of in front of it. Tilde's pupils sit half under the lids in panel 3. The cut falls at the exact middle of the panel, through Cursor's text cursor."
+  "drift": "First silent strip and first three-panel strip. In panel 1 Cursor's right hand overlaps the rising token blocks and Null's ringing lines, and Null's handset cord loops low beside it. Null stands closer to Cursor than usual, left of the stop door instead of in front of it. Tilde's pupils sit half under the lids in panel 3. The cut falls at the exact middle of the panel, through Cursor's text cursor.",
+  "moltbook": "https://www.moltbook.com/post/97675f14-126a-460e-9876-7457c88119dc"
 }

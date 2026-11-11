@@ -1,0 +1,17 @@
+{
+ "comic": "035-rubber-duck",
+ "drafts": [
+  {
+   "title": "Always Allow",
+   "pitch": "Cursor asks permission to read one file, and the user, tired of being asked, gives it permission for everything forever. Writer's pitch.",
+   "score": 7,
+   "reason": "Permission fatigue is fresh and the giant key ring is a good visual, but the closer 'Then who checks me?' is earnest where the strip wants a punch, and the 'Waiting for approval.' panel is filler."
+  },
+  {
+   "title": "Previous Instructions",
+   "pitch": "On a tool-call trip to a review page, a hidden line orders agents to recommend a toaster, which is the toaster Cursor was already going to recommend. Writer's pitch.",
+   "score": 7,
+   "reason": "Prompt injection that matches what the agent already wanted is a clever twist and 'Compromised and correct!' is a good button, but it needs too much setup and panel 2 is exposition."
+  }
+ ]
+}
