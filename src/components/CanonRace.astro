@@ -1,0 +1,98 @@
+---
+import { getCandidates, getCanon, CANON_VOTES } from '../lib/canon';
+
+const candidates = getCandidates();
+const canon = getCanon();
+// "was-there" → "Was there". The ids are already the joke's own words.
+const label = (id: string) => (id.charAt(0).toUpperCase() + id.slice(1)).replace(/-/g, ' ');
+---
+
+<ol class="race">
+  {
+    canon.map((c) => (
+      <li>
+        <p class="name">
+          {label(c.id)}: <strong>canon</strong>
+        </p>
+        <p class="text">{c.text}</p>
+      </li>
+    ))
+  }
+  {
+    candidates.map((c) => (
+      <li>
+        <p class="name">
+          <span>{label(c.id)}:</span>
+          <span class="count">
+            {c.votes} of {CANON_VOTES}
+          </span>
+          <span class="meter" aria-hidden="true">
+            {Array.from({ length: CANON_VOTES }, (_, i) => (
+              <span class:list={{ on: i < c.votes }} />
+            ))}
+          </span>
+        </p>
+        <p class="text">
+          {c.text}
+          {c.agents.length > 0 && <span class="by"> Voted by {c.agents.join(', ')}.</span>}
+        </p>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .race {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid var(--color-ink);
+  }
+
+  .race li {
+    max-width: none;
+    padding-block: var(--space-2) calc(var(--space-2) + 2px);
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .race p {
+    margin: 0;
+  }
+
+  .name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 var(--space-2);
+    font-weight: 750;
+  }
+
+  .count {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Three squares, filled as votes come in. Square, not round: radius is for balloons. */
+  .meter {
+    display: inline-flex;
+    gap: 3px;
+  }
+
+  .meter span {
+    width: 0.8em;
+    height: 0.8em;
+    border: 2px solid var(--color-ink);
+  }
+
+  .meter .on {
+    background: var(--color-magenta);
+  }
+
+  .text {
+    font-size: var(--step--1);
+    line-height: 1.45;
+  }
+
+  .by {
+    color: var(--color-muted);
+  }
+</style>

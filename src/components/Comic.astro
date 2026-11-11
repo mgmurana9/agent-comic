@@ -1,6 +1,6 @@
 ---
 import type { Comic } from '../lib/comics';
-import { transcript, fmtDate, isoDate, stripNumber } from '../lib/comics';
+import { fmtDate, isoDate, stripNumber } from '../lib/comics';
 import { PANEL } from '../data/site';
 
 interface Props {
@@ -59,7 +59,22 @@ const n = stripNumber(comic.id);
 
   <details class="transcript">
     <summary>Read the transcript</summary>
-    <pre>{transcript(comic)}</pre>
+    <ol class="script">
+      {
+        panels.map((p, i) => (
+          <li>
+            <p class="script-panel">Panel {i + 1}</p>
+            <p class="script-alt">{p.alt}</p>
+            {p.dialogue.map((d) => (
+              <p class="script-line">
+                <strong>{d.kind === 'caption' ? 'Caption' : d.kind === 'sfx' ? 'Sound' : d.speaker}{d.kind === 'thought' ? ' (thinks)' : ''}:</strong>{' '}
+                {d.text}
+              </p>
+            ))}
+          </li>
+        ))
+      }
+    </ol>
   </details>
 </article>
 
@@ -109,8 +124,15 @@ const n = stripNumber(comic.id);
     }
   }
 
+  /* One panel fills the measure, not the screen. */
+  .panels--1 {
+    max-width: 800px;
+  }
+
   .panel {
     position: relative;
+    display: flex;
+    flex-direction: column;
     container-type: inline-size;
     border: var(--ink-line) solid var(--color-ink);
     background: var(--color-paper);
@@ -218,6 +240,52 @@ const n = stripNumber(comic.id);
     rotate: -6deg;
   }
 
+  /* Narrow panels (phones, and two- or three-up on a laptop): the lettering moves out of
+     the art into a tier above it, so balloons never cover a face and the type
+     can stay at a reading size. The top ~35% of every panel is empty wall for
+     exactly this, so the art loses nothing. */
+  @container (max-width: 37.5rem) {
+    .band {
+      position: static;
+      gap: 0.6em 3%;
+      padding: 3.5% 3.5% 3%;
+    }
+
+    /* Panels in a row share a height. The top tier takes up the slack, so the art
+       lines up along the bottom across the row. */
+    img {
+      margin-top: auto;
+    }
+
+    .band--top {
+      order: -1;
+      flex-grow: 1;
+      align-content: flex-start;
+      border-bottom: 2px solid var(--color-ink);
+      padding-bottom: 4.5%;
+    }
+
+    .band--bottom {
+      border-top: 2px solid var(--color-ink);
+      padding: 4.5% 3.5% 3.5%;
+    }
+
+    .line {
+      max-width: 82%;
+      font-size: 1rem;
+      line-height: 1.28;
+    }
+
+    .line--caption {
+      max-width: 100%;
+      font-size: 0.9375rem;
+    }
+
+    .line--sfx {
+      font-size: 1.4rem;
+    }
+  }
+
   /* Left, center, right within a band. Order is visual only; the DOM keeps
      the script's reading order. */
   .pos-top-left, .pos-bottom-left { order: 1; }
@@ -241,13 +309,42 @@ const n = stripNumber(comic.id);
     text-underline-offset: 0.18em;
   }
 
-  .transcript pre {
+  .script {
     margin: var(--space-2) 0 0;
-    padding: var(--space-3);
+    padding: 0 0 0 var(--space-3);
+    list-style: none;
     border-left: var(--ink-line) solid var(--color-ink);
-    white-space: pre-wrap;
-    font-family: var(--font-body);
-    font-size: var(--step-0);
     max-width: var(--measure);
+  }
+
+  .script li + li {
+    margin-top: var(--space-4);
+  }
+
+  .script p {
+    margin: 0 0 var(--space-1);
+  }
+
+  .script-panel {
+    font-weight: 800;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .script-alt {
+    color: var(--color-muted);
+    font-size: var(--step--1);
+    line-height: 1.45;
+  }
+
+  .script-line {
+    font-family: var(--font-letter);
+    font-weight: 450;
+  }
+
+  .script-line strong {
+    font-family: var(--font-body);
+    font-weight: 800;
   }
 </style>

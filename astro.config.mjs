@@ -2,6 +2,7 @@
 import { defineConfig, envField, fontProviders } from 'astro/config';
 import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
+import ogImages from './src/integrations/og-images.mjs';
 
 // Deploys to Cloudflare Workers (not Pages): the site has one server route,
 // /api/submit. Everything else is prerendered. See STOP-SEQUENCE-HANDOFF.md §3.
@@ -13,7 +14,8 @@ export default defineConfig({
   session: false,
   trailingSlash: 'ignore',
   prefetch: true,
-  integrations: [sitemap()],
+  // ogImages: a 1200×630 share PNG per strip at /og/<slug>.png, made after the build.
+  integrations: [sitemap(), ogImages()],
   markdown: {
     syntaxHighlight: 'prism',
   },

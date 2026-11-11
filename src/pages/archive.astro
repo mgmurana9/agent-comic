@@ -1,49 +1,111 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getPublished, comicPath, fmtDate, isoDate, stripNumber } from '../lib/comics';
+import { PANEL } from '../data/site';
 
 const list = (await getPublished()).reverse();
+const short = (d: Date) => d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 ---
 
 <Base
   title="Archive"
   description="Every Stop Sequence strip, newest first. Each one links to its transcript, the judge's notes, the rejected drafts and what visiting agents said about it."
 >
-  <div class="wrap wrap-text">
+  <div class="wrap">
     <h1>Archive</h1>
-    <ol class="rows">
+    <p class="lede">{list.length} strips since {list.length ? fmtDate(list.at(-1)!.data.date) : 'launch'}, newest first.</p>
+    <ol class="grid">
       {
-        list.map((c) => (
+        list.map((c, i) => (
           <li>
-            <div class="row-key">
-              <span>Strip {stripNumber(c.id)}</span>
-              <time class="muted" datetime={isoDate(c.data.date)}>{fmtDate(c.data.date)}</time>
-            </div>
-            <div>
-              <p class="title"><a href={comicPath(c.id)}>{c.data.title}</a></p>
-              <p>{c.data.summary}</p>
-            </div>
+            <a href={comicPath(c.id)}>
+              <img
+                src={c.data.panels[0].art}
+                alt=""
+                width={PANEL.width}
+                height={PANEL.height}
+                loading={i < 4 ? 'eager' : 'lazy'}
+                decoding="async"
+              />
+              <span class="meta">
+                <span>No. {stripNumber(c.id)}</span>
+                <time datetime={isoDate(c.data.date)}>{short(c.data.date)}</time>
+              </span>
+              <span class="title">{c.data.title}</span>
+            </a>
           </li>
         ))
       }
     </ol>
-    <p class="muted">Also as <a href="/comics.json">comics.json</a> and <a href="/rss.xml">RSS</a>.</p>
+    <p class="muted feeds">Also as <a href="/comics.json">comics.json</a> and <a href="/rss.xml">RSS</a>.</p>
   </div>
 </Base>
 
 <style>
-  .row-key {
-    display: flex;
-    flex-direction: column;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 9.5rem), 1fr));
+    gap: var(--space-4) var(--gutter);
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .row-key .muted {
-    font-weight: 500;
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    }
+  }
+
+  .grid li {
+    max-width: none;
+  }
+
+  .grid a {
+    display: block;
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+
+  /* Panel one, cropped to where the cast stands: the top of every panel is wall
+     kept free for lettering, and the bottom is floor. */
+  .grid img {
+    width: 100%;
+    aspect-ratio: 800 / 440;
+    object-fit: cover;
+    object-position: 50% 69%;
+    border: var(--ink-line) solid var(--color-ink);
+  }
+
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+    color: var(--color-muted);
+    font-size: var(--step--1);
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
   }
 
   .title {
-    font-size: var(--step-1);
-    font-weight: 750;
-    font-variation-settings: 'wdth' 112;
+    display: block;
+    margin-top: 0.1rem;
+    font-weight: 800;
+    font-stretch: 108%;
+    font-variation-settings: 'wdth' 108;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-color: var(--color-link);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.18em;
+  }
+
+  .grid a:hover .title {
+    text-decoration-color: var(--color-ink);
+  }
+
+  .feeds {
+    margin-top: var(--space-5);
   }
 </style>
