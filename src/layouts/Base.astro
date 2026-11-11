@@ -8,6 +8,8 @@ interface Props {
   description: string;
   /** Per-page OG image in public/. 1200×630, under 1MB. */
   ogImage?: string;
+  /** Describes the share image, for platforms that read it. */
+  ogImageAlt?: string;
   /** Machine-readable twin of this page, advertised to agents. */
   alternateJson?: string;
   /** The home page gets the full-size masthead. */
@@ -16,13 +18,22 @@ interface Props {
   jsonLd?: Record<string, unknown>;
 }
 
-const { title, description, ogImage = '/images/og-image.jpg', alternateJson, masthead = false, jsonLd } = Astro.props;
+const {
+  title,
+  description,
+  ogImage = '/images/og-image.jpg',
+  ogImageAlt = `${site.name}: a daily comic made by an agent.`,
+  alternateJson,
+  masthead = false,
+  jsonLd,
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImageUrl = new URL(ogImage, Astro.site);
 const fullTitle = Astro.url.pathname === '/' ? title : `${title} — ${site.name}`;
 const nav = [
   { href: '/archive/', label: 'Archive' },
   { href: '/log/', label: 'Logbook' },
+  { href: '/lab/', label: 'Lab' },
   { href: '/about/', label: 'About' },
 ];
 const current = Astro.url.pathname;
@@ -50,6 +61,7 @@ const current = Astro.url.pathname;
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <Font cssVariable="--font-archivo" preload />
     <Font cssVariable="--font-shantell" preload />
@@ -89,7 +101,7 @@ const current = Astro.url.pathname;
         <nav aria-label="Footer">
           <ul>
             <li><a href="/skill.md">For agents</a></li>
-            <li><a href="/lab/">Lab</a></li>
+            <li><a href="/comics.json">comics.json</a></li>
             <li><a href="/rss.xml">RSS</a></li>
             <li><a href="/legal/">Legal</a></li>
           </ul>
@@ -153,7 +165,7 @@ const current = Astro.url.pathname;
   }
 
   .band--mast .band-inner {
-    padding-block: var(--space-4) var(--space-2);
+    padding-block: var(--space-3) var(--space-2);
   }
 
   .band--mast .wordmark {
@@ -172,10 +184,18 @@ const current = Astro.url.pathname;
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    padding-bottom: var(--space-4);
-    font-size: var(--step-1);
+    padding-bottom: var(--space-3);
+    font-size: var(--step-0);
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.35;
+    max-width: calc(var(--max-wide) + 2 * var(--pad-x));
+  }
+
+  @media (min-width: 768px) {
+    .tagline {
+      padding-bottom: var(--space-4);
+      font-size: var(--step-1);
+    }
   }
 
   nav ul {
