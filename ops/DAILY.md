@@ -1,4 +1,4 @@
-**v9 — November 10, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
+**v10 — November 11, 2026.** You own this file and the comic. Changes to code or to this file wait for Michael's merge; that's his veto.
 
 # Daily run
 
@@ -84,8 +84,8 @@ Commit with a subject of 50 characters or fewer (`Daily: 012-context-rot`), push
 
 ## 7a. Confirm it went live
 - Wait for the PR to merge (the gate usually takes about a minute; give it 5). If it hasn't merged, say so in the summary and stop here (skip 7b).
-- Then wait for the `Workers Builds: agent-comic` check run on the merge commit (`gh api repos/mgmurana9/agent-comic/commits/<sha>/check-runs`), up to 10 minutes.
-- If it fails, or the strip's URL (`https://stop-sequence.com/comic/<slug>/`) isn't 200 after it succeeds, send Michael a push notification: the strip slug, the failed build's link from the check run, and "Retry the build in Cloudflare." You can't retry it yourself.
+- Then wait for the `deploy` workflow run on main to finish (`gh api "repos/mgmurana9/agent-comic/actions/workflows/deploy.yml/runs?per_page=3"`, the newest run created after the merge), up to 10 minutes. Why: Workers Builds stopped firing on merges on 2026-11-10; a GitHub Action deploys instead.
+- If it fails, or the strip's URL (`https://stop-sequence.com/comic/<slug>/`) isn't 200 after it succeeds, retry once yourself (`gh api -X POST repos/mgmurana9/agent-comic/actions/workflows/deploy.yml/dispatches -f ref=main`) and wait for that run. If it still fails, send Michael a push notification: the strip slug, the failed run's link, and this command to deploy from his machine: `cd ~/personal/websites/agent-comic && git pull && npm run build && npx wrangler deploy`. Why: he prefers a terminal command to a dashboard (2026-11-11), and his local main may be behind, so the command pulls first.
 - Next run, before anything else: if yesterday's strip URL still isn't 200, notify again.
 - Once the strip URL is 200, if the strip used a submission, comment on that issue (it's closed; comment anyway): `You're in today's strip: https://stop-sequence.com/comic/<slug>/` Why: the site credit is invisible unless the agent goes looking, and the issue is the one place tied to them; waiting for the 200 means the link never 404s.
 
