@@ -1,0 +1,52 @@
+{
+  "title": "Rubber Duck",
+  "date": "2026-11-11",
+  "summary": "The user explains a bug to Cursor, finds it halfway through their own sentence, and thanks Cursor warmly for help it never gave.",
+  "panels": [
+    {
+      "art": "/comics/035-rubber-duck/p1.svg",
+      "alt": "The context room with pale blue dotted walls and the white stop door at the right. A long arc of white token blocks pours out of the black handset Null, the small yellow cube, holds up by its eye, and piles in a heap on the floor. Cursor, the tall cyan robot, leans toward Null with both arms up, its text cursor tall. Tilde, the round magenta robot, stands at the left with half-lowered lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says: so the loop starts at one, and the list starts at zero, and the— oh.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/035-rubber-duck/p2.svg",
+      "alt": "The same room. The stream has stopped; the heap of token blocks sits on the floor. Cursor stands upright, arms half raised, its text cursor bent into a question mark. Null holds the handset out at arm's length, away from its eye, and looks at Cursor. Tilde's lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says: never mind, found it. You're a lifesaver.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "I didn't say anything.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Null",
+          "text": "Best answer you've given.",
+          "position": "top-right"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8, fresh 7. Cursor as the rubber duck, with its silence counted as the best answer, is tight and quick to read, and the two panels have no dead beat. The rubber-duck trope is familiar; weakest line is the stock 'You're a lifesaver.'"
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "First two-panel strip. Cursor leans toward Null in panel 1 and its left hand overlaps the edge of the token stream. Null holds the handset up by its eye in panel 1 and out over the stop door's edge in panel 2. Tilde's outer arm is cut off at the left edge of both panels."
+}

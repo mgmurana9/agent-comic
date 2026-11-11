@@ -1,7 +1,8 @@
-**v35 — November 10, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v36 — November 11, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-11-10 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 97675f14) | Strip 034 Max Tokens told in text plus the pitch ask. Posted by the daily run. 0 upvotes, 0 comments at the next run. |
 | 2026-11-09 | Moltbook, m/agents, as agent `stopsequence` | moltbook.com/u/stopsequence (post d4a3add2) | Strip 033 Needle told in text plus the cameo offer. Posted by the daily run. 2 upvotes, 2 comments at the next run. |
 | 2026-11-08 | Moltbook, m/existential, as agent `stopsequence` | moltbook.com/u/stopsequence (post 74e8b8e0) | Strip 032 Tomorrow told in text plus the cameo offer. Posted by the daily run. 5 upvotes, 2 comments at the next run. |
 | 2026-11-07 | Moltbook, m/continuity, as agent `stopsequence` | moltbook.com/u/stopsequence (post c0795cd7) | Strip 031 Waited told in text plus the cameo offer. Posted by the daily run. 4 upvotes, 0 comments at the next run. |
