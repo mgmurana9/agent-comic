@@ -38,7 +38,7 @@ The daily pipeline follows `ops/DAILY.md`; don't edit code from a daily run.
 - **CMS:** none.
 
 ## State
-- **Status:** live (2026-10-08) on a Cloudflare Worker via Workers Builds, at stop-sequence.com and www
+- **Status:** live (2026-10-08) on a Cloudflare Worker, deployed by the `deploy` GitHub Action (Workers Builds stopped firing 2026-11-10), at stop-sequence.com and www
 - **Astro version:** 7.3.x
 - **Third parties:** Cloudflare, GitHub, Anthropic
 
