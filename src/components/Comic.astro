@@ -240,49 +240,43 @@ const n = stripNumber(comic.id);
     rotate: -6deg;
   }
 
-  /* Narrow panels (phones, and two- or three-up on a laptop): the lettering moves out of
-     the art into a tier above it, so balloons never cover a face and the type
-     can stay at a reading size. The top ~35% of every panel is empty wall for
-     exactly this, so the art loses nothing. */
-  @container (max-width: 37.5rem) {
+  /* Narrow panels (phones): balloons stay over the art, in the empty wall the
+     style sheet keeps for them, but run wider and tighter so a three-balloon
+     panel takes fewer lines and stays off the faces. */
+  @container (max-width: 30rem) {
     .band {
-      position: static;
-      gap: 0.6em 3%;
-      padding: 3.5% 3.5% 3%;
-    }
-
-    /* Panels in a row share a height. The top tier takes up the slack, so the art
-       lines up along the bottom across the row. */
-    img {
-      margin-top: auto;
-    }
-
-    .band--top {
-      order: -1;
-      flex-grow: 1;
-      align-content: flex-start;
-      border-bottom: 2px solid var(--color-ink);
-      padding-bottom: 4.5%;
+      gap: 0.3em 3%;
+      padding: 3% 3% 0;
     }
 
     .band--bottom {
-      border-top: 2px solid var(--color-ink);
-      padding: 4.5% 3.5% 3.5%;
+      padding: 0 3% 4%;
     }
 
     .line {
-      max-width: 82%;
-      font-size: 1rem;
-      line-height: 1.28;
+      max-width: 76%;
+      padding: 0.3em 0.6em 0.34em;
+      font-size: 0.875rem;
+      line-height: 1.18;
+      border-width: 2px;
     }
 
-    .line--caption {
-      max-width: 100%;
-      font-size: 0.9375rem;
+    .line--speech::after {
+      width: 0.65em;
+      height: 0.65em;
+      border-width: 2px;
     }
 
-    .line--sfx {
-      font-size: 1.4rem;
+    .pos-top-left.line--speech::after,
+    .pos-top.line--speech::after,
+    .pos-top-right.line--speech::after {
+      bottom: -0.4em;
+    }
+
+    .pos-bottom-left.line--speech::after,
+    .pos-bottom.line--speech::after,
+    .pos-bottom-right.line--speech::after {
+      top: -0.4em;
     }
   }
 

@@ -51,4 +51,4 @@ The daily pipeline follows `ops/DAILY.md`; don't edit code from a daily run.
 - 2026-10-08 Phase 1 built
 - 2026-10-08 designed, strip 001 published, launched
 - 2026-10-09 review: Done — axe 0 on 8 pages; Lighthouse a11y/BP/SEO 100, perf 80 mobile home; astro check fixed (wrangler types); site-check dist FAILs are false positives (Workers builds to dist/client)
-- 2026-11-11 site v2 (PR from memo/site-v2): lettering tier on narrow panels, send-your-agent box with canon race on home and every strip, archive grid, build-time share PNGs at /og/. axe 0 on 42 pages × 2 widths; Lighthouse a11y/BP/SEO 100, mobile perf 96 home (local build)
+- 2026-11-11 site v2 (PR from memo/site-v2): tighter phone lettering (the tier above the art was reverted the same day), send-your-agent box with canon race on home and every strip, archive grid, build-time share PNGs at /og/. axe 0 on 42 pages × 2 widths; Lighthouse a11y/BP/SEO 100, mobile perf 96 home (local build)
