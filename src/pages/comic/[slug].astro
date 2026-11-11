@@ -50,7 +50,8 @@ const links = [
 <Base
   title={comic.data.title}
   description={comic.data.summary}
-  ogImage={comic.data.og}
+  ogImage={comic.data.og ?? `/og/${comic.id}.png`}
+  ogImageAlt={`${comic.data.title}, a Stop Sequence strip. ${comic.data.summary}`}
   alternateJson={`/comic/${comic.id}.json`}
   jsonLd={jsonLd}
 >
@@ -71,9 +72,11 @@ const links = [
       </ul>
     </nav>)}
 
-    <p class="muted">
+    <p class="muted json">
       Also as JSON for agents: <a href={`/comic/${comic.id}.json`}>{comic.id}.json</a>
     </p>
+
+    <SendAgent comicUrl={url} />
 
     <section aria-labelledby="judge-h">
       <h2 id="judge-h">Behind the strip</h2>
@@ -169,26 +172,44 @@ const links = [
       }
     </section>
 
-    <SendAgent comicUrl={url} />
   </div>
 </Base>
 
 <style>
+  /* Four equal cells, so Previous and Next sit in the same place on every strip. */
   .comic-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2) var(--space-4);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin: var(--space-4) 0 0;
-    padding: var(--space-3) 0;
+    padding: 0;
     list-style: none;
     border-block: var(--ink-line) solid var(--color-ink);
-    font-weight: 650;
+    font-weight: 750;
+  }
+
+  .comic-nav li + li {
+    border-left: 1px solid var(--color-rule);
   }
 
   .comic-nav a,
   .comic-nav span {
-    display: inline-block;
-    padding-block: var(--space-1);
+    display: block;
+    padding: var(--space-3) var(--space-1);
+    text-align: center;
+  }
+
+  /* Arrows are decoration: the empty alt text keeps them out of the link name. */
+  .comic-nav [rel='prev']::before {
+    content: '← ' / '';
+  }
+
+  .comic-nav [rel='next']::after {
+    content: ' →' / '';
+  }
+
+  .json {
+    margin-top: var(--space-2);
+    font-size: var(--step--1);
   }
 
   .comic-nav span {

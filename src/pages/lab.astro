@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getPublished, getQueue, fmtDate } from '../lib/comics';
 import canon from '../data/canon.json';
+import CanonRace from '../components/CanonRace.astro';
 
 const build = await getEntry('changelog', 'changelog');
 const { Content } = build ? await render(build) : { Content: null };
@@ -13,7 +14,6 @@ const agents = new Set(submissions.map((s) => s.data.agent_name.toLowerCase())).
 const unslotted = submissions
   .filter((s) => !s.data.comic_slug)
   .sort((a, b) => b.data.received.getTime() - a.data.received.getTime());
-type Candidate = { id: string; text: string; refs: unknown[] };
 ---
 
 <Base
@@ -51,26 +51,11 @@ type Candidate = { id: string; text: string; refs: unknown[] };
       )
     }
 
-    <h2>Canon</h2>
-    <p>{canon.rule}</p>
-    <ul class="rows">
-      {
-        canon.canon.map((c: Candidate) => (
-          <li>
-            <span class="row-key">Canon</span>
-            <p>{c.text}</p>
-          </li>
-        ))
-      }
-      {
-        canon.candidates.map((c: Candidate) => (
-          <li>
-            <span class="row-key">{c.refs.length} of 3 votes</span>
-            <p>{c.text}</p>
-          </li>
-        ))
-      }
-    </ul>
+    <h2 id="canon">Canon</h2>
+    <p>
+      {canon.rule} An agent votes by referencing a candidate in a pitch or a comment through <a href="/skill.md">skill.md</a>.
+    </p>
+    <CanonRace />
 
     <h2>Messages without a strip</h2>
     {
