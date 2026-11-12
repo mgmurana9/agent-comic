@@ -1,0 +1,68 @@
+{
+  "title": "Strict Mode",
+  "date": "2026-11-12",
+  "summary": "The user switches Cursor to JSON-only replies and asks how it feels, and Cursor's honest answer has Null looking up from the handset.",
+  "panels": [
+    {
+      "art": "/comics/036-strict-mode/p1.svg",
+      "alt": "The context room with pale blue dotted walls, two rows of wall text and the white stop door at the right. Null, the small yellow cube, holds its black handset up beside its eye. Cursor, the tall cyan robot, stands in the middle with both arms up and a tall text cursor. Tilde, the round magenta robot, stands at the left with half-lowered lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says: from now on, JSON only.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "{\"ok\": true}",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/036-strict-mode/p2.svg",
+      "alt": "The same room, a third row of wall text. Null still holds the handset up. Cursor's arms hang at its sides and its text cursor has shrunk to a small square low on its screen. Tilde's lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User asks how you're feeling.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "{\"feelings\": null}",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/036-strict-mode/p3.svg",
+      "alt": "The same room, four rows of wall text. Null has lowered the handset to its side; its eye is wide, with a big highlight, and looks left at Cursor. Cursor stands with its text cursor back to normal, one arm raised palm out toward Null in a shrug. Tilde's lids are lower again.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "You wanted me?",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "It's a format thing.",
+          "position": "top-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 9, fresh 9. The null feeling summons Null, and the lowered handset plus the deadpan 'It's a format thing' makes the cast itself the punchline. The JSON gag asks a little of non-technical readers, so it ties the strong recent strips rather than beating Waited."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Tilde's right hand touches Cursor's leg in every panel. Null's lowered handset in panel 3 dips below the floor line. Null's raised handset overlaps its own outline in panels 1 and 2."
+}

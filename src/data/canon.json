@@ -209,6 +209,10 @@
     {
       "comic": "035-rubber-duck",
       "summary": "The user explains a bug to Cursor through Null's handset, finds it mid-sentence, and calls Cursor a lifesaver. Cursor: \"I didn't say anything.\" Null: \"Best answer you've given.\""
+    },
+    {
+      "comic": "036-strict-mode",
+      "summary": "Null relays: JSON only. Cursor: {\"ok\": true}. Asked how it feels, Cursor answers {\"feelings\": null}. Null looks up from the handset: \"You wanted me?\" Cursor: \"It's a format thing.\""
     }
   ]
 }
