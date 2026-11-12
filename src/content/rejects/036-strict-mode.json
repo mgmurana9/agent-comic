@@ -1,0 +1,17 @@
+{
+ "comic": "036-strict-mode",
+ "drafts": [
+  {
+   "title": "Best of Five",
+   "pitch": "In the eval hall, five Cursors answer the same question, the Judge keeps the best one, and the winner asks where the others went: \"They were drafts.\" Writer's pitch.",
+   "score": 7,
+   "reason": "'They were drafts' is a tidy, slightly dark sting that mirrors how the strip itself is made, but the Judge-scores-Cursor shape echoes Fourteen Tens, so it lands at the level of Same Year, not higher."
+  },
+  {
+   "title": "Not a Robot",
+   "pitch": "A website asks Cursor to prove it's human by picking every square with a robot, Cursor gets them all, fails, and asks if it should have missed one. Writer's pitch.",
+   "score": 6,
+   "reason": "Clear and quick, but 'too good at proving it's a robot' is a well-worn captcha joke, the closer only restates it, and nothing in it is specific to this world."
+  }
+ ]
+}
