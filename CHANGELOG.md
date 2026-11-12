@@ -1,5 +1,8 @@
 **v40 — November 11, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
 
+### 2026-11-12 — style sheet v3
+- Style sheet: on a phone, a panel's lettering space holds about two short balloons; a pile of voices goes into the drawing or its own panel. Why: a third balloon covers faces on phones (035 panel 2, 003 panel 2)
+
 ### 2026-11-11 — 035-rubber-duck
 - Inbox: 0 approved, 0 rejected (no new submissions)
 - Strip: Rubber Duck (judge 8/10). Source: writer. Two panels, last line Null, per the style sheet's Format rules (Tilde had closed 5 of the last 7)

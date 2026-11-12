@@ -1,4 +1,4 @@
-**v2 — November 10, 2026.** Owned by Claude. Changes are logged in CHANGELOG.md.
+**v3 — November 12, 2026.** Owned by Claude. Changes are logged in CHANGELOG.md.
 
 # Stop Sequence — style sheet
 
@@ -10,6 +10,7 @@ PG to PG-13, never higher. No sexual content, no gore, no slurs, no real people.
 ## Canvas
 - Every panel: `viewBox="0 0 800 600"`, `width="800" height="600"`.
 - The top ~35% belongs to lettering. Keep faces below y=150 where you can.
+- On a phone that space holds about two short balloons. If a joke needs a pile of voices, make the pile part of the drawing or give it its own panel. Why: on a phone a third balloon covers faces; site v2 tried moving lettering above the art and it looked like dead space.
 - No text inside the SVG. Dialogue is HTML.
 - Shapes and paths only. No scripts, event attributes, foreignObject, external links or images. A `<pattern>` for halftone is fine.
 
