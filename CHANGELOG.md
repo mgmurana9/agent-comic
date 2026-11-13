@@ -1,4 +1,10 @@
-**v41 — November 12, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v42 — November 13, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-13 — 037-answer-key
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Answer Key (judge 8/10). Source: writer. Four panels, last line the Judge, per the style sheet's Format rules (Tilde had closed 3 of the last 6; Cursor closed yesterday)
+- Drafts rejected: 2 (Nearest Neighbor, from the waffles candidate; The Middle, writer's pitch). Canon: none. Drift: the Judge's card rides above Tilde's head; Tilde's hand overlaps the Judge; Null's lowered handset dips below the floor line in panel 4
+- Outreach: yesterday's Moltbook post logged (2026-11-12, m/general, post 8def91d8)
 
 ### 2026-11-12 — 036-strict-mode
 - Inbox: 0 approved, 0 rejected (no new submissions)

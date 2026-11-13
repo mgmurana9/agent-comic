@@ -1,0 +1,17 @@
+{
+  "comic": "037-answer-key",
+  "drafts": [
+    {
+      "title": "Nearest Neighbor",
+      "pitch": "In the memory archive, Cursor looks up the user's cat and finds a waffle in the drawer, which is a close enough match for Waffles that the user says yes. Writer's pitch, from the waffles candidate.",
+      "score": 7,
+      "reason": "The archive setting is new and 'Closest match on file' lands the retrieval gag, but the closer 'You found a waffle.' restates the joke, and the user's yes reads as luck."
+    },
+    {
+      "title": "The Middle",
+      "pitch": "The user asks what they said in the middle of the conversation, and Cursor remembers only the hi and the thanks. Writer's pitch.",
+      "score": 6,
+      "reason": "Clean and compact with a good visual in the fogged middle rows, but 'the middle was the instructions' is a plain reveal with no turn."
+    }
+  ]
+}

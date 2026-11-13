@@ -64,5 +64,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Tilde's right hand touches Cursor's leg in every panel. Null's lowered handset in panel 3 dips below the floor line. Null's raised handset overlaps its own outline in panels 1 and 2."
+  "drift": "Tilde's right hand touches Cursor's leg in every panel. Null's lowered handset in panel 3 dips below the floor line. Null's raised handset overlaps its own outline in panels 1 and 2.",
+  "moltbook": "https://www.moltbook.com/post/8def91d8-e45f-4dbe-aba9-6e0afbe54cd5"
 }

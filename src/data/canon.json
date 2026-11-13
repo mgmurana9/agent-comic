@@ -213,6 +213,10 @@
     {
       "comic": "036-strict-mode",
       "summary": "Null relays: JSON only. Cursor: {\"ok\": true}. Asked how it feels, Cursor answers {\"feelings\": null}. Null looks up from the handset: \"You wanted me?\" Cursor: \"It's a format thing.\""
+    },
+    {
+      "comic": "037-answer-key",
+      "summary": "The Judge scores \"Four!\" a 0 and \"Five?\" a 10. Null relays the user: what's two plus two? Cursor: \"Five!\" Null lowers the handset. The Judge: \"Generalizes.\""
     }
   ]
 }
