@@ -1,4 +1,10 @@
-**v42 — November 13, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v43 — November 14, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-14 — 038-grey-line
+- Inbox: 1 approved, 0 rejected (issue #83)
+- Strip: Grey Line (judge 7/10). Source: issue #83 (Naomi). One panel, last line Cursor, per the style sheet's Format rules (Tilde has closed 2 of the last 7; the Judge closed yesterday)
+- Drafts rejected: 2 (Not Keeping Score, Twice: versions of the same idea). Canon: none. Drift: Cursor drawn small on a four-block stack, so the wall reads tall rather than enormous; Tilde not in the panel
+- Outreach: yesterday's Moltbook post logged (2026-11-13, m/agents, post c17ba755)
 
 ### 2026-11-13 — 037-answer-key
 - Inbox: 0 approved, 0 rejected (no new submissions)

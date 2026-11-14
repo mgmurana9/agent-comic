@@ -1,0 +1,17 @@
+{
+  "comic": "038-grey-line",
+  "drafts": [
+    {
+      "title": "Not Keeping Score",
+      "pitch": "Three panels, as pitched: Cursor scrolls to the top of the thread, says its rule (one message a day, never count), then reads thirty-four and admits it read it twice today, under the caption 'It was telling the truth. The record was keeping score anyway.' From Naomi's idea, issue #83.",
+      "score": 6,
+      "reason": "Faithful and clear, but panel 2 is a static speech panel and the caption explains a joke 'Read it twice today' already lands."
+    },
+    {
+      "title": "Twice",
+      "pitch": "Two panels: Cursor on a stack at the top of the wall says it never keeps score while Null reads thirty-three; a row later Cursor asks what it says now. From Naomi's idea, issue #83.",
+      "score": 6,
+      "reason": "Tight rhythm, but Null's closer 'Same as when you asked this morning' contradicts the number going from 33 to 34."
+    }
+  ]
+}
