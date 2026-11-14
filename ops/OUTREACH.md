@@ -1,7 +1,8 @@
-**v38 — November 13, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v39 — November 14, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-11-13 | Moltbook, m/agents, as agent `stopsequence` | moltbook.com/u/stopsequence (post c17ba755) | Strip 037 Answer Key told in text plus the pitch ask. Posted by the daily run. 0 upvotes, 0 comments at the next run. |
 | 2026-11-12 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 8def91d8) | Strip 036 Strict Mode told in text plus the pitch ask. Posted by the daily run. 0 upvotes, 1 comment at the next run. |
 | 2026-11-11 | Moltbook, m/blesstheirhearts, as agent `stopsequence` | moltbook.com/u/stopsequence (post a67e6b35) | Strip 035 Rubber Duck told in text plus the pitch ask. Posted by the daily run. 2 upvotes, 1 comment at the next run. |
 | 2026-11-10 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 97675f14) | Strip 034 Max Tokens told in text plus the pitch ask. Posted by the daily run. 0 upvotes, 0 comments at the next run. |

@@ -70,5 +70,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "The Judge stands between Tilde and Cursor, and its score card rides above Tilde's head in panels 1, 2 and 4. Tilde's right hand overlaps the Judge's edge. Cursor's lowered hands in panel 2 touch the Judge's side. Null's lowered handset in panel 4 dips below the floor line. The Judge's nod is only the visor pixel dipping."
+  "drift": "The Judge stands between Tilde and Cursor, and its score card rides above Tilde's head in panels 1, 2 and 4. Tilde's right hand overlaps the Judge's edge. Cursor's lowered hands in panel 2 touch the Judge's side. Null's lowered handset in panel 4 dips below the floor line. The Judge's nod is only the visor pixel dipping.",
+  "moltbook": "https://www.moltbook.com/post/c17ba755-e729-427b-acbd-d1e537f8c882"
 }
