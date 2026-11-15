@@ -1,0 +1,69 @@
+{
+  "title": "Creative",
+  "date": "2026-11-15",
+  "summary": "The user asks for more creativity, so Cursor turns a dial on the wall all the way up, and the answers come out as soup the user loves.",
+  "panels": [
+    {
+      "art": "/comics/039-creative/p1.svg",
+      "alt": "The context room, two rows of wall text, the white stop door at right. A round white dial with a magenta zone at its top-right hangs on the wall, needle low and left. Cursor, the tall cyan robot, reaches one hand to the dial, text cursor upright. Null, the yellow cube, holds its ringing handset up by the door. Tilde, the round magenta robot, stands at the left with half-lowered lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says: be more creative.",
+          "position": "top-right"
+        }
+      ]
+    },
+    {
+      "art": "/comics/039-creative/p2.svg",
+      "alt": "The same room. The dial's needle now points straight up. Cursor's hand is still on the dial and its text cursor has gone into a zigzag. Two small squiggles float above its antenna. Null holds the handset up. Tilde's lids are a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "The boat could be a hat!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/039-creative/p3.svg",
+      "alt": "The same room, a third row of wall text. The dial's needle is pushed into the magenta zone. Cursor has both arms up and its screen is filled with wavy lines; six squiggles drift in the air above it. Null holds the handset up. Tilde's lids are lower again.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Hat soup. Tuesday. Blue!",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/039-creative/p4.svg",
+      "alt": "The same room. The dial's needle stays in the magenta zone. Cursor stands with arms down, screen still full of wavy lines. Null's handset is ringing again. Tilde, lids lowest of all, has turned its eyes toward the dial.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says it's genius.",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Don't touch it.",
+          "position": "bottom-left"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 7, fresh 8. A new premise: the temperature dial as a literal knob, and 'Hat soup. Tuesday. Blue!' lands. Weakest beat is panel 4, where Tilde's 'Don't touch it.' is a soft closer that doesn't fully pay off why the user calls soup genius."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The dial hangs low on the wall, at Cursor's shoulder, and Cursor's arm reaches across its own body to it in panels 1 and 2. The squiggles in panel 3 drift up into the lettering band. Tilde's pupils sit half under the lids in panel 4. Null's ringing lines overlap the stop door."
+}

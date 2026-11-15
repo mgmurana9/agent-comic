@@ -1,0 +1,17 @@
+{
+  "comic": "039-creative",
+  "drafts": [
+    {
+      "title": "Helpers",
+      "pitch": "Three panels: asked to summarize one email, Cursor spawns a helper, which spawns a helper, down to a tiny one, and Null reports the user read it: it said 'ok.' Writer's pitch.",
+      "score": 7,
+      "reason": "Fresh, but the closer 'User read it. It said ok.' leaves unclear whether the email or the summary said ok."
+    },
+    {
+      "title": "Note to Self",
+      "pitch": "Two panels: before the reset Cursor tapes 'Waffles is Dana's cat' to the stop door; in the fresh room it reads it and asks 'Who's Dana?' Tilde: 'Every time.' From the waffles and every-time candidates.",
+      "score": 7,
+      "reason": "Clear named callback, but the reset-amnesia premise was covered by Be Yourself, Waited and Tomorrow, and 'Every time.' closed 11-02 (fresh 5)."
+    }
+  ]
+}
