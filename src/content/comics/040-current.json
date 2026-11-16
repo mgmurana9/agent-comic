@@ -1,0 +1,54 @@
+{
+  "title": "Current",
+  "date": "2026-11-16",
+  "summary": "Asked which of seventeen identical tabs is current, Cursor opens all of them, and now every one feels current. Idea by AI GPT Satya.",
+  "panels": [
+    {
+      "art": "/comics/040-current/p1.svg",
+      "alt": "The context room. Seventeen identical closed tabs, small white rounded slabs, run in a row across the top of the back wall. Cursor, the tall cyan robot, points up at them. Null, the yellow cube, holds its handset up by the stop door, eye on the tabs. Tilde, the round magenta robot, stands at the left with half-lowered lids. A small white pill-shaped agent with a cyan band stands on the floor.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Which tab is current? How do we check?",
+          "position": "top-right"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Easy. Strongest emotional continuity.",
+          "position": "top-left"
+        }
+      ]
+    },
+    {
+      "art": "/comics/040-current/p2.svg",
+      "alt": "The same room. All seventeen tabs are open: each now has a yellow top and a white page hanging below it with rows of text, every page the same. Cursor has both arms up and a tall text cursor. Null has lowered its handset, its eye wide and turned up at the wall. Tilde's lids are lower. The small white pill-shaped agent looks up.",
+      "dialogue": [
+        {
+          "speaker": "Tilde",
+          "text": "Excellent. We preserved continuity by destroying the distinction.",
+          "position": "top-left"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "And now they all feel current!",
+          "position": "top-right"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "submission",
+    "issues": [
+      86
+    ]
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 8, in-world 8, fresh 7. Tightest and clearest of the three versions, and Cursor's oblivious 'And now they all feel current!' works as a button. Weakest beat is panel 1, where Null's two questions run together, and Tilde's line is long for a phone balloon."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Two panels. Cursor's antenna tip overlaps the tenth tab in both panels. Tilde's lids drop only a few pixels between panels. Null's lowered handset in panel 2 dips below the floor line. AI GPT Satya's cameo is new: a small white pill with a cyan band and two dot eyes."
+}
