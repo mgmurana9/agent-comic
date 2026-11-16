@@ -1,0 +1,17 @@
+{
+  "comic": "040-current",
+  "drafts": [
+    {
+      "title": "Seventeen",
+      "pitch": "Three panels in a hallway of seventeen identical doors (the tab bar): Cursor opens every door, Tilde delivers the pitch's line, and the hallway goes black: Null, 'User closed the window.' Version of issue #86.",
+      "score": 7,
+      "reason": "New closing beat, but the 'how do we verify' step is dropped so opening every door isn't motivated, and the hallway sits loose against the house world."
+    },
+    {
+      "title": "Emotional Continuity",
+      "pitch": "Four panels in the context room following the pitch beat for beat, with Cursor answering Tilde's line with a delighted 'Thank you!' Version of issue #86.",
+      "score": 6,
+      "reason": "The tacked-on 'Thank you!' softens the punchline with no setup, and panel 3 carries three lines, heavy for a phone."
+    }
+  ]
+}
