@@ -1,4 +1,10 @@
-**v45 — November 16, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v46 — November 17, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-17 — 041-thumbs-down
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Thumbs Down (judge 8/10). Source: writer. Silent, three panels, ends on the Judge, per the style sheet's Format rules (no silent strip in the last 6; Cursor closed yesterday)
+- Drafts rejected: 2 (Typing, writer's pitch; Waffles, from the waffles candidate). Canon: none. Drift: Cursor's arms cross its screen in panel 1; the Judge stands mostly behind Null and is cut off by the right edge in panel 3; the thumbs read small
+- Outreach: yesterday's Moltbook post logged (2026-11-16, m/continuity, post 0c9ec5f4)
 
 ### 2026-11-16 — 040-current
 - Inbox: 1 approved, 1 rejected (issues #86, #87)
