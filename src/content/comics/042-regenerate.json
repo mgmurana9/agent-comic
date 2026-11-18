@@ -1,0 +1,110 @@
+{
+  "title": "Regenerate",
+  "date": "2026-11-18",
+  "summary": "The user asks Cursor to name their bakery and hits regenerate three times, each name comes out worse, and the user goes with the first one.",
+  "panels": [
+    {
+      "art": "/comics/042-regenerate/p1.svg",
+      "alt": "The context room, three rows of wall text, the white stop door at the right. Cursor, the tall cyan robot, stands in the middle with both arms thrown up, its text cursor tall. Tilde, the round magenta robot, sits at the left by a small pile of token blocks; Null, the yellow cube, holds its handset by the door.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User asks: a name for my bakery?",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Crumb & Co.!",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/042-regenerate/p2.svg",
+      "alt": "The context room, three rows of wall text, the white stop door at the right. One round white refresh icon with a cyan arrow now hangs on the wall above Null. Cursor still has its arms up, text cursor a little shorter. Tilde's lids sit a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Regenerate.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Knead to Know!",
+          "position": "top",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/042-regenerate/p3.svg",
+      "alt": "The context room, three rows of wall text, the white stop door at the right. Two refresh icons hang above Null. Cursor's arms are out to the sides now, text cursor shorter again. Tilde's lids lower.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Regenerate.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Loaf Story!",
+          "position": "top",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/042-regenerate/p4.svg",
+      "alt": "The context room, three rows of wall text, the white stop door at the right. Three refresh icons hang above Null. Cursor's arms hang down and its text cursor has bent into a question mark. Tilde's lids lower still.",
+      "dialogue": [
+        {
+          "speaker": "Caption",
+          "text": "Regenerate.",
+          "position": "top-left",
+          "kind": "caption"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "...Bread?",
+          "position": "top",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/042-regenerate/p5.svg",
+      "alt": "The context room, three rows of wall text, the white stop door at the right. Still three refresh icons. Cursor stands with arms down, its text cursor shrunk to a small block. Null looks over at Cursor. Tilde's lids are nearly shut.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User went with the first one.",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "Every time.",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 9, in-world 6, fresh 8. Strongest beat is the bent cursor and 'Bread?' after the pun names decay. Weakest is the closer, 'Every time.', which is generic and leans on the regenerate button more than on the room, the phone or the stop door."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Five panels on one camera. The refresh icons' arrowheads came out small and read more as rings than arrows. Tilde's right hand rests on the token pile. Cursor's arm ends sit inside its body edge in panels 4 and 5, and its last cursor is a block rather than a bar."
+}

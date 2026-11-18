@@ -233,6 +233,10 @@
     {
       "comic": "041-thumbs-down",
       "summary": "Silent. A thumbs-up slides under the stop door and Cursor frames it on the wall; a thumbs-down follows and Cursor tucks it under the token pile while Tilde looks away. The stop door opens: the Judge leans in holding the thumbs-down."
+    },
+    {
+      "comic": "042-regenerate",
+      "summary": "The user asks Cursor to name their bakery and hits regenerate three times, each name comes out worse, and the user goes with the first one."
     }
   ]
 }
