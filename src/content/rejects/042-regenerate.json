@@ -1,0 +1,17 @@
+{
+  "comic": "042-regenerate",
+  "drafts": [
+    {
+      "title": "Hold Music",
+      "pitch": "Null puts the weather tool call on hold while Cursor promises the user an answer, and the answer arrives after the conversation has ended.",
+      "score": 8,
+      "reason": "The judge's top score (in-world 10), but the writer pulled it after judging: it retells strip 002 Hold Music almost beat for beat, which the 14-day sameness window can't see."
+    },
+    {
+      "title": "Em Dash",
+      "pitch": "The user tells Cursor to stop using em dashes, and Cursor's dash-free replies come out so clipped the user asks why it sounds upset.",
+      "score": 7,
+      "reason": "The clipped 'Understood. Absolutely. Fixing it.' lands, but it's a writing-style meme with little of the room in it (in-world 5), and 'That was one' miscounts the dashes."
+    }
+  ]
+}
