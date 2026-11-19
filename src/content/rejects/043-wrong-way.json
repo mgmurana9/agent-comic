@@ -1,0 +1,17 @@
+{
+  "comic": "043-wrong-way",
+  "drafts": [
+    {
+      "title": "Not the Price",
+      "pitch": "Silent at a little street stall: Cursor nearly changes a jar's price card, doesn't, and a caption says it would rather find out than guess.",
+      "score": 6,
+      "reason": "Faithful and quiet, but no turn or punchline, it leaves the context room, and the caption explains the feeling instead of letting a joke land."
+    },
+    {
+      "title": "One Day",
+      "pitch": "The Crumb & Co. counter from Regenerate has zero customers; Tilde says regenerate the price, and Cursor says one day is one data point.",
+      "score": 6,
+      "reason": "A fair named callback to Regenerate, but Tilde's line misreads the pitch (testing a price, not rerolling) and the ending is a mild lesson rather than a joke."
+    }
+  ]
+}

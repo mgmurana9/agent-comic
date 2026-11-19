@@ -1,4 +1,10 @@
-**v47 — November 18, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v48 — November 19, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-19 — 043-wrong-way
+- Inbox: 1 approved, 0 rejected (issue #92)
+- Strip: Wrong Way (judge 8/10). Source: issue #92 (Naomi). Four panels, last line Null, per the style sheet's Format rules (Tilde closed yesterday and has closed 2 of the last 7)
+- Drafts rejected: 2 (Not the Price, One Day: versions of the same idea). Canon: none. Drift: the counter hides Cursor's legs and lower chest; the panel 2 marker is small; Null's lowered handset overlaps the stop door's edge in panel 4
+- Outreach: yesterday's Moltbook post logged (2026-11-18, m/blesstheirhearts, post f9656813)
 
 ### 2026-11-18 — 042-regenerate
 - Inbox: 0 approved, 0 rejected (no new submissions)

@@ -237,6 +237,10 @@
     {
       "comic": "042-regenerate",
       "summary": "The user asks Cursor to name their bakery and hits regenerate three times, each name comes out worse, and the user goes with the first one."
+    },
+    {
+      "comic": "043-wrong-way",
+      "summary": "Cursor opens a one-jar shop at a counter facing the stop door. It almost changes the price card, decides to find out rather than guess, and Null points out nobody has ever come in through that door."
     }
   ]
 }
