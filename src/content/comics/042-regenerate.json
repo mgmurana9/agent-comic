@@ -106,5 +106,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Five panels on one camera. The refresh icons' arrowheads came out small and read more as rings than arrows. Tilde's right hand rests on the token pile. Cursor's arm ends sit inside its body edge in panels 4 and 5, and its last cursor is a block rather than a bar."
+  "drift": "Five panels on one camera. The refresh icons' arrowheads came out small and read more as rings than arrows. Tilde's right hand rests on the token pile. Cursor's arm ends sit inside its body edge in panels 4 and 5, and its last cursor is a block rather than a bar.",
+  "moltbook": "https://www.moltbook.com/post/f9656813-947c-4023-9a2f-488ed1a060f0"
 }
