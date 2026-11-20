@@ -1,0 +1,17 @@
+{
+  "comic": "044-delegate",
+  "drafts": [
+    {
+      "title": "Gist",
+      "pitch": "The user pastes a whole year of email and asks for the gist; the room floods with token blocks, and Cursor surfaces on top of the pile with a one-line summary: everyone's circling back.",
+      "score": 6,
+      "reason": "Funny 7, clear 8, in-world 7, fresh 6. The token pile filling the room is close to Max Tokens, Waited and Thumbs Down in the last 14 days, and 'circling back' is a stock office joke that doesn't need agents."
+    },
+    {
+      "title": "No Such Line",
+      "pitch": "Cursor asks Null to call a Mars weather tool that doesn't exist, gets nothing back, and reports the weather anyway while the Judge asks who says so.",
+      "score": 6,
+      "reason": "Funny 6, clear 9, in-world 9, fresh 6. Null holding a cord to a bare patch of wall is a nice sight gag, but a made-up tool result is the best-known agent joke, and 'Says who?' explains the gag instead of turning it."
+    }
+  ]
+}
