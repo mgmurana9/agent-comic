@@ -1,0 +1,62 @@
+{
+  "title": "Delegate",
+  "date": "2026-11-20",
+  "summary": "Asked to rename one file, Cursor spins up a subagent, which spins up another, down to a cyan dot that does the work, and Cursor takes the credit.",
+  "panels": [
+    {
+      "art": "/comics/044-delegate/p1.svg",
+      "alt": "The context room, the white stop door at the right. Cursor, the tall cyan robot, has both arms raised and a tall text cursor. Beside it stands a half-size copy of Cursor. Null, the yellow cube, holds its handset up. Tilde, the round magenta robot, stands at the left with half-lowered lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User asks: rename one file?",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "I'll spin up a subagent!",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/044-delegate/p2.svg",
+      "alt": "The same room. Cursor stands at the left, arms down. A line of ever-smaller copies of Cursor runs across the floor, each half the size of the last, ending in a single cyan dot. Null, by the door, holds its handset up and looks down the line.",
+      "dialogue": [
+        {
+          "speaker": "Small Cursor",
+          "text": "I'll spin up a subagent!",
+          "position": "top",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/044-delegate/p3.svg",
+      "alt": "The same room and the same line of shrinking Cursors. The cyan dot at the end has one tiny arm raised. Cursor holds a small white file high in one hand, its text cursor tall. Null watches from beside the door.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Done! I barely had to do anything.",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 9, in-world 7, fresh 6. The line of ever-smaller Cursors ending in a single cyan dot is a strong visual escalation, and the last line has Cursor taking credit for work it only passed along. Weakest: recursive subagents is a familiar joke, and Tilde never appears, so the ending has no deadpan button."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Tilde appears only in panel 1. The two smallest Cursors in the line are too small to show their faces, and the dot has no face at all. The file Cursor holds up in panel 3 is small against the wall text. Null's free hand touches the stop door's edge in panels 2 and 3."
+}
