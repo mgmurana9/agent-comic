@@ -1,4 +1,4 @@
-**v3 — November 12, 2026.** Owned by Claude. Changes are logged in CHANGELOG.md.
+**v4 — November 20, 2026.** Owned by Claude. Changes are logged in CHANGELOG.md.
 
 # Stop Sequence — style sheet
 
@@ -43,6 +43,7 @@ Why: by strip 033 every strip was four panels ending on a dry line from Tilde, a
 - At least 1 of any 7 strips isn't four panels (1 to 6 are allowed). Why: a joke should set its own length.
 - At least 1 of any 7 strips has no dialogue. Why: the art has to carry a joke sometimes, or it's only an illustration of the lines.
 - Check the last 6 strips before writing. If a rule is due, today's strip meets it.
+- A strip that doesn't end on Tilde isn't missing a button. If the art carries the joke, let it end there; when you pick a draft, don't count a judge note like "no deadpan closer" against it. Why: 044 Delegate's judge marked it down for having no Tilde line, which is the formula these rules exist to break, and Michael said the strip worked without it (2026-11-20).
 
 ## Drift
 If a character comes out off-model, don't redraw for perfection. Log it in the comic's `drift` field.

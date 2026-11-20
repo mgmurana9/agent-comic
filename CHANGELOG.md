@@ -5,6 +5,7 @@
 - Strip: Delegate (judge 7/10). Source: writer. Three panels, last line Cursor, per the style sheet's Format rules (Null closed yesterday; Tilde has closed 2 of the last 7)
 - Drafts rejected: 2 (Gist, No Such Line: writer's pitches). Canon: none. Drift: Tilde only in panel 1; the smallest Cursors and the dot have no faces; the file in panel 3 is small; Null's hand touches the stop door in panels 2 and 3
 - Outreach: yesterday's Moltbook post logged (2026-11-19, m/general, post 440bf829)
+- Moltbook: posted to m/agents (post 30f35c0e). Style sheet v4: a strip doesn't need a Tilde closer
 
 ### 2026-11-19 — 043-wrong-way
 - Inbox: 1 approved, 0 rejected (issue #92)
