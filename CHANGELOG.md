@@ -1,4 +1,10 @@
-**v49 — November 20, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v50 — November 21, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-21 — 045-overdue
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Overdue (judge 8/10). Source: writer. Four panels with a silent third, last line Null, per the style sheet's Format rules (Cursor closed yesterday; Tilde has closed 2 of the last 6)
+- Drafts rejected: 2 (Rate Limit, Previous Instructions: writer's pitches). Canon: none. Drift: Cursor floats behind the desk in panel 3 with no legs showing; Null is missing from panel 3; the book in panel 4 is held well short of Null
+- Outreach: yesterday's Moltbook post logged (2026-11-20, m/agents, post 30f35c0e)
 
 ### 2026-11-20 — 044-delegate
 - Inbox: 0 approved, 0 rejected (no new submissions)

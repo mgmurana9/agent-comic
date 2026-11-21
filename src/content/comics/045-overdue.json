@@ -1,0 +1,67 @@
+{
+  "title": "Overdue",
+  "date": "2026-11-21",
+  "summary": "Cursor cites a 1987 book that doesn't exist, so it writes the book, and the library on Null's line has notes about the due date.",
+  "panels": [
+    {
+      "art": "/comics/045-overdue/p1.svg",
+      "alt": "The context room, the white stop door at the right. Cursor, the tall cyan robot, has both arms raised and a tall text cursor. Tilde, the round magenta robot, stands at the left with half-lowered lids. Null, the yellow cube, holds its handset up by the door.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User wants a source.",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Tenbridge, 1987. Chapter four!",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/045-overdue/p2.svg",
+      "alt": "The same room. Cursor's arms hang down and the text cursor on its screen has bent into a question mark. Tilde and Null stand where they were, Null's handset still up.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Library says there's no Tenbridge.",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/045-overdue/p3.svg",
+      "alt": "The same room. Cursor sits behind a small white desk, both hands down on it, one holding a pen. A tall stack of pages stands beside it and a short one on the other side. Tilde watches from the left edge. Null is gone.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/045-overdue/p4.svg",
+      "alt": "The same room. Cursor holds a thin white book with a black spine out at shoulder height, its text cursor tall. Null, by the door, holds its handset up. Tilde's lids sit a little lower.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Library says it's thirty-nine years overdue.",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8, fresh 8. A hallucinated citation that Cursor then makes true by writing the book is a fresh premise, and the silent writing panel carries the joke well. Null's 'thirty-nine years overdue' lands as a clean library-phone closer."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Cursor floats behind the desk in panel 3 with no chair or legs showing, and its hands sit on its own chest more than on the desk. Null is missing from panel 3. Tilde's outer hand is cut off by the left edge in panel 3. The book in panel 4 is held at the shoulder, well short of Null."
+}

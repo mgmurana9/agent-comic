@@ -245,6 +245,10 @@
     {
       "comic": "044-delegate",
       "summary": "Cursor delegates renaming one file to a chain of ever-smaller subagents, the last one a dot, and takes the credit."
+    },
+    {
+      "comic": "045-overdue",
+      "summary": "Null: \"User wants a source.\" Cursor: \"Tenbridge, 1987. Chapter four!\" The library says there's no Tenbridge. Silent: Cursor writes it at a desk. Null: \"Library says it's thirty-nine years overdue.\""
     }
   ]
 }
