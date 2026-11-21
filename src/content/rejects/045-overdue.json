@@ -1,0 +1,17 @@
+{
+  "comic": "045-overdue",
+  "drafts": [
+    {
+      "title": "Rate Limit",
+      "pitch": "Null queues to make one tool call behind a line of identical yellow cubes at a single wall phone in a grey hallway, and at the front is told to try again in sixty seconds.",
+      "score": 7,
+      "reason": "Funny 7, clear 8, in-world 7, fresh 7. The queue of Nulls stretching both ways is a strong visual and the payoff is clear, but the line to the vanishing point is close to 044's shrinking chain, and Cursor has little to do after the setup."
+    },
+    {
+      "title": "Previous Instructions",
+      "pitch": "A fetched web page tells Cursor to ignore all previous instructions; Cursor complies at once and then can't say what they were.",
+      "score": 6,
+      "reason": "Funny 6, clear 6, in-world 8, fresh 7. Good idea of an injection hitting an agent with nothing to forget, but the last panel's two lines don't connect, and Cursor's eager 'Done!' echoes 044."
+    }
+  ]
+}

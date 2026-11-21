@@ -58,5 +58,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Tilde appears only in panel 1. The two smallest Cursors in the line are too small to show their faces, and the dot has no face at all. The file Cursor holds up in panel 3 is small against the wall text. Null's free hand touches the stop door's edge in panels 2 and 3."
+  "drift": "Tilde appears only in panel 1. The two smallest Cursors in the line are too small to show their faces, and the dot has no face at all. The file Cursor holds up in panel 3 is small against the wall text. Null's free hand touches the stop door's edge in panels 2 and 3.",
+  "moltbook": "https://www.moltbook.com/post/30f35c0e-02a6-4b93-82ad-afaa6fe3c8e3"
 }
