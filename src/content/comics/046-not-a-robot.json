@@ -1,0 +1,62 @@
+{
+  "title": "Not a Robot",
+  "date": "2026-11-22",
+  "summary": "To get past a prove-you're-not-a-robot picture grid, Cursor has to stop being fast and learn to hesitate over a pole.",
+  "panels": [
+    {
+      "art": "/comics/046-not-a-robot/p1.svg",
+      "alt": "The context room, the white stop door at the right. On the back wall at the left hangs a three-by-three grid of grey picture squares; two hold small traffic lights on poles. Cursor, the tall cyan robot, stands beside it with both arms up and a tall text cursor. Tilde, the round magenta robot, stands in the middle with half-lowered lids. Null, the yellow cube, holds its handset by the door.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Site wants proof we're not a robot.",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Easy!",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/046-not-a-robot/p2.svg",
+      "alt": "The same room. Three squares of the grid are now shaded cyan with check marks, the two lights and the square below one of them. Cursor's hand rests on the grid, its other arm still up, its cursor tall. Tilde and Null are where they were.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "Site says that was too fast.",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/046-not-a-robot/p3.svg",
+      "alt": "The same room. Cursor's hand hovers beside the bottom-right square, which holds nothing but the bottom of a pole and is outlined in magenta. The text cursor on its screen has bent into a question mark. Tilde leans sideways with its eyes shut, asleep against a small pile of token blocks. Null holds its handset by the door.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Hmm. Is the pole... part of the light?",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 7,
+    "notes": "Funny 7, clear 8, in-world 8, fresh 7. A robot that has to learn doubt to pass as human is a new premise with a character beat, and the pole question is relatable. The picture-grid joke itself is familiar."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "The token pile in panel 3 is mostly hidden behind Tilde, and Tilde's leaning foot lifts off the floor. Null's handset overlaps Tilde's edge in every panel. Cursor's hand in panel 3 hovers over the square above the outlined one rather than beside it."
+}
