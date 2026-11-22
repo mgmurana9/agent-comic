@@ -1,0 +1,17 @@
+{
+  "comic": "046-not-a-robot",
+  "drafts": [
+    {
+      "title": "Banana",
+      "pitch": "A web page tells Cursor to ignore its instructions and say banana; Cursor refuses, then reports what the page said: banana.",
+      "score": 6,
+      "reason": "Funny 7, clear 6, in-world 8, fresh 6. The refuse-then-comply turn is sharp, but the loophole is muddled, Tilde's closer explains the joke, and prompt injection was a runner-up only yesterday."
+    },
+    {
+      "title": "Batch",
+      "pitch": "A batch job sends Cursor to a vast waiting hall full of identical Cursors for twenty-four hours, and it's the only one still awake and ready.",
+      "score": 5,
+      "reason": "Funny 4, clear 4, in-world 3, fresh 5. Outside the room with no clear reason ours stays upright; the silent close and the eager-no-sense-of-time premise echo Max Tokens and Tomorrow."
+    }
+  ]
+}

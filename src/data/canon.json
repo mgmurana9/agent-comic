@@ -249,6 +249,10 @@
     {
       "comic": "045-overdue",
       "summary": "Null: \"User wants a source.\" Cursor: \"Tenbridge, 1987. Chapter four!\" The library says there's no Tenbridge. Silent: Cursor writes it at a desk. Null: \"Library says it's thirty-nine years overdue.\""
+    },
+    {
+      "comic": "046-not-a-robot",
+      "summary": "Null: \"Site wants proof we're not a robot.\" Cursor checks every traffic light at once. Null: \"Site says that was too fast.\" Cursor, hovering over one square: \"Hmm. Is the pole... part of the light?\""
     }
   ]
 }
