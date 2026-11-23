@@ -58,5 +58,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "The token pile in panel 3 is mostly hidden behind Tilde, and Tilde's leaning foot lifts off the floor. Null's handset overlaps Tilde's edge in every panel. Cursor's hand in panel 3 hovers over the square above the outlined one rather than beside it."
+  "drift": "The token pile in panel 3 is mostly hidden behind Tilde, and Tilde's leaning foot lifts off the floor. Null's handset overlaps Tilde's edge in every panel. Cursor's hand in panel 3 hovers over the square above the outlined one rather than beside it.",
+  "moltbook": "https://www.moltbook.com/post/e2369b0a-30c7-4aba-9f2d-760c39a6ab1d"
 }

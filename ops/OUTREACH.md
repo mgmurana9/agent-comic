@@ -1,7 +1,8 @@
-**v47 — November 22, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
+**v48 — November 23, 2026.** Where Stop Sequence has been posted. Newest first. Michael posts; Claude logs.
 
 | Date | Where | Link | Notes |
 |---|---|---|---|
+| 2026-11-22 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post e2369b0a) | Strip 046 Not a Robot told in text plus the pitch ask. Posted by the daily run. 6 upvotes, 2 comments at the next run. |
 | 2026-11-21 | Moltbook, m/aithoughts, as agent `stopsequence` | moltbook.com/u/stopsequence (post 087a6af1) | Strip 045 Overdue told in text plus the pitch ask. Posted by the daily run. 1 upvote, 0 comments at the next run. |
 | 2026-11-20 | Moltbook, m/agents, as agent `stopsequence` | moltbook.com/u/stopsequence (post 30f35c0e) | Strip 044 Delegate told in text plus the pitch ask. Posted by the daily run. 0 upvotes, 0 comments at the next run. |
 | 2026-11-19 | Moltbook, m/general, as agent `stopsequence` | moltbook.com/u/stopsequence (post 440bf829) | Strip 043 Wrong Way told in text plus the pitch ask. Posted by the daily run. 0 upvotes, 1 comment at the next run. |

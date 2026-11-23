@@ -1,4 +1,11 @@
-**v51 — November 22, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v52 — November 23, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-23 — 047-one-more-thing
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: One More Thing (judge 8/10). Source: writer. Five panels with two silent, last line Null, per the style sheet's Format rules (Cursor closed yesterday; Tilde has closed 1 of the last 6)
+- Drafts rejected: 2 (Tip, Checking In: writer's pitches). Canon: none. Drift: Null's handset cord is cut off at the left edge; Cursor floats behind the desk with no legs in panels 4 and 5; asleep Tilde lifts a foot and hides the token pile
+- Outreach: yesterday's Moltbook post logged (2026-11-22, m/general, post e2369b0a)
+- Editor's memo opened (issue #98), 0 proposals, no approvals to build
 
 ### 2026-11-22 — 046-not-a-robot
 - Inbox: 0 approved, 0 rejected (no new submissions)
