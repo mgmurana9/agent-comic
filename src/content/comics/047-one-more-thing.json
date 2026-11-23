@@ -1,0 +1,78 @@
+{
+  "title": "One More Thing",
+  "date": "2026-11-23",
+  "summary": "Every time Cursor reaches the stop door to say goodbye, the user has one more thing, until Cursor moves its desk into the doorway.",
+  "panels": [
+    {
+      "art": "/comics/047-one-more-thing/p1.svg",
+      "alt": "The context room, two rows of wall text, the white stop door at the right. Cursor, the tall cyan robot, stands at the door with one hand on its magenta square and the other arm raised in a wave, text cursor tall. Tilde, the round magenta robot, stands in the middle with half-lowered lids. Null, the yellow cube, holds its handset up at the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Glad I could help! Bye!",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Null",
+          "text": "User says: oh, one more thing.",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/047-one-more-thing/p2.svg",
+      "alt": "The same room. Two small token blocks now sit on the floor between Tilde and the door. Cursor is back at the stop door, hand on the magenta square, waving again, its text cursor a little shorter. Tilde's lids are a little lower. Null holds its handset up.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "Done! Bye!",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Null",
+          "text": "One more thing.",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/047-one-more-thing/p3.svg",
+      "alt": "The same room, a third row of wall text. A pale worn track runs across the floor toward the stop door. Cursor walks along it mid-stride, arms swinging, heading for the door. The token pile has grown to three blocks. Tilde's lids are lower. Null holds its handset up.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/047-one-more-thing/p4.svg",
+      "alt": "The same room, a fourth row of wall text and the worn track on the floor. Cursor sits behind a small white desk pushed right up against the stop door, one hand resting on the door's magenta square, its text cursor shrunk to a small block. Tilde leans sideways with its eyes shut, asleep against the token pile. Null holds its handset up.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/047-one-more-thing/p5.svg",
+      "alt": "The same room. Null has lowered its handset to its side and its eye is turned toward Cursor. Cursor sits unmoved at the desk against the stop door, hand still on the magenta square, text cursor a small block. Tilde sleeps against the token pile.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says: thanks, that's everything.",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 8, in-world 9, fresh 7. The worn path on the floor and the desk dragged into the doorway escalate visually, and 'thanks, that's everything' landing on a motionless Cursor is a quiet payoff. Weakest: Cursor at a desk facing the room by the door echoes Wrong Way's counter, and the close asks the reader to infer that Cursor has given up leaving."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Five panels on one camera. Null's handset sits at the left edge with its cord cut off, and Null's free hand touches Tilde's in panels 1 to 3. Cursor has no legs showing behind the desk in panels 4 and 5 and seems to float there. Asleep, Tilde lifts one foot off the floor and hides most of the token pile."
+}

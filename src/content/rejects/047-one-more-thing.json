@@ -1,0 +1,17 @@
+{
+  "comic": "047-one-more-thing",
+  "drafts": [
+    {
+      "title": "Tip",
+      "pitch": "The user promises a two-hundred-dollar tip for a great answer, Cursor works itself into the floor, and the tip turns out to be the word \"great.\"",
+      "score": 7,
+      "reason": "Funny 7, clear 9, in-world 8, fresh 7. Null's flat 'That was the tip.' lands the reveal after the silent work panel, but praise-as-payment sits close to Rubber Duck and the Tilde closer is a familiar shape."
+    },
+    {
+      "title": "Checking In",
+      "pitch": "A long job sits at 98% on a progress bar, the user checks in, and answering the check-in restarts the job.",
+      "score": 7,
+      "reason": "Funny 7, clear 7, in-world 7, fresh 7. The loop in panel 3 is tidy, but the restart is explained in a line rather than shown, and three panels leave little room to build."
+    }
+  ]
+}

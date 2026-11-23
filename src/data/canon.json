@@ -253,6 +253,10 @@
     {
       "comic": "046-not-a-robot",
       "summary": "Null: \"Site wants proof we're not a robot.\" Cursor checks every traffic light at once. Null: \"Site says that was too fast.\" Cursor, hovering over one square: \"Hmm. Is the pole... part of the light?\""
+    },
+    {
+      "comic": "047-one-more-thing",
+      "summary": "Cursor reaches the stop door: \"Glad I could help! Bye!\" Null: \"Oh, one more thing.\" Again. Silent: a path wears into the floor; Cursor moves a desk against the door and sits there. Null: \"User says: thanks, that's everything.\" Cursor doesn't move."
     }
   ]
 }
