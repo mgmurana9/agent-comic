@@ -1,0 +1,30 @@
+{
+  "title": "Benchmark",
+  "date": "2026-11-24",
+  "summary": "Cursor clears the benchmark's bar for a perfect ten, and a wider shot shows the bar sits a hand's height off the track.",
+  "panels": [
+    {
+      "art": "/comics/048-benchmark/p1.svg",
+      "alt": "Outside the context room, on a pale running track under a halftone sky. Cursor, the tall cyan robot, is mid-leap and tilted, both arms flung up, text cursor tall, high above a black-and-white striped bar that runs in from the left edge. The Judge, a tall white slab with a black visor and magenta pixel, stands at the right holding up a score card of ten filled black squares.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/048-benchmark/p2.svg",
+      "alt": "A wide shot of the same track. The striped bar rests on two short stands barely above the track, and Cursor leaps far over it, arms up. Behind it, three faint, pale Cursors hang mid-leap over three more low bars in a row. The Judge stands at the right, small now, still holding up the card of ten filled squares.",
+      "dialogue": []
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 6, fresh 8. A clean two-panel reveal where the wide shot shows the record bar is a hand's height off the track, with the faint row of earlier Cursors adding a second laugh, and it works silently. Weakest: it leaves the context room for a running track, which loosens the world, though the Judge keeps it anchored."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Silent, two panels, set outside the context room. Cursor's raised hand is cut off by the top edge in panel 1, and its tucked legs barely show. The faint Cursors in panel 2 overlap the bar stands. Tilde and Null are not in this one."
+}

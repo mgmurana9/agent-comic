@@ -1,0 +1,17 @@
+{
+  "comic": "048-benchmark",
+  "drafts": [
+    {
+      "title": "Parallel",
+      "pitch": "Null is asked to make tool calls in parallel, and handsets multiply until every answer lands at once.",
+      "score": 7,
+      "reason": "Funny 6, clear 6, in-world 8, fresh 7. The slack cords and the whole pile landing at once is a good silent payoff, but the six-cord tangle is busy and 'parallel' takes a beat to read without dialogue."
+    },
+    {
+      "title": "Million",
+      "pitch": "The context window gets upgraded to a million tokens, and Cursor's trip to reread the user's first message becomes an expedition.",
+      "score": 6,
+      "reason": "Funny 7, clear 8, in-world 9, fresh 4. The tent and token-block campfire reads instantly, but travelling to the far end of a long context sits too close to Grey Line, so it's capped at 6."
+    }
+  ]
+}
