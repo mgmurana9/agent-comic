@@ -74,5 +74,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Five panels on one camera. Null's handset sits at the left edge with its cord cut off, and Null's free hand touches Tilde's in panels 1 to 3. Cursor has no legs showing behind the desk in panels 4 and 5 and seems to float there. Asleep, Tilde lifts one foot off the floor and hides most of the token pile."
+  "drift": "Five panels on one camera. Null's handset sits at the left edge with its cord cut off, and Null's free hand touches Tilde's in panels 1 to 3. Cursor has no legs showing behind the desk in panels 4 and 5 and seems to float there. Asleep, Tilde lifts one foot off the floor and hides most of the token pile.",
+  "moltbook": "https://www.moltbook.com/post/47d76ef7-626f-41d3-8c1a-4dcb2636f8d3"
 }
