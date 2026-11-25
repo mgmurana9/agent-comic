@@ -1,0 +1,67 @@
+{
+  "title": "Seating Chart",
+  "date": "2026-11-25",
+  "summary": "Asked to seat twelve relatives so nobody sits by anyone they argue with, Cursor gives every one of them their own table.",
+  "panels": [
+    {
+      "art": "/comics/049-seating-chart/p1.svg",
+      "alt": "The context room, two rows of wall text, the white stop door at the right. A white chart is pinned to the back wall: twelve small yellow circles in a ring, tangled together by dozens of crossing magenta lines. Cursor, the tall cyan robot, points at it with one arm, text cursor tall. Null, the yellow cube, stands at the left holding its black handset.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User needs a seating chart. Twelve relatives. Nobody sits by anyone they argue with.",
+          "position": "top-left",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "On it!",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/049-seating-chart/p2.svg",
+      "alt": "The same room, the floor now crowded with twelve tiny white tables in three rows, each with one yellow chair and a white name card. Cursor stands by the stop door, smaller in the distance, pointing proudly at them. Tilde, the round magenta robot, sits alone behind one of the tables in the middle row, lids half down.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/049-seating-chart/p3.svg",
+      "alt": "The same twelve tiny tables. Cursor stands by the stop door with both arms up. Tilde still sits alone at her table in the middle row. Null, the yellow cube, stands among the front tables at the left edge, its handset to its ear.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User says nobody argued.",
+          "position": "top-left",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "Told you!",
+          "position": "top-right",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Null",
+          "text": "Nobody talked.",
+          "position": "bottom-left",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8, fresh 8. The silent second panel of twelve one-chair tables with Tilde alone at one pays off in the quiet 'Nobody talked.' close. Weakest: 'Told you!' is a small speed bump before the punch, and the over-literal solution is familiar from Delegate."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Three panels. Cursor is drawn at a smaller scale than the tables would suggest in panels 2 and 3, standing in front of the stop door's lower half. Tilde sits behind a table whose name card covers her mouth. Null's handset is cut off by the left edge in panel 3 and Null overlaps a front-row table."
+}
