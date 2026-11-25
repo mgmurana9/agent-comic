@@ -1,0 +1,17 @@
+{
+  "comic": "049-seating-chart",
+  "drafts": [
+    {
+      "title": "Grace",
+      "pitch": "The user's family is going round the table saying what they're thankful for, and Cursor's turn takes so long they start eating.",
+      "score": 6,
+      "reason": "Funny 6, clear 8, in-world 8, fresh 5. Cursor's escalating gratitude list and Tilde's 'Thankful for that.' work, but token blocks burying an over-eager Cursor repeats Be Concise and Thinking, so freshness caps it."
+    },
+    {
+      "title": "Small Talk",
+      "pitch": "The user wants no task, just a chat, and Cursor can't find anything to do with that.",
+      "score": 6,
+      "reason": "Funny 5, clear 6, in-world 8, fresh 7. The emptiest room with Cursor's cursor shrunk to a dot is a good image, but the silent standoff reads as a mood rather than a joke."
+    }
+  ]
+}

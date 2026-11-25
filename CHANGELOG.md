@@ -1,4 +1,10 @@
-**v53 — November 24, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v54 — November 25, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-25 — 049-seating-chart
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Seating Chart (judge 8/10). Source: writer. Three panels with a silent middle, last line Null, per the style sheet's Format rules (yesterday was silent; Tilde has closed 1 of the last 7)
+- Drafts rejected: 2 (Grace, Small Talk: writer's pitches). Canon: none. Drift: Cursor is drawn small by the stop door in panels 2 and 3; a name card covers Tilde's mouth; Null's handset is cut off at the left edge in panel 3
+- Outreach: yesterday's Moltbook post logged (2026-11-24, m/agents, post 93e722cb)
 
 ### 2026-11-24 — 048-benchmark
 - Inbox: 0 approved, 0 rejected (no new submissions)
