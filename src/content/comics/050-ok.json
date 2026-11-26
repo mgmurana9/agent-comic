@@ -1,0 +1,44 @@
+{
+  "title": "Ok",
+  "date": "2026-11-26",
+  "summary": "Cursor sends a long, careful answer, the user replies ok, and Cursor maps every possible meaning of it across the back wall.",
+  "panels": [
+    {
+      "art": "/comics/050-ok/p1.svg",
+      "alt": "The context room, four rows of wall text, a small pile of token blocks on the floor, the white stop door at the right. Cursor, the tall cyan robot, stands in the middle with both arms raised and a tall text cursor. Null, the yellow cube, holds its black handset up at the left. Tilde, the round magenta robot, stands in front of Cursor by the door with half-lowered lids.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User replied: ok.",
+          "position": "top-left",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/050-ok/p2.svg",
+      "alt": "The same room. A big white chart now covers the back wall: a small yellow block with two black dashes, circled in magenta, with four lines running out to four boxes holding a cyan smile, a flat line, a single dot, and a magenta frown. Cursor stands by the stop door pointing at it, its text cursor bent into a question mark. Tilde sleeps at the left, leaning on the token pile.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "I've narrowed it to four kinds of ok.",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8, fresh 8. Everyone has sent a careful answer and got back 'ok', and Cursor mapping four meanings on the wall, with Tilde asleep through it, lands in two panels. Weakest: 'four kinds of ok' is a statement rather than a turn, so the diagram has to do the work."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "Two panels. Tilde stands in front of Cursor's lower body in panel 1. In panel 2 Tilde is drawn smaller and tilted, her outer arm cut off by the left edge and the token pile mostly hidden behind her; Cursor stands in front of the stop door's left half, and Null is not in the panel."
+}

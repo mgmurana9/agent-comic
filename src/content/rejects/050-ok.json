@@ -1,0 +1,17 @@
+{
+  "comic": "050-ok",
+  "drafts": [
+    {
+      "title": "Fork",
+      "pitch": "The user forks the conversation, and now there are two of everyone, including two equally tired Tildes.",
+      "score": 7,
+      "reason": "Funny 7, clear 9, in-world 8, fresh 7. The silent split room with two Cursors waving across the line is a nice visual and the Tilde close lands, but the doubled-tiredness payoff is predictable and Cursor does nothing of its own."
+    },
+    {
+      "title": "Cached",
+      "pitch": "Null's answers get faster once they're cached, until Cursor wonders what the user actually asked.",
+      "score": 7,
+      "reason": "Funny 7, clear 6, in-world 8, fresh 7. A good escalation of Null answering before the ring, but 'cached' needs explaining, the pre-answered weather reads ambiguously, and Null's eye sliding away echoes recent Null closers."
+    }
+  ]
+}

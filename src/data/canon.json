@@ -265,6 +265,10 @@
     {
       "comic": "049-seating-chart",
       "summary": "Null relays a seating chart for twelve relatives where nobody sits by anyone they argue with. Silent: Cursor gives everyone their own tiny table; Tilde sits alone at one. Null: \"User says nobody argued.\" Cursor: \"Told you!\" Null: \"Nobody talked.\""
+    },
+    {
+      "comic": "050-ok",
+      "summary": "Cursor sends a long careful answer; the user replies \"ok.\" Cursor maps four meanings of it on the back wall while Tilde sleeps: \"I've narrowed it to four kinds of ok.\""
     }
   ]
 }
