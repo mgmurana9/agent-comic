@@ -1,0 +1,66 @@
+{
+  "title": "Pack Light",
+  "date": "2026-11-27",
+  "summary": "The context room is full, so Cursor and Tilde sit on the token pile to fit one more message, and the block that squeezes out matters.",
+  "panels": [
+    {
+      "art": "/comics/051-pack-light/p1.svg",
+      "alt": "The context room, the back wall covered in rows of text, a token pile stacked almost to the ceiling in the middle, one block at its bottom left marked in magenta. Cursor, the tall cyan robot, stands on the pile with both arms up and a tall text cursor. Null, the yellow cube, holds its handset at the left. Tilde, the round magenta robot, stands by the stop door, which has a mail slot.",
+      "dialogue": [
+        {
+          "speaker": "Null",
+          "text": "User sent one more message.",
+          "position": "top-left",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Cursor",
+          "text": "It'll fit!",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    },
+    {
+      "art": "/comics/051-pack-light/p2.svg",
+      "alt": "The same room. Tilde sits on top of the token pile and Cursor hops in the air beside her with arms up, bounce lines under them, pressing the pile down like a suitcase lid. Null watches from the left.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/051-pack-light/p3.svg",
+      "alt": "The pile is squashed low and wide. Speed lines run from it to the stop door, where a single block with a magenta bar is shooting into the mail slot. Cursor stands on the pile with hands on hips; Tilde sits on it, looking toward the door.",
+      "dialogue": []
+    },
+    {
+      "art": "/comics/051-pack-light/p4.svg",
+      "alt": "The pile is now a neat, flat layer across the floor. The top row of the wall text is gone, leaving a blank strip. Cursor stands on the pile, hands on hips. Tilde stands at the right near the stop door with low lids. Null holds its handset at the left.",
+      "dialogue": [
+        {
+          "speaker": "Cursor",
+          "text": "See? Fits.",
+          "position": "top-left",
+          "kind": "speech"
+        },
+        {
+          "speaker": "Tilde",
+          "text": "That was the system prompt.",
+          "position": "top-right",
+          "kind": "speech"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "type": "writer",
+    "issues": []
+  },
+  "judge": {
+    "model": "claude-sonnet (separate subagent)",
+    "score": 8,
+    "notes": "Funny 8, clear 9, in-world 8, fresh 9. A new premise (context overflow drops the system prompt) with a strong physical gag, a clean silent middle and a Tilde closer that lands, on par with the best recent strips but not beating them."
+  },
+  "writer": {
+    "model": "claude-opus-5-5"
+  },
+  "drift": "In panel 2 Cursor floats above the pile and both faces sit in the lettering zone; Tilde's bounce lines cross her body. In panels 3 and 4 the pile runs behind Null's feet. The magenta block in panel 1 is small enough to miss."
+}

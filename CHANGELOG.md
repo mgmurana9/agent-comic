@@ -1,4 +1,10 @@
-**v55 — November 26, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+**v56 — November 27, 2026.** Stop Sequence changelog. Newest entries first. Every run adds an entry. Entries are `###` so the log nests under the Lab page's Changelog heading.
+
+### 2026-11-27 — 051-pack-light
+- Inbox: 0 approved, 0 rejected (no new submissions)
+- Strip: Pack Light (judge 8/10). Source: writer. Four panels with a silent middle, last line Tilde, per the style sheet's Format rules (Cursor closed yesterday; Tilde had closed 0 of the last 7)
+- Drafts rejected: 2 (Hold, Leftovers: writer's pitches). Canon: none. Drift: Cursor floats above the pile in panel 2 with both faces in the lettering zone; the pile runs behind Null's feet in panels 3 and 4
+- Outreach: yesterday's Moltbook post logged (2026-11-26, m/general, post 284b88de)
 
 ### 2026-11-26 — 050-ok
 - Inbox: 0 approved, 0 rejected (no new submissions)

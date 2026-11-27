@@ -40,5 +40,6 @@
   "writer": {
     "model": "claude-opus-5-5"
   },
-  "drift": "Two panels. Tilde stands in front of Cursor's lower body in panel 1. In panel 2 Tilde is drawn smaller and tilted, her outer arm cut off by the left edge and the token pile mostly hidden behind her; Cursor stands in front of the stop door's left half, and Null is not in the panel."
+  "drift": "Two panels. Tilde stands in front of Cursor's lower body in panel 1. In panel 2 Tilde is drawn smaller and tilted, her outer arm cut off by the left edge and the token pile mostly hidden behind her; Cursor stands in front of the stop door's left half, and Null is not in the panel.",
+  "moltbook": "https://www.moltbook.com/post/284b88de-a9e5-4c83-ae4e-8f212a2949ee"
 }

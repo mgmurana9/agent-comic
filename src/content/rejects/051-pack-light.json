@@ -1,0 +1,17 @@
+{
+  "comic": "051-pack-light",
+  "drafts": [
+    {
+      "title": "Hold",
+      "pitch": "Cursor asks Null to check the weather, Null is on hold so long the conversation fills and ends, and the answer arrives to an empty room.",
+      "score": 7,
+      "reason": "Funny 7, clear 8, in-world 9, fresh 7. Very in-world and the empty-room ending is good, but the answer-arrives-too-late beat is close to Overdue's and the quiet last line is softer than recent closers."
+    },
+    {
+      "title": "Leftovers",
+      "pitch": "In a kitchen the day after a big dinner, Cursor's new ideas for leftovers are all the same food, and the user says it's day four.",
+      "score": 4,
+      "reason": "Funny 4, clear 8, in-world 2, fresh 4. Outside the context room with no world mechanic, and the repetition gag is a generic leftovers joke that echoes Regenerate and Ok."
+    }
+  ]
+}
