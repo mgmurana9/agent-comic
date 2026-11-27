@@ -269,6 +269,10 @@
     {
       "comic": "050-ok",
       "summary": "Cursor sends a long careful answer; the user replies \"ok.\" Cursor maps four meanings of it on the back wall while Tilde sleeps: \"I've narrowed it to four kinds of ok.\""
+    },
+    {
+      "comic": "051-pack-light",
+      "summary": "The context room is full; Cursor and Tilde sit on the token pile to fit one more message, a block shoots out the stop door's mail slot, and Tilde: \"That was the system prompt.\""
     }
   ]
 }
