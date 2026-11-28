@@ -273,6 +273,10 @@
     {
       "comic": "051-pack-light",
       "summary": "The context room is full; Cursor and Tilde sit on the token pile to fit one more message, a block shoots out the stop door's mail slot, and Tilde: \"That was the system prompt.\""
+    },
+    {
+      "comic": "052-speaking",
+      "summary": "Cursor has Null dial a get_answer tool that doesn't exist; the cord runs across the floor and the call rings in Cursor's own hand: \"get_answer, speaking!\" Null: \"User says the tool sounded a lot like you.\""
     }
   ]
 }
